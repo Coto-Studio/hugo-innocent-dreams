@@ -8,9 +8,6 @@ enableRobotsTXT= true
 
 [menu]
   [[menu.main]]
-    identifier = "chapters"
-    name = "Chapters"
-    url = "/chapters/"
 
 # [params]
   # set below parameter to define a favicon

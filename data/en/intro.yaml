@@ -1,7 +1,6 @@
 title:
-- line: 'Waking From'
-- line: 'Innocent Dreams'
+  - line: "Waking From"
+  - line: "Innocent Dreams"
 
 description:
-#- line: 'An upcoming novel'
-- line: 'By Nelson/Roberto'
+  - line: "By Nelson/Roberto"

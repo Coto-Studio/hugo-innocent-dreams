@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang='{{ .Site.Language.Lang | default "en-us" }}'>
+	<head>
+		{{ partial "head/metadata" . }}
+		{{ partial "head/favicons" . }}
+		{{ partial "head/css" . }}
+		{{ partial "head/rss" . }}
+		{{ template "_internal/opengraph.html" . }}
+	</head>
+	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
+		{{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
+		{{ $featuredPostEnabled := .Site.Params.Posts.featuredpost | default true }}
+		{{ $folderName :=  .Site.Params.folderName | default "posts" }}
+		{{ $allPosts := where .Site.RegularPages "Section" $folderName }}
+		{{ $remainingPosts := .Paginate $allPosts $postPerPage }}
+		{{ $featuredPost := slice }}
+
+		{{ if $featuredPostEnabled }}
+			{{ $remainingPosts = (.Paginate (after 1 $allPosts) $postPerPage) }}
+		{{ end }}
+
+		{{ $isFirstPage := eq $remainingPosts.PageNumber 1 }}
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			{{ if $isFirstPage }}
+				{{ partial "header/intro" . }}
+				{{ $featuredPost = first 1 $allPosts }}
+			{{ end }}
+			{{ partial "header/site-header" . }}
+			{{ partial "header/site-nav" . }}
+
+			<!-- Main -->
+			<div id="main">
+				<section class="post">
+					<header class="major">
+						{{ if not .Date.IsZero }}
+						<span class="date">{{ .Date.Format (.Site.Params.DateFormat | default "January 2, 2006") }}</span>
+						{{ end }}
+						<h1>{{ .Title }}</h1>
+						<p>{{ .Description }}</p>
+					</header>
+					{{ if .Params.image }}
+					<div class="image main"><img src="{{ .Params.image | relURL }}" alt="" /></div>
+					{{ end }}
+					{{ .Content }}
+
+					{{ partial "postcustom" . }}
+
+					{{ if not (eq .Params.disableComments true) }}
+					{{ template "_internal/disqus.html" . }}
+					{{ end }}
+				</section>
+			</div>
+
+			{{ partial "footer/site-footer" . }}
+			{{ partial "footer/copyright" . }}
+		</div>
+		{{ template "_internal/google_analytics.html" . }}
+		{{ partial "footer/scripts" . }}
+	</body>
+</html>

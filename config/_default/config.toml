@@ -6,8 +6,11 @@ theme = "hugo-theme-massively"
 disableComments = 'true'
 enableRobotsTXT= true
 
-[menu]
-  [[menu.main]]
+#[menu]
+#  [[menu.main]]
+#  identifier = "help"
+#  name = "How You Can Help"
+#  url = "/how-you-can-help/"
 
 # [params]
   # set below parameter to define a favicon

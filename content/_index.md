@@ -1,7 +1,8 @@
 ---
-title: "Welcome"
-date: 2020-03-17T12:08:32-04:00
-header_title: "Manuscript Preview"
+header_title: "About The Book"
+title: "About The Book"
+description: "This is the description"
+image: "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpeg"
 draft: fasle
 ---
 

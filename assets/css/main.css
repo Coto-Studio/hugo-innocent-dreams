@@ -136,7 +136,7 @@ select,
 textarea {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 2.375;
 }
 
@@ -3093,7 +3093,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 /* Main */
 #main {
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.925);
   position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);

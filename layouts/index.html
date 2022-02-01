@@ -11,6 +11,7 @@
 		{{ partial "head/css" . }}
 		{{ partial "head/rss" . }}
 		{{ template "_internal/opengraph.html" . }}
+		<meta name="theme-color" content="#ffffff" />
 	</head>
 	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
 		{{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}

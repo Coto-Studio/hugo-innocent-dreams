@@ -4,7 +4,7 @@
     {{ with $data.contactinfo.contactformaction }}
     <section>
       <h2>Get Updates</h2>
-      <form method="post" action="{{ . }}">
+      <form id="signup-form" method="post" action="{{ . }}" data-botpoison-public-key="pk_dd2eb71b-ac8a-4772-b8d0-02eed0d0f626" target="_blank">
         <div class="fields">
           <div class="field">
             <label for="name">{{ i18n "CONTACT_FORM_FIELD_NAME" . }}</label>
@@ -16,7 +16,7 @@
           </div>
         </div>
         <ul class="actions">
-          <li><input type="submit" value='{{ i18n "CONTACT_FORM_SUBMIT_SEND_MESSAGE" . }}' /></li>
+          <li><input id="submit "type="submit" value='{{ i18n "CONTACT_FORM_SUBMIT_SEND_MESSAGE" . }}' /></li>
         </ul>
       </form>
     </section>

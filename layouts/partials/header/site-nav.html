@@ -2,7 +2,6 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 <nav id="nav">
     <ul class="links">
-        <li class="{{if .IsHome }}active{{end}}"><a href='{{ "/" | relLangURL }}'>{{ .Title }}</a></li>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}{{if eq $currentPage.RelPermalink .URL }}active{{end}}"><a href='{{ .URL }}' title="{{ .Title }}">{{ .Name }}</a></li>

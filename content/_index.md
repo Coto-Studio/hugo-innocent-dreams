@@ -1,8 +1,8 @@
 ---
-header_title: "About The Book"
+header_title: "Waking From Innocent Dreams"
 title: "About The Book"
 description: "This is the description"
-image: "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpeg"
+image: "https://static.nelsonroberto.com/innocent-dreams/chapter-01-img-1.jpeg"
 draft: fasle
 ---
 

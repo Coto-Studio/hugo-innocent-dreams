@@ -6,17 +6,23 @@ theme = "hugo-theme-massively"
 disableComments = 'true'
 enableRobotsTXT= true
 
-#[menu]
-#  [[menu.main]]
-#  identifier = "help"
-#  name = "How You Can Help"
-#  url = "/how-you-can-help/"
+[menu]
+  [[menu.main]]
+  identifier = "about"
+  name = "About The Book"
+  url = "/"
+  [[menu.main]]
+  identifier = "help"
+  name = "How You Can Help"
+  url = "/how-you-can-help/"
 
-# [params]
-  # set below parameter to define a favicon
+[params]
+  ## Set below parameter to define a favicon
   # favicon = "favicon.ico"
-  # set to change date format
+  ## Set to change date format
   # dateFormat = "2.1.2006"
+  ## Set theme-color for mobile devices
+  themeColor = "#000"
 
 # Below parameters can be set to override default post settings
  [params.posts]

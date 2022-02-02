@@ -8,13 +8,19 @@ enableRobotsTXT= true
 
 [menu]
   [[menu.main]]
-  identifier = "about"
+  identifier = "about-the-book"
   name = "About The Book"
   url = "/"
+  weight = 10
   [[menu.main]]
-  identifier = "help"
-  name = "How You Can Help"
-  url = "/how-you-can-help/"
+  identifier = "about-the-author"
+  name = "About The Author"
+  url = "/about-the-author/"
+  weight = 20
+  [[menu.main]]
+  identifier = "Publishing"
+  name = "Publishing"
+  url = "/Publishing/"
 
 [params]
   ## Set below parameter to define a favicon

@@ -8,8 +8,6 @@ draft: fasle
 
 Then one day my Dad, got a phone call out of the blue, my biological family had been searching for me for 14 years.
 
-Growing up as an adopted child I would sit on the edge of my bed, stare into the night and wonder where are the people who look like me.
-
 Then one day my adoptive parents got a phone call that would change the course of my life and take me on a journey to
 
 That phone call would take me on journey to the city streets of Costa Rica, the volcanic hilltops of Panama, and to the rural country side of El Salvador, my homeland.

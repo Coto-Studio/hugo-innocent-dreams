@@ -137,7 +137,7 @@ textarea {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 300;
   font-size: 1.25rem;
-  line-height: 2.375;
+  line-height: 1.8;
 }
 
 a {
@@ -2361,7 +2361,8 @@ ul.icons.alt li a.icon:hover:before {
 }
 
 /* Section/Article */
-section.special, article.special {
+section.special,
+article.special {
   text-align: center;
 }
 
@@ -2379,7 +2380,7 @@ header > p {
   font-style: italic;
 }
 header > h1 + p {
-  font-size: 1.1rem;
+  font-size: 1.75rem;
   margin-top: -0.5rem;
   line-height: 2;
 }
@@ -3093,7 +3094,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 /* Main */
 #main {
-  background: rgba(255, 255, 255, 0.925);
+  background: rgba(255, 255, 255, 0.935);
   position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);

@@ -7,7 +7,9 @@
 /* Main */
 
 	#main {
-		background: transparentize(_palette(bg), 0.075);
+		// Background transparency 
+		background: transparentize(_palette(bg), 0.065);
+		
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - #{_size(padding) * 2});

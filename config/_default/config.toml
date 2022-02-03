@@ -28,7 +28,8 @@ enableRobotsTXT= true
   ## Set to change date format
   # dateFormat = "2.1.2006"
   ## Set theme-color for mobile devices
-  themeColor = "#000"
+  [[params.themeColor]]
+  content = "#000000"
 
 # Below parameters can be set to override default post settings
  [params.posts]

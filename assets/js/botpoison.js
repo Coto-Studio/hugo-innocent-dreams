@@ -1,11 +1,11 @@
 var formElement = document.getElementById("signup-form");
-var inputElement = document.getElementById("submit");
+var buttonElement = document.getElementById("submit");
 formElement.addEventListener("botpoison-challenge-start", function () {
-  inputElement.setAttribute("disabled", "disabled");
+  buttonElement.setAttribute("disabled", "disabled");
 });
 formElement.addEventListener("botpoison-challenge-success", function () {
-  inputElement.removeAttribute("disabled");
+  buttonElement.removeAttribute("disabled");
 });
 formElement.addEventListener("botpoison-challenge-error", function () {
-  inputElement.removeAttribute("disabled");
+  buttonElement.removeAttribute("disabled");
 });

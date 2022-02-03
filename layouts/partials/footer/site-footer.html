@@ -1,6 +1,7 @@
 <!-- Footer -->
 {{ $data := index .Site.Data .Site.Language.Lang }}
 <footer id="footer">
+  {{ if not .Params.disableNewsletter }}
     {{ with $data.contactinfo.contactformaction }}
     <section>
       <h2>Get Updates</h2>
@@ -21,6 +22,7 @@
       </form>
     </section>
     {{ end }}
+  {{ end }}
     <section class="split contact">
         {{ with $data.contactinfo.address }}
         <section class="alt">

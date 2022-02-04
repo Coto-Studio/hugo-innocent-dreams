@@ -17,10 +17,6 @@ enableRobotsTXT= true
   name = "About The Author"
   url = "/about-the-author/"
   weight = 20
-  [[menu.main]]
-  identifier = "Publishing"
-  name = "Publishing"
-  url = "/Publishing/"
 
 [params]
   ## Set below parameter to define a favicon
@@ -29,12 +25,13 @@ enableRobotsTXT= true
   # dateFormat = "2.1.2006"
   ## Set theme-color for mobile devices
   [[params.themeColor]]
-  content = "#000000"
+    content = "#000000"
 
 # Below parameters can be set to override default post settings
  [params.posts]
-#     folderName = "post"
-     pageSize = "14"
+   folderName = "features"
+   pageSize = "14"
+   featuredPost = false
 #     featuredPost = true
 #     paginationPages = 2
 #     showFirstLast = false

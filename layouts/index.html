@@ -13,25 +13,23 @@
 		{{ template "_internal/opengraph.html" . }}
 	</head>
 	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
-		{{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
-		{{ $featuredPostEnabled := .Site.Params.Posts.featuredpost | default true }}
-		{{ $folderName :=  .Site.Params.folderName | default "posts" }}
+		{{ $postPerPage := .Site.Params.Posts.pageSize | default 6 }}
+		{{ $featuredPostEnabled := .Site.Params.Posts.featuredPost | default true }}
+		{{ $folderName :=  .Site.Params.Posts.folderName | default "posts" }}
 		{{ $allPosts := where .Site.RegularPages "Section" $folderName }}
-		{{ $remainingPosts := .Paginate $allPosts $postPerPage }}
+		{{ $remainingPosts := slice }}
 		{{ $featuredPost := slice }}
-
+		
 		{{ if $featuredPostEnabled }}
+			{{ $featuredPost = index (first 1 $allPosts) 0 }}
 			{{ $remainingPosts = (.Paginate (after 1 $allPosts) $postPerPage) }}
+		{{ else }}
+			{{ $remainingPosts = .Paginate $allPosts $postPerPage }}
 		{{ end }}
-
+			
 		{{ $isFirstPage := eq $remainingPosts.PageNumber 1 }}
 		<!-- Wrapper -->
 		<div id="wrapper" class="fade-in">
-
-			{{ if $isFirstPage }}
-				{{ partial "header/intro" . }}
-				{{ $featuredPost = first 1 $allPosts }}
-			{{ end }}
 			{{ partial "header/site-header" . }}
 			{{ partial "header/site-nav" . }}
 
@@ -50,12 +48,14 @@
 					{{ end }}
 					{{ .Content }}
 
-					{{ partial "postcustom" . }}
-
-					{{ if not (eq .Params.disableComments true) }}
-					{{ template "_internal/disqus.html" . }}
-					{{ end }}
+					{{ partial "postcustom" . }}					
 				</section>
+				
+				{{ if and $featuredPost $isFirstPage }}
+					{{ partial "posts/featured.html" $featuredPost }}
+				{{ end }}
+				
+				{{ partial "posts/list.html" $remainingPosts.Pages }}
 			</div>
 
 			{{ partial "footer/site-footer" . }}

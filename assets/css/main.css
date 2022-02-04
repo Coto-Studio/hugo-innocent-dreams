@@ -3248,6 +3248,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  border-top: solid 2px #909498;
   background-color: #e7e7e7;
   color: #909498;
   cursor: default;

@@ -31,7 +31,7 @@ enableRobotsTXT= true
  [params.posts]
    folderName = "features"
    pageSize = "14"
-   featuredPost = false
+   featuredPost = true
 #     featuredPost = true
 #     paginationPages = 2
 #     showFirstLast = false

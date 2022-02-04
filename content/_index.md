@@ -10,8 +10,21 @@ Then one day my Dad, got a phone call out of the blue, my biological family had 
 
 Then one day my adoptive parents got a phone call that would change the course of my life and take me on a journey to
 
+{{< image src="https://static.nelsonroberto.com/innocent-dreams/chapter-03-img-3.jpg" class="right" >}}
+
 That phone call would take me on journey to the city streets of Costa Rica, the volcanic hilltops of Panama, and to the rural country side of El Salvador, my homeland.
 
 An adventure that to this day I'm entirely sure if it was a dream, reality, or a bit of both.
 
 If I dreamt it, it really happened, or a bit of both.
+
+{{< box >}}
+_Don't forget to [subscribe](#footer) to get all the news about the book._
+{{</ box >}}
+
+{{< subheader >}}
+
+## About the author
+
+sub-header
+{{< /subheader >}}

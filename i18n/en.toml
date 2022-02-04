@@ -17,7 +17,7 @@
 [COPYRIGHT_MESSAGE_1]
   other = "Design: [HTML5 UP](https://html5up.net)"
 [COPYRIGHT_MESSAGE_2]
-  other = "Hugo Port: [curttimson](https://curtistimson.co.uk)"
+  other = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com)"
 [INTRO_CONTINUE]
   other = "Continue"
 [NAV_CONTACT]
@@ -30,3 +30,8 @@
   other = "First"
 [PAGINATION_LAST]
   other = "Last"
+[LINK_TEXT]
+  other = "Read More"
+[TAG_TEXT]
+  one = "View Post"
+  other = "View Posts"

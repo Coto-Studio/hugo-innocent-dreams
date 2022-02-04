@@ -30,6 +30,10 @@
 		{{ $isFirstPage := eq $remainingPosts.PageNumber 1 }}
 		<!-- Wrapper -->
 		<div id="wrapper" class="fade-in">
+			{{ if $isFirstPage }}
+				{{ partial "header/intro" . }}
+			{{ end }}
+			
 			{{ partial "header/site-header" . }}
 			{{ partial "header/site-nav" . }}
 

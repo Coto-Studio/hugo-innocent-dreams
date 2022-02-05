@@ -14,9 +14,9 @@ disableKinds = ["taxonomy", "term", "tag"]
   url = "/"
   weight = 10
   [[menu.main]]
-  identifier = "about-the-author"
-  name = "About The Author"
-  url = "/about-the-author/"
+  identifier = "news"
+  name = "News"
+  url = "/news/"
   weight = 20
 
 [params]

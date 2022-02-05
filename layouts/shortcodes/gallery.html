@@ -1,12 +1,15 @@
-{{ $gallery := .Get "name"}}
-{{ with $gallery }}
-<div class="box alt">
-  <div class="row gtr-50 gtr-uniform">
-    {{ range $.Page.Param . }}
-    <div class="col-4">
-      <span class="image fit"><img src="{{ . }}" alt="" /></span>
+{{ $images := $.Page.Resources.ByType "image" }}
+{{ if not $images }}
+  {{ $images = $.Page.Param (.Get "name") }}
+{{ end }}
+{{ with $images }}
+  <div class="box alt">
+    <div class="row gtr-50 gtr-uniform">
+      {{ range . }}
+      <div class="col-4">
+        <span class="image fit"><img src="{{ . }}" alt="" /></span>
+      </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
-</div>
 {{ end }}

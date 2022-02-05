@@ -56,10 +56,10 @@
 				</section>
 				
 				{{ if and $featuredPost $isFirstPage }}
-					{{ partial "posts/featured.html" $featuredPost }}
+					{{/* partial "posts/featured.html" $featuredPost */}}
 				{{ end }}
 				
-				{{ partial "posts/list.html" $remainingPosts.Pages }}
+				{{/* partial "posts/list.html" $remainingPosts.Pages */}}
 			</div>
 
 			{{ partial "footer/site-footer" . }}

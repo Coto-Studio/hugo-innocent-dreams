@@ -9,6 +9,28 @@
 form {
   margin: 0 0 _size(element-margin) 0;
 
+  .message {
+    font-size: 1.1em;
+    height: 1em;
+    line-height: inherit;
+    margin-top: 0;
+    &.success {
+      color: _palette(accent);
+
+      &:before {
+        // content: "\f00c";
+      }
+    }
+
+    &.failure {
+      color: _palette(fg);
+
+      &:before {
+        // content: "\f119";
+      }
+    }
+  }
+
   > :last-child {
     margin-bottom: 0;
   }

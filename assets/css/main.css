@@ -1805,6 +1805,18 @@ button.primary:hover,
 form {
   margin: 0 0 2rem 0;
 }
+form .message {
+  font-size: 1.1em;
+  height: 1em;
+  line-height: inherit;
+  margin-top: 0;
+}
+form .message.success {
+  color: #85a6de;
+}
+form .message.failure {
+  color: #212931;
+}
 form > :last-child {
   margin-bottom: 0;
 }

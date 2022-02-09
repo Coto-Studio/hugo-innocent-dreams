@@ -1,4 +1,4 @@
-<form method="post" action="#">
+<form method="post" action="https://submit-form.com/I2btXeVH">
 	<div class="row gtr-uniform">
 		<div class="col-6 col-12-xsmall">
 			<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
@@ -8,43 +8,51 @@
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="question-1">What's your mailing address?</label>
-			<p>Hardest question first, could you write a review? It doesn't have to be that long, like an Amazion review. I am collecting these and may use them on the website or on the final book itself!</p>
-			<textarea name="question-1" id="question-1" placeholder="Write a review" rows="6"></textarea>
+			<label for="question-1">What is your mailing address?</label>
+			<p>What is your mailing address so that I can send you the book.</p>
+			<textarea name="question-1" id="question-1" placeholder="Mailing Address" rows="4"></textarea>
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<select name="demo-category" id="demo-category">
+			<label for="connection">What is your connection to me and my work?</label>
+			<select name="connection" id="connection">
 				<option value="">- Category -</option>
-				<option value="1">Manufacturing</option>
-				<option value="1">Shipping</option>
-				<option value="1">Administration</option>
-				<option value="1">Human Resources</option>
+				<option value="1">El Salvador</option>
+				<option value="1">Frisbee</option>
+				<option value="1">Beaver</option>
+				<option value="1">Wentworth</option>
+				<option value="1">SAE/Worcester Polytech</option>
+				<option value="1">Camp Frank A. Day</option>
+				<option value="1">Other</option>
 			</select>
 		</div>
 		<!-- Break -->
-		<div class="col-4 col-12-small">
-			<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-			<label for="demo-priority-low">Low</label>
+		<div class="col-12">
+			<label for="confidence">Could you read the book in 3 to 4 week?</label>
+			<p>The book is 460 pages but I've been told it's a fast read. How confident are you that you could finish reading it within 3 to 4 weeks?</p>
 		</div>
 		<div class="col-4 col-12-small">
-			<input type="radio" id="demo-priority-normal" name="demo-priority">
-			<label for="demo-priority-normal">Normal</label>
+			<input type="radio" id="confidence-low" name="confidence" checked>
+			<label for="confidence-low">Fairly confident</label>
 		</div>
 		<div class="col-4 col-12-small">
-			<input type="radio" id="demo-priority-high" name="demo-priority">
-			<label for="demo-priority-high">High</label>
+			<input type="radio" id="confidence-medium" name="confidence">
+			<label for="confidence-medium">Somewhat confident</label>
+		</div>
+		<div class="col-4 col-12-small">
+			<input type="radio" id="confidence-unsure" name="confidence">
+			<label for="confidence-unsure">Unsure</label>
 		</div>
 		<!-- Break -->
 		<div class="col-12-small">
-			<input type="checkbox" id="newsletter" name="newsletter" >
-			<label for="newsletter">Sign up for my newsletter?</label>
+			<label >Sign up for my newsletter?</label>
 			<p>The emails are sent twice a month, first with content and then an author update.</p>
+			<input type="checkbox" id="newsletter" name="newsletter" ><label for="newsletter">Sign me up!</label>
 		</div>
 		<!-- Break -->
 		<div class="col-12">
 			<ul class="actions">
-				<li><button type="submit">Submit Feedback</button></li>
+				<li><button type="submit">Submit</button></li>
 				<li><input type="reset" value="Reset" /></li>
 			</ul>
 		</div>

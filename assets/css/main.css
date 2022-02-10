@@ -2394,7 +2394,7 @@ header > p {
 header > h1 + p {
   font-size: 1.75rem;
   margin-top: -0.5rem;
-  line-height: 2;
+  line-height: 1.5;
 }
 header > h2 + p {
   font-size: 1rem;
@@ -2445,6 +2445,13 @@ header.major > .date:after {
 @media screen and (max-width: 736px) {
   header.major {
     margin: 0 0 2rem 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  header h1 {
+    font-size: 0.6rem;
+    margin-top: -0.5rem;
+    line-height: 1.5;
   }
 }
 
@@ -2801,6 +2808,8 @@ body.is-preload #wrapper.fade-in:before {
   transform: translateY(2rem);
   opacity: 0;
   visibility: hidden;
+  text-shadow: 2px 2px 2px black;
+  max-width: 20ch;
 }
 #intro.hidden {
   pointer-events: none;
@@ -2843,7 +2852,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     min-height: 90vh;
   }
   #intro h1 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     line-height: 1.1;
     margin-bottom: 1rem;
   }
@@ -2870,6 +2879,14 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   }
   #intro .actions {
     display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  #intro {
+    padding-bottom: 3rem;
+  }
+  #intro + #header .logo {
+    max-width: 90%;
   }
 }
 
@@ -2971,7 +2988,16 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     padding-bottom: 3rem;
   }
   #header .logo {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    border-width: 3px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  #header {
+    padding-bottom: 3rem;
+  }
+  #header .logo {
+    font-size: 1.6rem;
     border-width: 3px !important;
   }
 }
@@ -3137,7 +3163,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   margin-top: -2rem;
 }
 #main > .post header.major > h1, #main > .post header.major h2 {
-  font-size: 4rem;
+  font-size: 3.75rem;
   line-height: 1.1;
   margin: 0 0 2rem 0;
 }
@@ -3220,6 +3246,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   #main > .posts > * {
     padding: 2.5rem;
     width: 50%;
+  }
+  #main > .posts header > p {
+    line-height: 1;
   }
 }
 @media screen and (max-width: 736px) {

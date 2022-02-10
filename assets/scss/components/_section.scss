@@ -32,7 +32,7 @@ header {
     // Description Font-size
     font-size: 1.75rem;
     margin-top: -0.5rem;
-    line-height: 2;
+    line-height: 1.5;
   }
 
   > h2 + p {
@@ -96,6 +96,15 @@ header {
   @include breakpoint("<=small") {
     &.major {
       margin: 0 0 _size(element-margin) 0;
+    }
+  }
+
+  @include breakpoint("<=xxsmall") {
+    h1 {
+      // Description Font-size
+      font-size: 0.6rem;
+      margin-top: -0.5rem;
+      line-height: 1.5;
     }
   }
 }

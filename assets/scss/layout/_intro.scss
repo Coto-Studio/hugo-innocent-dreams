@@ -24,6 +24,7 @@
   h1 {
     font-size: 5rem;
     line-height: 1;
+    text-shadow: 2px 2px 2px black;
   }
 
   p {
@@ -74,6 +75,12 @@
   @include breakpoint("<=medium") {
     @include padding(_size(padding) * 2, _size(padding) * 2);
     min-height: 90vh;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.1;
+      margin-bottom: _size(element-margin) * 0.5;
+    }
 
     p {
       br {

@@ -44,6 +44,12 @@
       text-shadow: 2px 2px 2px black;
       max-width: 20ch;
     }
+
+    @include breakpoint("<=xsmall") {
+      .logo {
+        max-width: 90%;
+      }
+    }
   }
 
   &.hidden {
@@ -117,9 +123,5 @@
 
   @include breakpoint("<=xxsmall") {
     padding-bottom: (_size(padding) * 1.5);
-
-    & + #header .logo {
-      max-width: 90%;
-    }
   }
 }

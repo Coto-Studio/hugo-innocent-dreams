@@ -64,7 +64,7 @@
     }
   }
 
-  @include breakpoint("<=xxsmall") {
+  @include breakpoint("<=xsmall") {
     padding-bottom: (_size(padding) * 1.5);
 
     .logo {

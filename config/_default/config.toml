@@ -1,5 +1,4 @@
 languageCode = "en-us"
-title = "Waking From Innocent Dreams"
 tabTitle = "Instructions"
 baseURL = "http://localhost:1313/"
 theme = "hugo-theme-massively"
@@ -20,6 +19,9 @@ disableKinds = ["taxonomy", "term", "tag"]
   weight = 20
 
 [params]
+  title = "Waking From Innocent Dreams"
+  keywords = "Book, Author, Novel, Autobiographical, El Salvador"
+  description = "An upcoming autobiograghical novel by Nelson/Roberto."
   ## Set below parameter to define a favicon
   # favicon = "favicon.ico"
   ## Set to change date format

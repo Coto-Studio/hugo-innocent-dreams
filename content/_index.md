@@ -1,7 +1,7 @@
 ---
 header_title: "Waking From Innocent Dreams"
-title: "About The Book"
-description: "Growing up my parents couldn't tell who I was or where I came from. At night I would sit on my bed and stare into the black and wonder, where are the people who look like me?"
+displayTitle: "About The Book"
+displayDescription: "Growing up my parents couldn't tell who I was or where I came from. At night I would sit on my bed and stare into the black and wonder, where are the people who look like me?"
 image: "https://static.nelsonroberto.com/innocent-dreams/chapter-01-img-1.jpeg"
 draft: fasle
 book-images:

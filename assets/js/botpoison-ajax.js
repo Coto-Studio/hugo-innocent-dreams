@@ -1,8 +1,8 @@
 // Botpoison Ajax Form.
 (function () {
   // Vars.
-  var $form = document.getElementsByTagName("form")[0],
-    $submit = document.getElementById("submit"),
+  var $form = document.getElementsByTagName("form")[0];
+  var $submit = $form.querySelector('button[type="submit"]'),
     $message;
 
   // Bail if addEventListener isn't supported.
@@ -45,15 +45,19 @@
     window.setTimeout(async function () {
       // $form.submit();
 
-      // AJAX Form code
-      const email = document.getElementById("email").value;
-      const name = document.getElementById("name").value;
+      // Get Form Attributes
       const formAction = $form.getAttribute("action");
       const pubKey = $form.dataset.botpoisonPublicKey;
       const botpoison = new Botpoison({
         publicKey: pubKey,
       });
 
+      // Get form data
+      const formData = new FormData($form);
+      const data = {};
+      formData.forEach((value, key) => (data[key] = value));
+
+      // Get Botpoison solution
       const { solution } = await botpoison.challenge({
         onProgress: (progress) => {
           if (progress === 0.5) {
@@ -63,18 +67,16 @@
           }
         },
       });
+      data["_botpoison"] = solution;
 
+      // Create HTTP request
       fetch(formAction, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          _botpoison: solution,
-        }),
+        body: JSON.stringify(data),
       })
         .then(function (response) {
           console.log(response);

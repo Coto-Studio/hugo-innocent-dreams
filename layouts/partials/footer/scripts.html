@@ -5,6 +5,7 @@
 {{ $breakpoints := resources.Get "js/breakpoints.min.js" }}
 {{ $util := resources.Get "js/util.js" }}
 {{ $botpoison := resources.Get "js/botpoison-ajax.js" }}
+{{ $lightboxjs := resources.Get "js/lightbox.js" }}
 {{ $main := resources.Get "js/main.js" }}
 
 {{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $botpoison $main | resources.Concat "assets/js/bundle.js" }}
@@ -14,3 +15,4 @@
 
 <!-- Scripts -->
 <script src='{{ $js.RelPermalink }}'></script>
+<script src='{{ $lightboxjs.RelPermalink }}'></script>

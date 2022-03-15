@@ -4,10 +4,12 @@
 {{ end }}
 {{ with $images }}
   <div class="box alt">
-    <div class="row gtr-50 gtr-uniform">
+    <div class="row gtr-50 gtr-uniform ">
       {{ range . }}
       <div class="col-4">
-        <span class="image fit"><img src="{{ . }}" alt="" /></span>
+        <a href="{{ . }}" data-lightbox="gallery" data-image-alt="">
+          <span class="image fit"><img src="{{ . }}" alt="" /></span>
+        </a>
       </div>
       {{ end }}
     </div>

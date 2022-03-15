@@ -3,6 +3,7 @@ header_title: "Waking From Innocent Dreams"
 displayTitle: "About The Book"
 displayDescription: "Growing up, my parents couldn't tell me why I had been given up for adoption. All they knew was that I spent a year in an orphanage in Honduras. At night, I would sit on the edge of my bed, stare into the black, and wonder, where are the people who look like me?"
 image: "https://static.nelsonroberto.com/innocent-dreams/chapter-01-img-1.jpeg"
+imageTitle: "Nelson and Derek on vcation in Florida, 1997."
 draft: fasle
 book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpg"
@@ -34,7 +35,7 @@ _Read the first chapter when you [Subscribe](#footer) for my email newsletter an
 Nelson/Roberto
 {{< /subheader >}}
 
-{{< image src="https://static.nelsonroberto.com/images/profile_square.jpg" class="left" >}}
+{{< image src="https://static.nelsonroberto.com/images/profile_square.jpg" class="left" name="author" title="Nelson de Witt/Roberto Coto" >}}
 
 My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year long civil war.
 

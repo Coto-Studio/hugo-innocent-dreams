@@ -48,7 +48,11 @@
 						<p>{{ .Params.DisplayDescription }}</p>
 					</header>
 					{{ if .Params.image }}
-					<div class="image main"><img src="{{ .Params.image | relURL }}" alt="" /></div>
+					<div class="image main">
+						<a href="{{ .Params.image | relURL }}" data-lightbox="feature-image" data-title="{{ .Params.imageTitle }}">
+							<img src="{{ .Params.image | relURL }}" alt="" />
+						</a>
+					</div>
 					{{ end }}
 					{{ .Content }}
 

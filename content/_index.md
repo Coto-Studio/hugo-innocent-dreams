@@ -25,7 +25,7 @@ Even now, over 20 years later, as I look back on these events, I'm not entirely 
 {{< gallery name="book-images" >}}
 
 {{< box >}}
-_Read the first chapter when you [Subscribe](#footer) for my email newsletter and get stay informed about the book's progress._
+_Read the first chapter when you [Subscribe](#subscribe) for my email newsletter and get stay informed about the book's progress._
 {{</ box >}}
 
 {{< subheader >}}
@@ -54,4 +54,4 @@ Coming soon...
 
 I am actively seeking representation for my 118,000-word autobiographical novel, _Waking From Innocent Dreams_.
 
-If you work in the book publishing industry or know anyone who does I would love to hear from you. Please contact me directly using my email below.
+If you work in the book publishing industry or know anyone who does I would love to hear from you. Please contact me directly [using my email below](#contact-info).

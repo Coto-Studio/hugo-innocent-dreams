@@ -3,7 +3,7 @@
 <footer id="footer">
   {{ if not .Params.disableNewsletter }}
     {{ with $data.contactinfo.contactformaction }}
-    <section>
+    <section id="subscribe">
       <h2>Get Updates</h2>
       <form id="signup-form" method="post" action="{{ . }}" data-botpoison-public-key="pk_dd2eb71b-ac8a-4772-b8d0-02eed0d0f626" target="_blank">
         <div class="fields">
@@ -23,7 +23,7 @@
     </section>
     {{ end }}
   {{ end }}
-    <section class="split contact">
+    <section id="contact-info" class="split contact">
         {{ with $data.contactinfo.address }}
         <section class="alt">
             <h3>{{ i18n "CONTACT_ADDRESS" . }}</h3>

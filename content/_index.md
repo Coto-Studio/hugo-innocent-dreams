@@ -13,9 +13,9 @@ book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-25-img-1.jpg"
 ---
 
-**Then one day, in 1997, Dad got a phone call that turned my world upside down.**
+**Then one day, in 1997, my Dad got a phone call that turned my world upside down.**
 
-A human rights organization was searching for an infant, the son of revolutionaries, who had been violently separated from his family in the early 80s during El Salvador's civil war. They believed I was that child, and if I was willing to take a DNA test, it would confirm this unbelievable story and reunite me with my missing past.
+A human rights organization was searching for an infant, the son of revolutionaries guerrillas, who had been violently separated from his family in the early 80s during El Salvador's civil war. They believed I was that child, and if I was willing to take a DNA test, it would confirm this unbelievable story and reunite me with my missing past.
 
 That fateful decision took me on an epic adventure to the city streets, volcanic hilltops, and rural countryside of Central America, eventually leading me back to my homeland of El Salvador. As I fostered a deep connection with my biological father and siblings, I discovered a life taken from me. But when the reality of the working world forced me to choose between a career and my newfound family, I had to figure out how to balance the demands of two distinct cultures or give up on my pursuit of a normal life.
 

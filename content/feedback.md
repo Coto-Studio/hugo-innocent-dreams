@@ -1,6 +1,6 @@
 ---
-title: "Feedback"
-description: "Tell me what you thought of the manuscript of my book."
+title: "Manuscript Feedback"
+description: "What did you think?"
 disableNewsletter: true
 draft: false
 ---

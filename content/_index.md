@@ -3,8 +3,8 @@ header_title: "Waking From Innocent Dreams"
 displayTitle: "About The Book"
 displayDescription: "Growing up, my parents couldn't tell me why I had been given up for adoption. All they knew was that I spent a year in an orphanage in Honduras. At night, I would sit on the edge of my bed, stare into the black, and wonder, where are the people who look like me?"
 image: "https://static.nelsonroberto.com/innocent-dreams/chapter-01-img-1.jpeg"
-imageTitle: "Nelson and Derek on vcation in Florida, 1997."
-draft: fasle
+imageTitle: "Nelson and Derek vacationing in Florida, 1997."
+draft: false
 book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpg"
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-03-img-1.jpeg"
@@ -30,7 +30,7 @@ _Read the first chapter when you [Subscribe](#subscribe) for my email newsletter
 
 {{< subheader >}}
 
-## About the author
+## About The Author
 
 Nelson/Roberto
 {{< /subheader >}}
@@ -52,6 +52,14 @@ Along side the book I am working on a documentary film called [Identifying Nelso
 Coming soon...
 {{< /subheader >}}
 
-I am actively seeking representation for my 118,000-word autobiographical novel, _Waking From Innocent Dreams_.
+After a lot of consideration I have decided to peruse traditional publishing. Unfortunately this means the book will not be available for some time as I seek representation for my 118,000-word autobiographical novel, _Waking From Innocent Dreams_.
 
-If you work in the book publishing industry or know anyone who does I would love to hear from you. Please contact me directly [using my email below](#contact-info).
+I've come to realize that there are very few stories about El Salvador that are told by Salvadorans. Most stories we hear about the country focus on the violence caused by the country's civil war and now gangs. I'm hoping to change that.
+
+While my story certainly deals with the aftermath of the war it is not a story about violence. Instead it is a story about a family trying to pick up the pieces of their fragmented life the best they can.
+
+It is this reason that I am delaying the release of my book to see if my story has a chance at being traditionally published and changing this narrative. The best way to stay informed about its progress is to [sign up for my newsletter](#subscribe).
+
+**If you work in the publishing industry** as an agent or publisher and would like to chat, you can contact me directly [using my email below](#contact-info).
+
+**If you have connections to or know of publishers, or media outlets** that you I should check out, please use filled out the form on the "have you heard of?" Page

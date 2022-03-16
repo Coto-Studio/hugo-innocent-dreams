@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
+  {{ $postsPaging := .Paginate .Pages $postPerPage }}
+  <section class="">
+    <header class="major">
+      {{ if not .Date.IsZero }}
+      <span class="date">{{ .Date.Format (.Site.Params.DateFormat | default "January 2, 2006") }}</span>
+      {{ end }}
+      <h1>{{ .Params.DisplayTitle }}</h1>
+      <p>{{ .Params.DisplayDescription }}</p>
+    </header>
+    {{ if .Params.image }}
+    <div class="image main">
+      <a href="{{ .Params.image | relURL }}" data-lightbox="feature-image" data-title="{{ .Params.imageTitle }}">
+        <img src="{{ .Params.image | relURL }}" alt="" />
+      </a>
+    </div>
+    {{ end }}
+    {{ .Content }}
+  </section>
+  
+  {{ partial "posts/list.html" $postsPaging.Pages }}
+  {{ partial "posts/pagination.html" (dict "paginator" $postsPaging  "outer" . )}}
+{{ end }}

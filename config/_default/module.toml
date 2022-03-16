@@ -1,0 +1,5 @@
+[[imports]]
+ path = 'github.com/lokesh/lightbox2'
+ [[imports.mounts]]
+ source = "dist"
+ target = "static/"

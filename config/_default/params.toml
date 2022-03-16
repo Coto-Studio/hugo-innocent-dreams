@@ -1,0 +1,19 @@
+title = "Waking From Innocent Dreams"
+keywords = "Book, Author, Novel, Autobiographical, El Salvador"
+description = "An upcoming autobiograghical novel by Nelson/Roberto."
+## Set below parameter to define a favicon
+# favicon = "favicon.ico"
+## Set to change date format
+# dateFormat = "2.1.2006"
+## Set theme-color for mobile devices
+[[themeColor]]
+  content = "#000000"
+
+# Below parameters can be set to override default post settings
+[posts]
+ folderName = "features"
+ pageSize = "14"
+ featuredPost = true
+#     featuredPost = true
+#     paginationPages = 2
+#     showFirstLast = false

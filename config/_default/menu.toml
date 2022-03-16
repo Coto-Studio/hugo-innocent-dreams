@@ -1,0 +1,10 @@
+[[main]]
+  identifier = "about-the-book"
+  name = "About The Book"
+  url = "/"
+  weight = 10
+[[main]]
+  identifier = "news"
+  name = "News"
+  url = "/news/"
+  weight = 20

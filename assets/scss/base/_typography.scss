@@ -197,7 +197,6 @@ hr {
   a {
     color: _palette($p, fg-bold);
     border-bottom-color: transparentize(_palette($p, fg), 0.5);
-    font-size: 1.2rem;
 
     &:hover {
       border-bottom-color: transparent;

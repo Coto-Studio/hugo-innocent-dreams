@@ -1,4 +1,16 @@
-twitter: "https://twitter.com/dewittn"
-facebook: "https://facebook.com/dewittn"
-instagram: "https://instagram.com/dewittn19"
-linkedin: "https://www.linkedin.com/dewittn"
+twitter:
+  name: "Twitter"
+  url: "https://twitter.com/dewittn"
+  icon: "fa-twitter"
+facebook:
+  name: "Facebook"
+  url: "https://facebook.com/dewittn"
+  icon: fa-facebook
+instagram:
+  name: "Instagram"
+  url: "https://instagram.com/dewittn19"
+  icon: "fa-instagram"
+linkedin:
+  name: "LinkedIn"
+  url: "https://www.linkedin.com/dewittn"
+  icon: "fa-linkedin"

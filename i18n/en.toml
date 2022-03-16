@@ -2,6 +2,10 @@
   other = "Address"
 [CONTACT_EMAIL]
   other = "Email"
+[CONTACT_FORM_HEADER]
+  other = "Newsletter Signup"
+[CONTACT_FORM_TEASER]
+  other = "Subscribe and read the first chapter."
 [CONTACT_FORM_FIELD_EMAIL]
   other = "Email"
 [CONTACT_FORM_FIELD_MESSAGE]

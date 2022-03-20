@@ -46,7 +46,7 @@ jobs:
 
       - name: Deploy site using s3cmd
         env:
-          target: s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}
+          target: "s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}"
         run: |
           s3cmd mb ${{ target }}
           s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ ${{ target }}

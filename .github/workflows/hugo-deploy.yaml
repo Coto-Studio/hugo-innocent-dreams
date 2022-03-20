@@ -17,34 +17,45 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Set output
+      - name: Get Branch Name
         id: vars
-        run: echo ::set-output name=branch::${GITHUB_REF#refs/*/}
+        run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
 
-      - name: Echo Vars
-        run: |
-          echo "s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.branch }}"
+      - name: Check out code
+        uses: actions/checkout@v3
+        with:
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-#       - name: Check out master
-#         uses: actions/checkout@master
-#
-#       - name: Deploy Hugo to Object Storage
-#         uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.5
-#         with:
-#           hugo-version: 0.92.0
-#           aws-access-key-id: ${{ env.obj-access-key }}
-#           aws-secret-access-key: ${{ env.obj-secret-key }}
-#           region: ${{ env.obj-region }}
-#           target: "production"
-#
-#       - name: Set up S3cmd cli tool
-#         uses: s3-actions/s3cmd@v1.1
-#         with:
-#           provider: linode # default is linode
-#           region: ${{ env.obj-region }}
-#           access_key: ${{ env.obj-access-key }}
-#           secret_key: ${{ env.obj-secret-key }}
-#
-#       - name: Update File Permissions
-#         run: |
-#           s3cmd setacl s3://${{ env.obj-bucket }}/ --acl-public --recursive
+      - name: Deploy Hugo to Object Storage
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build
+        run:
+          hugo --minify
+
+          # aws-access-key-id: ${{ env.obj-access-key }}
+          # aws-secret-access-key: ${{ env.obj-secret-key }}
+          # region: ${{ env.obj-region }}
+          # target: "production"
+
+      - name: Set up S3cmd cli tool
+        uses: s3-actions/s3cmd@v1.1
+        with:
+          provider: linode # default is linode
+          region: ${{ env.obj-region }}
+          access_key: ${{ env.obj-access-key }}
+          secret_key: ${{ env.obj-secret-key }}
+
+      # - name: Deploy using s3cmd
+      #   env:
+      #     target: s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}
+      #   run: |
+      #     s3cmd mb ${{ target }}
+      #     s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ ${{ target }}
+      #     s3cmd setacl ${{ target }} --acl-public --recursive
+      #     s3cmd ws-create --ws-index=index.html --ws-error=404.html ${{ target }}
+      #     s3cmd ws-info ${{ target }}

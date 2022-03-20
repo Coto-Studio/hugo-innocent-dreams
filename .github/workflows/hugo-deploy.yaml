@@ -34,11 +34,11 @@ jobs:
           extended: true
 
       - name: Building Beta website
-        if: steps.vars.outputs.short_ref == "dev"
+        if: steps.vars.outputs.short_ref == 'dev'
         run: hugo --minify --environment ${{ steps.vars.outputs.short_ref }}
 
       - name: Building Production website
-        if: steps.vars.outputs.short_ref == "main"
+        if: steps.vars.outputs.short_ref == 'main'
         run: hugo --minify
 
       - name: Set up s3cmd

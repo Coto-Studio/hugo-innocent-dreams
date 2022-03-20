@@ -17,7 +17,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Get Branch Name
+      - name: Get branch name
         id: vars
         run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
 
@@ -27,20 +27,14 @@ jobs:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Deploy Hugo to Object Storage
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
           extended: true
 
-      - name: Build
-        run:
-          hugo --minify
-
-          # aws-access-key-id: ${{ env.obj-access-key }}
-          # aws-secret-access-key: ${{ env.obj-secret-key }}
-          # region: ${{ env.obj-region }}
-          # target: "production"
+      - name: Build website
+        run: hugo --minify
 
       - name: Set up S3cmd cli tool
         uses: s3-actions/s3cmd@v1.1
@@ -50,12 +44,12 @@ jobs:
           access_key: ${{ env.obj-access-key }}
           secret_key: ${{ env.obj-secret-key }}
 
-      # - name: Deploy using s3cmd
-      #   env:
-      #     target: s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}
-      #   run: |
-      #     s3cmd mb ${{ target }}
-      #     s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ ${{ target }}
-      #     s3cmd setacl ${{ target }} --acl-public --recursive
-      #     s3cmd ws-create --ws-index=index.html --ws-error=404.html ${{ target }}
-      #     s3cmd ws-info ${{ target }}
+      - name: Deploy site using s3cmd
+        env:
+          target: s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}
+        run: |
+          s3cmd mb ${{ target }}
+          s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ ${{ target }}
+          s3cmd setacl ${{ target }} --acl-public --recursive
+          s3cmd ws-create --ws-index=index.html --ws-error=404.html ${{ target }}
+          s3cmd ws-info ${{ target }}

@@ -7,8 +7,8 @@ on:
       - dev
 
 env:
-  obj-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  obj-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  obj-access-key: ${{ secrets.LINODE_ACCESS_KEY }}
+  obj-secret-key: ${{ secrets.LINODE_SECRET_KEY }}
   obj-region: "us-east-1"
   obj-bucket: ${{ github.event.repository.name }}
 

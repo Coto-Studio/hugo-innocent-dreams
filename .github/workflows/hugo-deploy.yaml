@@ -11,16 +11,19 @@ env:
   obj-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   obj-region: "us-east-1"
   obj-bucket: ${{ github.event.repository.name }}
-  branch: ${{ github.head_ref }}
 
 jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=branch::${GITHUB_REF#refs/*/}
+
       - name: Echo Vars
         run: |
-          echo "s3://${{ env.obj-bucket }}/${{ env.branch}}"
+          echo "s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.branch }}"
 
 #       - name: Check out master
 #         uses: actions/checkout@master

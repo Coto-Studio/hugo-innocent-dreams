@@ -44,15 +44,12 @@ jobs:
           access_key: ${{ env.obj-access-key }}
           secret_key: ${{ env.obj-secret-key }}
 
-      - name: Test s3cmd
-        run: s3cmd ws-info s3://static-missingmila
-
-      # - name: Deploy site using s3cmd
-      #   env:
-      #     target: "s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}/"
-      #   run: |
-      #     s3cmd mb s3://${{ env.obj-bucket }}
-      #     s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ $target
-      #     #s3cmd setacl $target --acl-public --recursive
-      #     s3cmd ws-create --ws-index=index.html --ws-error=404.html $target
-      #     s3cmd ws-info $target
+      - name: Deploy site using s3cmd
+        env:
+          target: "s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}/"
+        run: |
+          s3cmd mb s3://${{ env.obj-bucket }}
+          s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ $target
+          #s3cmd setacl $target --acl-public --recursive
+          s3cmd ws-create --ws-index=index.html --ws-error=404.html $target
+          s3cmd ws-info $target

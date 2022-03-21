@@ -41,9 +41,9 @@ My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's
 
 I am an author, marketer, and technologist who has worked on a wide range of entrepreneurial projects, such as helping to scale an embroidery business in Panamá, and consulting on a crowdfunding campaign to fight patent trolls.
 
-My work has been featured in [The Huffington Post](http://www.huffingtonpost.com/2011/11/03/el-salvador-adoption-identifying-nelson_n_1073980.html), and [The Christian Science Monitor](https://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/1019/Former-missing-child-in-El-Salvador-s-civil-war-tells-his-journey-in-film), as well as several podcasts. I've spoken about my story at a number of high schools and colleges including [Yale University](https://erm.yale.edu/event/identifying-nelson-film-qa-filmmaker-nelson-de-witt), Wellesley College, and The University of Chicago.
+In addition to this book, I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/). It centers around a week-long trip I took to El Salvador in 2011, where I got to connect with the other Disappeared Children, interview members of my birth family, and meet the country's president.
 
-Along side the book I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/), which is about El Salvador's disappeared children.
+My work has been featured in [The Huffington Post](http://www.huffingtonpost.com/2011/11/03/el-salvador-adoption-identifying-nelson_n_1073980.html), and [The Christian Science Monitor](https://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/1019/Former-missing-child-in-El-Salvador-s-civil-war-tells-his-journey-in-film), as well as several podcasts. I've spoken about my story at a number of high schools and colleges including [Yale University](https://erm.yale.edu/event/identifying-nelson-film-qa-filmmaker-nelson-de-witt), Wellesley College, and The University of Chicago.
 
 {{< subheader >}}
 

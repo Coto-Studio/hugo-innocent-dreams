@@ -1,10 +1,15 @@
+## Open Graph Data
 title = "Waking From Innocent Dreams"
-keywords = "Book, Author, Novel, Autobiographical, El Salvador"
+keywords = "Book, Author, Novel, Autobiographical, El Salvador, Nelson/Roberto"
 description = "An upcoming autobiographical novel by Nelson/Roberto."
+images = ['wfid_cover.png', 'images/bg.png']
+
 ## Set below parameter to define a favicon
 # favicon = "favicon.ico"
+
 ## Set to change date format
 # dateFormat = "2.1.2006"
+
 ## Set theme-color for mobile devices
 [[themeColor]]
   content = "#000000"

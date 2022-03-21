@@ -1,5 +1,9 @@
 {{ define "main"}}
-  <div>
-   <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
-  </div>
+  <header class="center">
+    {{- $img := resources.Get "images/whoops.jpg" -}}
+    {{ $img = $img.Fit "600x600" }}
+    {{ $img = $img.Crop "600x600" }}
+    <a href="{{ "/" | relURL }}"><img src="{{ $img.RelPermalink }}" alt="404 image" width="{{ $img.Width }}" height="{{ $img.Height }}" class="center-img"></a>
+    <h1 id="title"><a href="{{ "/" | relURL }}">Whoops... file not found!</a></h1>
+  </header>
 {{ end }}

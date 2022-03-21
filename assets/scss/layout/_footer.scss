@@ -85,6 +85,9 @@
               margin-top: -0.325rem;
             }
           }
+          a {
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -170,9 +173,6 @@
             &:last-child {
               padding: (_size(padding) * 1);
             }
-          }
-          a {
-            font-size: 1.2rem;
           }
         }
       }

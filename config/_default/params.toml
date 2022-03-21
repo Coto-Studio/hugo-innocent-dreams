@@ -2,7 +2,7 @@
 title = "Waking From Innocent Dreams"
 keywords = "Book, Author, Novel, Autobiographical, El Salvador, Nelson/Roberto"
 description = "An upcoming autobiographical novel by Nelson/Roberto."
-images = ['wfid_cover.png', 'images/bg.png']
+images = ['images/wfid_cover.png', 'images/bg.png']
 
 ## Set below parameter to define a favicon
 # favicon = "favicon.ico"

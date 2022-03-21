@@ -61,5 +61,3 @@ While my story certainly deals with the aftermath of the war it is not a story a
 It is this reason that I am delaying the release of my book to see if my story has a chance at being traditionally published and changing this narrative. The best way to stay informed about its progress is to [sign up for my newsletter](#subscribe).
 
 **If you work in the publishing industry** as an agent or publisher and would like to chat, you can contact me directly [using my email below](#contact-info).
-
-**If you have connections to or know of publishers, or media outlets** that you I should check out, please use filled out the form on the "have you heard of?" Page

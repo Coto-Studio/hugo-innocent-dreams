@@ -25,7 +25,7 @@ Even now, over 20 years later, as I look back on these events, I'm not entirely 
 {{< gallery name="book-images" >}}
 
 {{< box >}}
-_Read the first chapter when you [Subscribe](#subscribe) for my email newsletter and get stay informed about the book's progress._
+_Read the first chapter when you [subscribe](#subscribe) to my email newsletter and stay informed about the book's progress._
 {{</ box >}}
 
 {{< subheader >}}

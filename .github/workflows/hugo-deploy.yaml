@@ -53,8 +53,10 @@ jobs:
         env:
           bucket: "s3://${{ env.obj-bucket }}/"
           target: "s3://${{ env.obj-bucket }}/${{ steps.vars.outputs.short_ref }}/"
+          source: "public/"
         run: |
           s3cmd mb $bucket
-          s3cmd --no-mime-magic --acl-public sync public/ $target
+          s3cmd setacl $bucket --acl-public
+          s3cmd --no-mime-magic --acl-public sync $source $target
           s3cmd ws-create --ws-index=index.html --ws-error=404.html $bucket
           s3cmd ws-info $bucket

@@ -24,10 +24,11 @@
     @include vendor("flex-grow", "1");
     @include vendor("flex-shrink", "1");
     @include padding((_size(padding) * 2), (_size(padding) * 2));
-    border-left: solid 2px _palette(alt, border);
+    // border-left: solid 2px _palette(alt, border);
+    border-inline: solid 2px _palette(alt, border);
 
     &:first-child {
-      border-left: 0;
+      // border-left: 0;
     }
 
     &.split {
@@ -85,9 +86,9 @@
               margin-top: -0.325rem;
             }
           }
-          a {
-            font-size: 1.2rem;
-          }
+          // a {
+          //   font-size: 1.2rem;
+          // }
         }
       }
     }

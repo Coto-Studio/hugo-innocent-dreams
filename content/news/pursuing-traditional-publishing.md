@@ -2,7 +2,7 @@
 title: "Why I'm Pursuing Traditional Publishing"
 description: "After talking with a book marketing coach, I've decided to pursue traditional publishing one very important reason."
 date: 2022-04-07T10:01:18-04:00
-draft: true
+draft: false
 ---
 
 {{< box >}}

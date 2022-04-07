@@ -2,16 +2,16 @@
 	<div class="row gtr-uniform">
 		<div class="col-6 col-12-xsmall">
 			<label for="name">Name</label>
-			<input type="text" name="name" id="name" value="" placeholder="Full Name" />
+			<input type="text" name="name" id="name" value="" placeholder="Full Name" required/>
 		</div>
 		<div class="col-6 col-12-xsmall">
 			<label for="email">Email</label>
-			<input type="email" name="email" id="email" value="" placeholder="Your Email" />
+			<input type="email" name="email" id="email" value="" placeholder="Your Email" required/>
 		</div>
 		<!-- Break -->
 		<div class="col-12">
 			<label for="mailing-address">1. What is your mailing address?</label>
-			<textarea name="mailing-address" id="mailing-address" placeholder="Mailing Address (US Only)" rows="4"></textarea>
+			<textarea name="mailing-address" id="mailing-address" placeholder="Mailing Address (US Only)" rows="4" required></textarea>
 		</div>
 		<!-- Break -->
 		<div class="col-12">
@@ -29,11 +29,11 @@
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="confidence">4. How confident are you that you can read it in 3 to 4 weeks?</label>
+			<label for="confidence">3. How confident are you that you can read it in 3 to 4 weeks?</label>
 			<p>The book is 470 pages but I've been told it's a fast read. </p>
 		</div>
 		<div class="col-4 col-12-small">
-			<input type="radio" id="confidence-low" name="confidence" value="Fairly" checked>
+			<input type="radio" id="confidence-low" name="confidence" value="Fairly" required>
 			<label for="confidence-low">Fairly confident</label>
 		</div>
 		<div class="col-4 col-12-small">
@@ -46,9 +46,9 @@
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="time-of-year">5. When could you read it?</label>
+			<label for="time-of-year">4. When could you read it?</label>
 			<p>What is the best time of year for you to read the book.</p>
-			<select name="time-of-year" id="time-of-year">
+			<select name="time-of-year" id="time-of-year" required>
 				<option value="">- Category -</option>
 				<option value="Spring 2022">Spring 2022 (March - May)</option>
 				<option value="Summer 2022">Summer 2022 (June - August)</option>
@@ -60,7 +60,7 @@
 		</div>
 		<!-- Break -->
 		<div class="col-12-small">
-			<label >6. Would you like to sign up for my newsletter?</label>
+			<label >5. Would you like to sign up for my newsletter?</label>
 			<p>The emails are sent twice a month, first with content and then an author update.</p> 
 			<input type="checkbox" id="newsletter" name="newsletter" value="Yes">
 			<label for="newsletter">Sign me up!</label>

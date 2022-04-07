@@ -8,7 +8,8 @@
 
 form {
   margin: 0 0 _size(element-margin) 0;
-
+  border: 2px solid _palette(accent);
+  padding: 1em;
   .message {
     font-size: 1.1em;
     height: 1em;
@@ -92,16 +93,15 @@ form {
 
 label {
   display: block;
-  font-family: _font(family-heading);
-  font-weight: _font(weight-heading);
+  font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.075em;
-  font-size: 1.3rem;
-  text-transform: uppercase;
+  font-size: 1.4rem;
+  // text-transform: uppercase;
   margin: 0 0 (_size(element-margin) * 0.375) 0;
 
   @include breakpoint("<=medium") {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -235,7 +235,7 @@ input[type="radio"] {
 
 @mixin color-form($p: null) {
   label {
-    color: _palette($p, fg-bold);
+    color: _palette(invert, bg);
   }
 
   input[type="text"],

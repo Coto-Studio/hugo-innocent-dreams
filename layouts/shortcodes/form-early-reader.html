@@ -1,20 +1,21 @@
 <form method="post" action="https://submit-form.com/I2btXeVH" data-botpoison-public-key="pk_9529e502-26f4-45bb-8107-644635c143de">
 	<div class="row gtr-uniform">
 		<div class="col-6 col-12-xsmall">
-			<input type="text" name="name" id="name" value="" placeholder="Name" />
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" value="" placeholder="Full Name" />
 		</div>
 		<div class="col-6 col-12-xsmall">
-			<input type="email" name="email" id="email" value="" placeholder="Email" />
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" value="" placeholder="Your Email" />
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="mailing-address">What is your mailing address?</label>
-			<p>What is your mailing address so that I can send you the book.</p>
-			<textarea name="mailing-address" id="mailing-address" placeholder="Mailing Address" rows="4"></textarea>
+			<label for="mailing-address">1. What is your mailing address?</label>
+			<textarea name="mailing-address" id="mailing-address" placeholder="Mailing Address (US Only)" rows="4"></textarea>
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="affiliation">What is your connection to me?</label>
+			<label for="affiliation">2. What is your connection to me?</label>
 			<select name="affiliation" id="affiliation">
 				<option value="">- Category -</option>
 				<option value="El Salvador">El Salvador</option>
@@ -28,8 +29,8 @@
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="confidence">Could you read the book in 3 to 4 week?</label>
-			<p>The book is 460 pages but I've been told it's a fast read. How confident are you that you could finish reading it within 3 to 4 weeks?</p>
+			<label for="confidence">4. How confident are you that you can read it in 3 to 4 weeks?</label>
+			<p>The book is 470 pages but I've been told it's a fast read. </p>
 		</div>
 		<div class="col-4 col-12-small">
 			<input type="radio" id="confidence-low" name="confidence" value="Fairly" checked>
@@ -45,7 +46,7 @@
 		</div>
 		<!-- Break -->
 		<div class="col-12">
-			<label for="time-of-year">When could you read it?</label>
+			<label for="time-of-year">5. When could you read it?</label>
 			<p>What is the best time of year for you to read the book.</p>
 			<select name="time-of-year" id="time-of-year">
 				<option value="">- Category -</option>
@@ -53,13 +54,17 @@
 				<option value="Summer 2022">Summer 2022 (June - August)</option>
 				<option value="Fall 2022">Fall 2022 (Sept - Nov)</option>
 				<option value="Winter 2023">Winter 2023 (Dec - Feb)</option>
+				<option value="Spring 2023">Spring 2023 (March - May)</option>
+				<option value="Anytime">No Preference/Anytime</option>
 			</select>
 		</div>
 		<!-- Break -->
 		<div class="col-12-small">
-			<label >Sign up for my newsletter?</label>
-			<p>The emails are sent twice a month, first with content and then an author update.</p>
-			<input type="checkbox" id="newsletter" name="newsletter" value="Yes"><label for="newsletter">Sign me up!</label>
+			<label >6. Would you like to sign up for my newsletter?</label>
+			<p>The emails are sent twice a month, first with content and then an author update.</p> 
+			<input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+			<label for="newsletter">Sign me up!</label>
+			<p><i>Psssst... If you already receive my author updates form <a href="https://nelsonroberto.com/newsletter/">nelsonroberto.com</a> there is no need to sign up, it is the same newsletter.<i></p>
 		</div>
 		<!-- Break -->
 		<div class="col-12">

@@ -5,7 +5,7 @@ disableNewsletter: true
 draft: false
 ---
 
-## Instructions
+### Instructions
 
 First of all, I just want to say thank you so much for taking an interest in my work. This project has been a labor of love for the past six years and I cannot wait for you to read it.
 
@@ -15,6 +15,6 @@ If you would be interested in getting on the early reader waiting list please fi
 
 If you have any questions, please don't hesitate to reach out to me [using the email address below](#contact-info).
 
-## Sign Up Form
+### Sign Up Form
 
 {{< form-early-reader >}}

@@ -6,10 +6,13 @@
 
 /* Form */
 
-form {
-  margin: 0 0 _size(element-margin) 0;
+.long-form {
   border: 2px solid _palette(accent);
   padding: 1em;
+}
+
+form {
+  margin: 0 0 _size(element-margin) 0;
   .message {
     font-size: 1.1em;
     height: 1em;

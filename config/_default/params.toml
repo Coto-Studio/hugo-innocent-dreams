@@ -20,6 +20,5 @@ Copyright = "[Nelson/Roberto](https://nelsonroberto.com)"
  folderName = "features"
  pageSize = "14"
  featuredPost = true
-#     featuredPost = true
 #     paginationPages = 2
 #     showFirstLast = false

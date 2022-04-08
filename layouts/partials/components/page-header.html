@@ -3,7 +3,7 @@
   {{ with .PublishDate }}
     <span class="date">{{ .Format ($.Site.Params.DateFormat | default "January 2, 2006") }}</span>
   {{ end }}
-  <h1>{{with .Params.DisplayTitle}}{{.}}{{else}}{{.Title}}{{end}}</h1>
+  <h2>{{with .Params.DisplayTitle}}{{.}}{{else}}{{.Title}}{{end}}</h2>
   <p>{{with .Params.DisplayDescription}}{{.}}{{else}}{{.Description}}{{end}}</p>
   {{ if .Params.image }}
   <div class="image main">

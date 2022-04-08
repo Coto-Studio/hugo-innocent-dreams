@@ -1,5 +1,4 @@
 ---
-header_title: "Waking From Innocent Dreams"
 displayTitle: "About The Book"
 displayDescription: "Growing up, my parents couldn't tell me why I had been given up for adoption. All they knew was that I spent a year in an orphanage in Honduras. At night, I would sit on the edge of my bed, stare into the black, and wonder, where are the people who look like me?"
 image: "https://static.nelsonroberto.com/innocent-dreams/chapter-01-img-1.jpeg"
@@ -52,7 +51,7 @@ My work has been featured in [The Huffington Post](http://www.huffingtonpost.com
 Coming soon...
 {{< /subheader >}}
 
-After a lot of consideration I have decided to peruse traditional publishing. Unfortunately this means the book will not be available for some time as I seek representation for my 118,000-word autobiographical novel, _Waking From Innocent Dreams_.
+After a lot of consideration I have decided to [pursue traditional publishing]({{< ref "pursuing-traditional-publishing" >}}). Unfortunately this means the book will not be available for some time as I seek representation for my 118,000-word autobiographical novel, _Waking From Innocent Dreams_.
 
 I've come to realize that there are very few stories about El Salvador that are told by Salvadorans. Most stories we hear about the country focus on the violence caused by the country's civil war and now gangs. I'm hoping to change that.
 

@@ -1,24 +1,28 @@
 {{ define "main" }}
-  {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
-  {{ $postsPaging := .Paginate .Pages $postPerPage }}
+  {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}  
+  {{ $featuredPostEnabled := .Site.Params.Posts.featuredPost | default true }}
+  {{ $allPosts := .Pages }}
+  {{ $remainingPosts := slice }}
+  {{ $featuredPost := slice }}
+  
+  
+  {{ if $featuredPostEnabled }}
+    {{ $featuredPost = index (first 1 $allPosts) 0 }}
+    {{ $remainingPosts = .Paginate (after 1 $allPosts) $postPerPage }}
+  {{ else }}
+    {{ $remainingPosts = .Paginate $allPosts $postPerPage }}
+  {{ end }}
+  
+  {{ $isFirstPage := eq $remainingPosts.PageNumber 1 }}
   <section class="">
-    <header class="major">
-      {{ if not .Date.IsZero }}
-      <span class="date">{{ .Date.Format (.Site.Params.DateFormat | default "January 2, 2006") }}</span>
-      {{ end }}
-      <h1>{{ .Params.DisplayTitle }}</h1>
-      <p>{{ .Params.DisplayDescription }}</p>
-    </header>
-    {{ if .Params.image }}
-    <div class="image main">
-      <a href="{{ .Params.image | relURL }}" data-lightbox="feature-image" data-title="{{ .Params.imageTitle }}">
-        <img src="{{ .Params.image | relURL }}" alt="" />
-      </a>
-    </div>
-    {{ end }}
+    {{ partial "components/page-header" .}}
     {{ .Content }}
   </section>
   
-  {{ partial "posts/list.html" $postsPaging.Pages }}
-  {{ partial "posts/pagination.html" (dict "paginator" $postsPaging  "outer" . )}}
+  {{ if and $featuredPost $isFirstPage }}
+    {{ partial "posts/featured.html" $featuredPost }}
+  {{ end }}
+  
+  {{ partial "posts/list.html" $remainingPosts.Pages }}
+  {{ partial "posts/pagination.html" (dict "paginator" $remainingPosts  "outer" . )}}
 {{ end }}

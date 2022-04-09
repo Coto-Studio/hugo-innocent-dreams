@@ -1,46 +1,99 @@
-<form method="post" action="https://submit-form.com/Hu7KJyiM" data-botpoison-public-key="pk_4f6285aa-9fcf-44e2-b6d2-263c91d43061">
+<form class="long-form" method="post" action="https://submit-form.com/Hu7KJyiM" data-botpoison-public-key="pk_4f6285aa-9fcf-44e2-b6d2-263c91d43061">
 	<div class="row gtr-uniform">
 		<div class="col-6 col-12-xsmall">
-			<input type="text" name="name" id="demo-name" value="" placeholder="Name" />
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" value="" placeholder="Full Name" required/>
 		</div>
 		<div class="col-6 col-12-xsmall">
-			<input type="email" name="email" id="demo-email" value="" placeholder="Email" />
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" value="" placeholder="Your Email" required/>
 		</div>
-		<!-- Break -->
+		
+		<!-- Like -->
 		<div class="col-12">
-			<label for="question-1">Question 1: Write an amazon review</label>
-			<p>Hardest question first, could you write a review? It doesn't have to be that long, like an Amazion review. I am collecting these and may use them on the website or on the final book itself!</p>
-			<textarea name="blurb" id="blurb" placeholder="Write a review" rows="6"></textarea>
+			<label for="what-did-you-like">1. What resonated with you?</label>
+			<p>Were there any themes, aspects, or ideas in the book that you found compelling?</p>
+			<textarea name="what-did-you-like" id="what-did-you-like" rows="6"></textarea>
 		</div>
-		<!-- Break -->
+		<!-- Cut -->
 		<div class="col-12">
-			<label for="question-2">Question 2: Would you cut anything?</label>
-			<p>Where there any parts that were felt slow, unnecessary, or repetitive?</p>
-			<textarea name="what-to-cut" id="what-to-cut" placeholder="Write a review" rows="6"></textarea>
+			<label for="what-to-cut">2. Would you cut anything?</label>
+			<p>Were there any parts that felt slow, unnecessary, or repetitive? (No, is a perfectly acceptable answer.)</p>
+			<textarea name="what-to-cut" id="what-to-cut" rows="6"></textarea>
 		</div>
-		<!-- Break -->
+		<!-- Ending -->
 		<div class="col-12">
-			<label for="ending">Question 3: What did you think of the ending?</label>
-			<p>Did you find it satisfying or was anything left unresolved? If so what?</p>
-			<textarea name="ending" id="ending" placeholder="Write a review" rows="6"></textarea>
+			<label for="ending">3. What did you think of the ending?</label>
+			<p>Did you find it satisfying, or was anything left unresolved? If so, what?</p>
+			<textarea name="ending" id="ending" rows="6"></textarea>
 		</div>
-		<!-- Break -->
+		
+		<!-- Review -->
 		<div class="col-12">
-			<select name="outreach-kind" id="outreach-kind">
-				<option value="">- Category -</option>
-				<option value="Podcast">Podcast</option>
-				<option value="News Org">News Org</option>
-				<option value="School">School</option>
-				<option value="Other">Other</option>
-			</select>
+			<label for="review">4. Would you write a review?</label>
+			<p>Like you would for Amazon.com or any other review site. It doesn't have to be that long, a couple of sentences is fine.</p>
+			<textarea name="review" id="review" rows="6"></textarea>
 		</div>
-		<!-- Break -->
+		<!-- Star Rating -->
+		<div id="full-stars-example-two">
+				<label for="rating">5. How many stars would you give it?</label>
+				<div class="rating-group">
+						<input disabled checked class="rating__input rating__input--none" name="rating" id="rating-none" value="0" type="radio">
+						<label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+						<input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+						<label aria-label="2 stars" class="rating__label" for="rating-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+						<input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+						<label aria-label="3 stars" class="rating__label" for="rating-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+						<input class="rating__input" name="rating" id="rating-3" value="3" type="radio">
+						<label aria-label="4 stars" class="rating__label" for="rating-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+						<input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+						<label aria-label="5 stars" class="rating__label" for="rating-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+						<input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+				</div>
+		</div>
+		
+		<!-- Media Release -->
 		<div class="col-12-small">
-			<input type="checkbox" id="newsletter" name="newsletter" value="Yes">
-			<label for="newsletter">Sign up for my newsletter?</label>
-			<p>The emails are sent twice a month, first with content and then an author update.</p>
+			<label>6. May I use your review in promotional material?</label>
+			<p>This might include on the website or for blurbs on the book itself!</p> 
 		</div>
-		<!-- Break -->
+		<div class="col-4 col-12-small">
+			<input type="radio" id="release-yes" name="release" value="Yes">
+			<label for="release-yes">Sure!</label>
+		</div>
+		<div class="col-4 col-12-small">
+			<input type="radio" id="release-no" name="release" value="No">
+			<label for="release-no">No thanks.</label>
+		</div>
+		
+		<!-- Feedback -->
+		<div class="col-12-small">
+			<label>7. Would you be willing to speak with me?</label>
+			<p>I love hearing people's feedback "in person." Would you be interested in providing your feedback over the phone or on a video call?</p> 
+		</div>
+		<div class="col-4 col-12-small">
+			<input type="radio" id="call-yes" name="call" value="Yes">
+			<label for="call-yes">Sure!</label>
+		</div>
+		<div class="col-4 col-12-small">
+			<input type="radio" id="call-no" name="call" value="No">
+			<label for="call-no">No thanks.</label>
+		</div>
+		<div class="col-4 col-12-small">
+			<input type="radio" id="call-spoken" name="call" value="Spoken">
+			<label for="call-spoken">We've already spoken!</label>
+		</div>
+		
+		<!-- Newsletter -->
+		<div class="col-12-small">
+			<label>8. Would you like to sign up for my newsletter?</label>
+		<p>The emails are sent twice a month, first with content and then an author update.</p> 
+		<input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+		<label for="newsletter">Sign me up!</label>
+		<p><i>Psssst... If you already receive my author updates form <a href="https://nelsonroberto.com/newsletter/">nelsonroberto.com</a> there is no need to sign up, it is the same newsletter.<i></p>
+		</div>
+		
+		<!-- Submit -->
 		<div class="col-12">
 			<ul class="actions">
 				<li><button type="submit">Submit Feedback</button></li>

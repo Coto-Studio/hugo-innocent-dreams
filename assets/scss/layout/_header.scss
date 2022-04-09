@@ -43,7 +43,7 @@
     padding: 1rem 1.75rem;
     text-transform: uppercase;
     visibility: visible;
-
+    width: min(90%, 24ch);
     &:hover {
       border-color: _palette(invert, accent) !important;
       color: _palette(invert, accent) !important;

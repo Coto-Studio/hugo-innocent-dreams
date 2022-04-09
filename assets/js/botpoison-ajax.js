@@ -1,15 +1,19 @@
 // Botpoison Ajax Form.
 (function () {
   // Vars.
-  var $form = document.getElementsByTagName("form")[0];
-  var $submit = $form.querySelector('button[type="submit"]'),
-    $message;
+  const $form = document.getElementsByTagName("form")[0];
+  if (!$form) return;
+
+  const $submit = $form.querySelector('button[type="submit"]');
+  const infoMessage = "Scanning for spam bots!<br />(Processing request)";
+  const successMessage = "All set. Thank you!";
+  const errorMessage = "Something went wrong... :(";
 
   // Bail if addEventListener isn't supported.
   if (!("addEventListener" in $form)) return;
 
   // Message.
-  $message = document.createElement("span");
+  var $message = document.createElement("span");
   $message.classList.add("message");
   $form.appendChild($message);
 
@@ -38,6 +42,7 @@
 
     // Disable submit.
     $submit.disabled = true;
+    $message._show("info", infoMessage);
 
     // Process form.
     // Note: Doesn't actually do anything yet (other than report back with a "thank you"),
@@ -60,11 +65,7 @@
       // Get Botpoison solution
       const { solution } = await botpoison.challenge({
         onProgress: (progress) => {
-          if (progress === 0.5) {
-            console.log("Halfway there");
-          } else if (progress === 1) {
-            console.log("Finished");
-          }
+          if (progress === 1) return $message._hide();
         },
       });
       data["_botpoison"] = solution;
@@ -80,10 +81,10 @@
       })
         .then(function (response) {
           console.log(response);
-          $message._show("success", "All set. Thank you!");
+          $message._show("success", successMessage);
         })
         .catch(function (error) {
-          $message._show("error", "Something went wrong... :(");
+          $message._show("error", errorMessage);
         });
 
       // Reset form.

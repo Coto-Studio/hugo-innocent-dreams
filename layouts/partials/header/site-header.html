@@ -1,8 +1,6 @@
-<!-- Header -->
+<!-- Site  Header -->
 <header id="header">
-    {{ with .Params.header_title }}
-        <a href='{{ "/" | relLangURL }}' class="logo">{{ . }}</a>
-    {{ else }}
-        <a href='{{ "/" | relLangURL }}' class="logo">{{ .Title }}</a>
-    {{ end }}
+    <a href='{{ "/" | relLangURL }}' class="logo">
+        {{ with .Params.header_title }}{{.}}{{else}}{{.Site.Params.Title}}{{ end }}
+    </a>
 </header>

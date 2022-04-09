@@ -39,25 +39,13 @@
 
 			<!-- Main -->
 			<div id="main">
-				<section class="post">
-					<header class="major">
-						{{ if not .Date.IsZero }}
-						<span class="date">{{ .Date.Format (.Site.Params.DateFormat | default "January 2, 2006") }}</span>
-						{{ end }}
-						<h1>{{ .Params.DisplayTitle }}</h1>
-						<p>{{ .Params.DisplayDescription }}</p>
-					</header>
-					{{ if .Params.image }}
-					<div class="image main">
-						<a href="{{ .Params.image | relURL }}" data-lightbox="feature-image" data-title="{{ .Params.imageTitle }}">
-							<img src="{{ .Params.image | relURL }}" alt="" />
-						</a>
-					</div>
-					{{ end }}
+				<article class="post">
+					{{ partial "components/page-header" .}}
+					
 					{{ .Content }}
 
 					{{ partial "postcustom" . }}					
-				</section>
+				</article>
 				
 				{{ if and $featuredPost $isFirstPage }}
 					{{/* partial "posts/featured.html" $featuredPost */}}

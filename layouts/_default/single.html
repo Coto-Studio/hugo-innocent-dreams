@@ -1,0 +1,16 @@
+{{ define "main" }}
+	<!-- Post -->
+	<article class="post">
+		{{ partial "components/page-header" .}}
+	  
+	  {{ .Content }}
+	  
+		{{ partial "postcustom" . }}
+
+	  {{ partial "posts/tags.html" .}}
+	  
+	  {{ if not .Params.disableComments }}
+	  {{ template "_internal/disqus.html" . }}
+	  {{ end }}
+	</article>
+{{ end }}

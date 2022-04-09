@@ -43,7 +43,6 @@
       opacity: 0;
       visibility: hidden;
       text-shadow: 2px 2px 2px black;
-      max-width: 20ch;
     }
 
     @include breakpoint("<=xsmall") {

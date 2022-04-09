@@ -2,11 +2,11 @@
 	<div class="row gtr-uniform">
 		<div class="col-6 col-12-xsmall">
 			<label for="name">Name</label>
-			<input type="text" name="name" id="demo-name" value="" placeholder="Full Name"/>
+			<input type="text" name="name" id="demo-name" value="" placeholder="Full Name" required/>
 		</div>
 		<div class="col-6 col-12-xsmall">
 			<label for="email">Email</label>
-			<input type="email" name="email" id="demo-email" value="" placeholder="Your Email"/>
+			<input type="email" name="email" id="demo-email" value="" placeholder="Your Email" required/>
 		</div>
 		
 		<!-- Like -->
@@ -18,13 +18,13 @@
 		<!-- Cut -->
 		<div class="col-12">
 			<label for="what-to-cut">2. Would you cut anything?</label>
-			<p>Where there any parts that were felt slow, unnecessary, or repetitive?</p>
+			<p>Were there any parts that felt slow, unnecessary, or repetitive? No, is a perfectly acceptable answer.</p>
 			<textarea name="what-to-cut" id="what-to-cut" rows="6"></textarea>
 		</div>
 		<!-- Ending -->
 		<div class="col-12">
 			<label for="ending">3. What did you think of the ending?</label>
-			<p>Did you find it satisfying or was anything left unresolved? If so what?</p>
+			<p>Did you find it satisfying, or was anything left unresolved? If so, what?</p>
 			<textarea name="ending" id="ending" rows="6"></textarea>
 		</div>
 		
@@ -55,7 +55,7 @@
 		<!-- Media Release -->
 		<div class="col-12-small">
 			<label>6. May I use your review in promotional material?</label>
-			<p>This might include this website or blurbs on the book itself!</p> 
+			<p>This might include on the website or for blurbs on the book itself!</p> 
 		</div>
 		<div class="col-4 col-12-small">
 			<input type="radio" id="release-yes" name="release" value="Yes">
@@ -65,8 +65,6 @@
 			<input type="radio" id="release-no" name="release" value="No">
 			<label for="release-no">No thanks.</label>
 		</div>
-		
-		
 		
 		<!-- Feedback -->
 		<div class="col-12-small">
@@ -86,10 +84,7 @@
 			<label for="call-spoken">We've already spoken!</label>
 		</div>
 		
-
-		
-		
-		<!-- Break -->
+		<!-- Newsletter -->
 		<div class="col-12-small">
 			<label>8. Would you like to sign up for my newsletter?</label>
 		<p>The emails are sent twice a month, first with content and then an author update.</p> 
@@ -97,7 +92,8 @@
 		<label for="newsletter">Sign me up!</label>
 		<p><i>Psssst... If you already receive my author updates form <a href="https://nelsonroberto.com/newsletter/">nelsonroberto.com</a> there is no need to sign up, it is the same newsletter.<i></p>
 		</div>
-		<!-- Break -->
+		
+		<!-- Submit -->
 		<div class="col-12">
 			<ul class="actions">
 				<li><button type="submit">Submit Feedback</button></li>

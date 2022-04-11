@@ -7,4 +7,9 @@
   identifier = "news"
   name = "News"
   url = "/news/"
+  weight = 30
+[[main]]
+  identifier = "outreach"
+  name = "How You can help"
+  url = "/how-you-can-help/"
   weight = 20

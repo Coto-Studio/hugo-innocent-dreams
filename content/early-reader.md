@@ -3,6 +3,7 @@ title: "Early Reader Sign Up"
 description: "Would you like to read my book before everyone else?"
 disableNewsletter: true
 draft: false
+disallow: true
 ---
 
 ### Instructions

@@ -2,6 +2,7 @@
 title: "Success!"
 description: "I have recieved your feedback and will be in touch shortly."
 draft: false
+disallow: true
 ---
 
 **May I ask for one more favor?**

@@ -2,6 +2,7 @@
 title: "Manuscript Feedback"
 disableNewsletter: true
 draft: false
+disallow: true
 ---
 
 ### Thank You!

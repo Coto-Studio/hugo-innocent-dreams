@@ -36,7 +36,7 @@ Nelson/Roberto
 
 {{< image src="https://static.nelsonroberto.com/images/profile_square.jpg" class="left" name="author" title="Nelson de Witt/Roberto Coto" >}}
 
-My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year long civil war.
+My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year-long civil war.
 
 I am an author, marketer, and technologist who has worked on a wide range of entrepreneurial projects, such as helping to scale an embroidery business in Panamá, and consulting on a crowdfunding campaign to fight patent trolls.
 

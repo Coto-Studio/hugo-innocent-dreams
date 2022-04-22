@@ -12,7 +12,7 @@
   @include vendor("display", "flex");
   @include vendor("transition", ("transform 1s ease", "opacity 1s ease"));
   background: rgba(255, 255, 255, 0.175);
-  min-height: 2rem;
+  // min-height: 2rem;
   // line-height: 4rem;
   margin: -4rem auto 0 auto;
   overflow: hidden;
@@ -48,7 +48,7 @@
           display: block;
           font-size: 1rem;
           outline: none;
-          padding-inline: 1rem;
+          padding: 1rem;
 
           &:hover {
             color: inherit !important;
@@ -74,6 +74,7 @@
       @include vendor("flex-grow", "0");
       @include vendor("flex-shrink", "0");
       margin-bottom: 0;
+      padding: 1rem;
     }
   }
 

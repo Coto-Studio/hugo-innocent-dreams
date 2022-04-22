@@ -14,6 +14,7 @@ async function submitForm(event) {
   const errorMessage = "Something went wrong... :(";
   const submit = form.querySelector("button[type='submit']");
   const formAction = form.getAttribute("action");
+  const successURL = form.dataset.successUrl;
   const pubKey = form.dataset.botpoisonPublicKey;
   const botpoison = new Botpoison({
     publicKey: pubKey,
@@ -71,8 +72,12 @@ async function submitForm(event) {
     message._show("error", errorMessage);
   }
 
+  console.log(successURL);
+
   // Enable submit.
   submit.disabled = false;
+
+  if (successURL) window.location.replace(successURL);
 }
 
 // Add eventListener to all forms

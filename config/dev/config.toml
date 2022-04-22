@@ -1,1 +1,3 @@
 baseURL = "https://beta.wakingfrominnocentdreams.com/"
+enableRobotsTXT = true
+canonifyURLs = true

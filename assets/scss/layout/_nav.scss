@@ -12,11 +12,11 @@
   @include vendor("display", "flex");
   @include vendor("transition", ("transform 1s ease", "opacity 1s ease"));
   background: rgba(255, 255, 255, 0.175);
-  height: 4rem;
-  line-height: 4rem;
+  min-height: 2rem;
+  // line-height: 4rem;
   margin: -4rem auto 0 auto;
   overflow: hidden;
-  padding: 0 1rem 0 0;
+  // padding: 0 0 0 0;
   position: relative;
   width: calc(100% - #{_size(padding) * 2});
   max-width: _size(wrapper);
@@ -29,7 +29,8 @@
       @include vendor("flex-shrink", "1");
       font-family: _font(family-heading);
       font-weight: _font(weight-heading);
-      letter-spacing: 0.075em;
+      // letter-spacing: 0.075em;
+      text-align: center;
       list-style: none;
       margin-bottom: 0;
       padding-left: 0;
@@ -45,7 +46,7 @@
             ("background-color #{_duration(transition)} ease-in-out", "color #{_duration(transition)} ease-in-out")
           );
           display: block;
-          font-size: 0.75rem;
+          font-size: 1rem;
           outline: none;
           padding-inline: 1rem;
 

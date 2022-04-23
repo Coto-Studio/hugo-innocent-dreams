@@ -72,8 +72,6 @@ async function submitForm(event) {
     message._show("error", errorMessage);
   }
 
-  console.log(successURL);
-
   // Enable submit.
   submit.disabled = false;
 

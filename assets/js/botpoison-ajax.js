@@ -1,5 +1,5 @@
 // Botpoison Form Integration, by Coto.Studio
-import("https://unpkg.com/@botpoison/browser");
+// import("https://unpkg.com/@botpoison/browser");
 
 // AJAX Form Submit
 async function submitForm(event) {

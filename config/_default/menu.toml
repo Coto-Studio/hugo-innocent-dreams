@@ -5,6 +5,11 @@
   weight = 10
 [[main]]
   identifier = "news"
-  name = "News"
+  name = "The Latest News"
   url = "/news/"
+  weight = 30
+[[main]]
+  identifier = "outreach"
+  name = "Spread the Word"
+  url = "/spread-the-word/"
   weight = 20

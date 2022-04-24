@@ -23,10 +23,6 @@ Even now, over 20 years later, as I look back on these events, I'm not entirely 
 
 {{< gallery name="book-images" >}}
 
-{{< box >}}
-_Read the first chapter when you [subscribe](#subscribe) to my email newsletter and stay informed about the book's progress._
-{{</ box >}}
-
 {{< subheader >}}
 
 ## About The Author
@@ -36,7 +32,7 @@ Nelson/Roberto
 
 {{< image src="https://static.nelsonroberto.com/images/profile_square.jpg" class="left" name="author" title="Nelson de Witt/Roberto Coto" >}}
 
-My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year long civil war.
+My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year-long civil war.
 
 I am an author, marketer, and technologist who has worked on a wide range of entrepreneurial projects, such as helping to scale an embroidery business in Panamá, and consulting on a crowdfunding campaign to fight patent trolls.
 
@@ -60,3 +56,14 @@ While my story certainly deals with the aftermath of the war it is not a story a
 It is this reason that I am delaying the release of my book to see if my story has a chance at being traditionally published and changing this narrative. The best way to stay informed about its progress is to [sign up for my newsletter](#subscribe).
 
 **If you work in the publishing industry** as an agent or publisher and would like to chat, you can contact me directly [using my email below](#contact-info).
+
+{{< subheader >}}
+
+## Spread The Word
+
+Help me get this book into the world
+{{< /subheader >}}
+
+With my manuscript done, most of the hard work of writing and editing is behind me. However, now begins the potentially even harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
+
+Please visit the [Spread the Word]({{< ref "spread-the-word" >}}) page to see if there is something you can do to help me with this endeavor.

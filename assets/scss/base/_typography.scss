@@ -47,7 +47,7 @@ a {
       "box-shadow #{_duration(transition)} ease-in-out"
     )
   );
-  border-bottom: dotted 1px;
+  border-bottom: solid 2px;
   text-decoration: none;
 
   &:hover {
@@ -198,7 +198,7 @@ hr {
 
   a {
     color: _palette($p, fg-bold);
-    border-bottom-color: transparentize(_palette($p, fg), 0.5);
+    border-bottom-color: _palette($p, fg);
 
     &:hover {
       border-bottom-color: transparent;

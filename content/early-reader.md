@@ -14,7 +14,7 @@ Since I am [pursuing traditional publishing]({{< ref "pursuing-traditional-publi
 
 If you would be interested in getting on the early reader waiting list please fill out the form below. Then at some point during the next year, I will mail you the book, or give it to you in person. I'll check in with you before sending it and when you are done you can mail it back or drop it off at my house. (My address, along with instructions, is printed on page 2 of the book.)
 
-If you have any questions, please don't hesitate to reach out to me [using the email address below](#contact-info).
+If you would like to send me this information via email, or run into any problems, please do not hesitate to message me [using the address listed below](#contact-info).
 
 ### Sign Up Form
 

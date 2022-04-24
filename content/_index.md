@@ -64,6 +64,6 @@ It is this reason that I am delaying the release of my book to see if my story h
 Help me get this book into the world
 {{< /subheader >}}
 
-With my manuscript done, most of the hard work of writing and editing is behind me. However, now begins the potentially even harder work of getting people to read my book. Each year hundreds of thousands of books are published, most of which languish in obscurity, only selling a handful of copies.
+With my manuscript done, most of the hard work of writing and editing is behind me. However, now begins the potentially even harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
 
 Please visit the [Spread the Word]({{< ref "spread-the-word" >}}) page to see if there is something you can do to help me with this endeavor.

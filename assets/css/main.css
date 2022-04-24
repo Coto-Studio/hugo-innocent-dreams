@@ -3168,7 +3168,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   display: block;
   font-size: 1rem;
   outline: none;
-  padding: 1.25rem;
+  padding: 1rem;
   border-bottom-color: transparent;
 }
 #nav ul.links li a:hover {

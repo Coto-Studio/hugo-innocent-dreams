@@ -10,6 +10,7 @@
 		{{ partial "head/favicons" . }}
 		{{ partial "head/css" . }}
 		{{ partial "head/rss" . }}
+		{{ partial "head/scripts" . }}
 		{{ template "_internal/opengraph.html" . }}
 	</head>
 	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
@@ -28,6 +29,5 @@
 		</div>
 
 		{{ template "_internal/google_analytics.html" . }}
-		{{ partial "footer/scripts" . }}
 	</body>
 </html>

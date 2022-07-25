@@ -18,7 +18,7 @@ Another critical issue for me is to show a side of our culture that isn’t root
 
 > In fact, the best-known English-language book about El Salvador is **Salvador**, written by Didion after spending a total of two weeks there—most of it in the air-conditioned company of US embassy officials. Her statement, "Terror is the given of the place, is arguably the best-known description of El Salvador in the English language.
 
-While my story touches on and is shaped by the country’s civil war, it is not a story _about_ that violence or “terror.” Instead, it is a story about a family that is trying to do their best with what they have been given. For these reasons think it’s worth pursuing the somewhat cumbersome process of traditional publishing—more on that in a bit.
+While my story touches on and is shaped by the country’s civil war, it is not a story _about_ that violence or “terror.” Instead, it is a story about a family that is trying to do their best with what they have been given. For these reasons think it’s worth pursuing the somewhat lengthy process of traditional publishing.
 
 {{< box >}}
 **Note:** The best way to keep update to date with the book is to sign up for my [newsletter updates](#footer).

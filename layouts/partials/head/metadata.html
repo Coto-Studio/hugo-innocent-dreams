@@ -15,3 +15,7 @@
   />
 {{ end }}
 <link rel="canonical" href="{{with .Params.CanonicalURL}}{{.}}{{else}}{{.Permalink}}{{end}}" />
+
+{{ if .Params.disallow }}
+<meta name="robots" content="noindex">
+{{ end }}

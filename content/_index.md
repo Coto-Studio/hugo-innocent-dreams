@@ -23,6 +23,10 @@ But when a family secret threatened the life I had worked so hard to build, I ha
 
 Even now, over 20 years later, as I look back on these events, I'm not entirely sure if it all was a dream, reality, or a bit of both.
 
+{{< box >}}
+{{< button title="Nofity Me" class="center">}}
+{{< /box >}}
+
 {{< gallery name="book-images" >}}
 
 {{< subheader >}}

@@ -1,13 +1,13 @@
-name: Hugo Build Beta Site and Deploy to S3
+name: Hugo Build Production Site and Deploy to S3
 
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   call-reuseable-workflow:
-    uses: Coto-Studio/workflows/.github/workflows/hugo-build-and-deploy-dev.yml@main
+    uses: Coto-Studio/workflows/.github/workflows/hugo-build-and-deploy-production.yml@main
     secrets:
       obj-access-key: ${{ secrets.LINODE_ACCESS_KEY }}
       obj-secret-key: ${{ secrets.LINODE_SECRET_KEY }}

@@ -1,4 +1,4 @@
-name: Hugo Build Beta Site and Deploy to S3
+name: Coto Studio - Build Hugo Site and Deploy to Linode Object Storage
 
 on:
   workflow_dispatch:

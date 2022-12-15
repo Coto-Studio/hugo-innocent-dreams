@@ -9,5 +9,5 @@ jobs:
   call-reuseable-workflow:
     uses: Coto-Studio/workflows/.github/workflows/hugo-build-and-deploy-dev.yml@main
     with:
-      obj-access-key: ${{ secrets.LINODE_ACCESS_KEY }}
-      obj-secret-key: ${{ secrets.LINODE_SECRET_KEY }}
+      obj-access-key: "${{ secrets.LINODE_ACCESS_KEY }}"
+      obj-secret-key: "${{ secrets.LINODE_SECRET_KEY }}"

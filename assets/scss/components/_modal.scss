@@ -1,0 +1,9 @@
+.notify-modal {
+  .actions {
+    justify-content: center;
+  }
+  &::backdrop {
+    background: _palette(null, fg-bold);
+    opacity: 0.95;
+  }
+}

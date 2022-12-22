@@ -17,7 +17,7 @@
       </div>
       <div class="field">
         <input type="checkbox" id="footer-newsletter" name="newsletter" value="Yes">
-        <label for="footer-newsletter">Subscribe to my bimonthly newsletter as well.<br /><a href="{{ $.Site.Params.learnMoreLink }}">Learn more.</a></label>
+        <label for="footer-newsletter">Subscribe to my bimonthly newsletter as well.<br /><a href="{{ relref $.Page $.Site.Params.learnMoreLink }}">Learn more.</a></label>
       </div>
     </div>
     <ul class="actions">

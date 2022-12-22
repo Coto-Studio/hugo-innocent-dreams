@@ -41,12 +41,20 @@
         border-top: solid 2px _palette(alt, border);
 
         &:first-child {
-          @include padding((_size(padding) * 2) - 1, (_size(padding) * 2), (_size(padding), 0, 0, 0));
+          @include padding(
+            (_size(padding) * 2) - 1,
+            (_size(padding) * 2),
+            (_size(padding), 0, 0, 0)
+          );
           border-top: 0;
         }
 
         &:last-child {
-          @include padding((_size(padding) * 2) - 1, (_size(padding) * 2), (0, 0, _size(padding), 0));
+          @include padding(
+            (_size(padding) * 2) - 1,
+            (_size(padding) * 2),
+            (0, 0, _size(padding), 0)
+          );
         }
       }
 
@@ -72,11 +80,13 @@
           }
 
           &:first-child {
-            padding: (_size(padding) * 2) (_size(padding) * 2) ((_size(padding) * 2) - 1) (_size(padding) * 2);
+            padding: (_size(padding) * 2) (_size(padding) * 2)
+              ((_size(padding) * 2) - 1) (_size(padding) * 2);
           }
 
           &:last-child {
-            padding: ((_size(padding) * 2) - 1) (_size(padding) * 2) (_size(padding) * 2) (_size(padding) * 2);
+            padding: ((_size(padding) * 2) - 1) (_size(padding) * 2)
+              (_size(padding) * 2) (_size(padding) * 2);
           }
 
           &.alt {
@@ -98,6 +108,7 @@
   h3,
   p {
     font-size: 0.8rem;
+    color: _palette(null, fg-bold);
   }
 
   @include breakpoint("<=medium") {

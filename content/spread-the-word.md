@@ -23,19 +23,21 @@ In recent years, stories like _Encanto_, _Gentefied_, and _In The Heights_ have 
 
 That's where you come in. If my story is going to get any real traction in a crowded marketplace it will be because of your efforts. **So I hope you will help me spread the word about my book by acting on least one of the steps below:**
 
-1. [Sign up for my newsletter](#1-sign-up-for-my-newsletter)
-2. [Share this story with someone](#2-share-this-story-with-someone)
-3. [Suggest a connection](#3-suggest-a-connection)
+1. [Sign up for my email list](#sign-up-for-my-email-list)
+2. [Share this story with someone](#share-this-story-with-someone)
+3. [Suggest a connection](#suggest-a-connection)
 
 ---
 
-### 1. Sign up for my newsletter
+## Sign up for my email list
 
-It might seem trivial, but signing up for my email newsletter is one of the easiest and most effective ways that you can support this project. Understandably, it can be challenging for publishers and other potential partners to take financial risks on an unknown author like me. However, having a healthy subscriber base sends a clear signal that there is an audience interested in my story.
+It might seem trivial, but **_the single best way that you can help this project is by joining my email list._**
 
-**If you have any desire to buy my book when it's available, then I strongly recommend you subscribe to my mailing list.**
+Understandably, it can be challenging for publishers and other potential partners to take financial risks on an unknown author like me. However, having a healthy subscriber base sends a clear signal that there is an audience interested in my story.
 
-Emails are sent out on the 2nd and 4th Tuesday of each month. One is an original piece of content, for example, my [Beyond The Book](https://nelsonroberto.com/beyond-the-book/) series, and the other is [an author update](https://nelsonroberto.com/newsletter/) which focuses on the book's progress.
+When you enter your email below you will get notified when there is a major book announcement, for example that the book is available for purchase.
+
+If you choose to sign up for the bimonthly newsletter, you can expect to receive updates on the 2nd and 4th Tuesday of each month. One is an original piece of content, for example, my [Beyond The Book](https://nelsonroberto.com/beyond-the-book/) series, and the other is [an author update](https://nelsonroberto.com/newsletter/) which focuses on the book's progress.
 
 {{% box %}}
 {{% form-newsletter %}}
@@ -43,7 +45,7 @@ Emails are sent out on the 2nd and 4th Tuesday of each month. One is an original
 
 ---
 
-### 2. Share this story with someone
+## Share this story with someone
 
 In my 2013 essay [Why you should support (and share) your friend’s work](https://medium.com/i-m-h-o/why-you-should-support-and-share-your-friends-work-dba326805b02) I argued that one of the best ways to support your friend's creative endeavors is to share their work.
 
@@ -61,7 +63,7 @@ I realize that the website address is a bit long so I created this handy short l
 
 ---
 
-### 3. Suggest a connection
+## Suggest a connection
 
 As I mentioned above, getting my book in front of 10,000 people is going to be a challenging task, one that I'm hoping you will help me with. **Do you know anyone, or can you think of anyone, that has an audience who might be interested in covering my story?** Perhaps you went to school with someone who works in the media. Perhaps you listen to a podcast that interviews authors.
 

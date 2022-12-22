@@ -15,10 +15,14 @@
         <label for="email">{{ i18n "CONTACT_FORM_FIELD_EMAIL" . }}</label>
         <input type="text" name="email" id="email" required/>
       </div>
+      <div class="field">
+        <input type="checkbox" id="footer-newsletter" name="newsletter" value="Yes">
+        <label for="footer-newsletter">Subscribe to my bimonthly newsletter as well.<br /><a href="{{ $.Site.Params.learnMoreLink }}">Learn more.</a></label>
+      </div>
     </div>
     <ul class="actions">
       <li>
-        <button id="submit" type="submit">{{ i18n "CONTACT_FORM_SUBMIT_SEND_MESSAGE" . }}</button>
+        <button id="submit" type="submit" class="primary">{{ i18n "CONTACT_FORM_SUBMIT_SEND_MESSAGE" . }}</button>
       </li>
     </ul>
   </form>

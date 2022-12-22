@@ -3,9 +3,9 @@
 [CONTACT_EMAIL]
   other = "Email"
 [CONTACT_FORM_HEADER]
-  other = "Newsletter Signup"
+  other = "Notify Me"
 [CONTACT_FORM_TEASER]
-  other = "Subscribe and read the first chapter."
+  other = "Enter your address below and I will email you when the book is available for purchase."
 [CONTACT_FORM_FIELD_EMAIL]
   other = "Email"
 [CONTACT_FORM_FIELD_MESSAGE]

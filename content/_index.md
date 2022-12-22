@@ -13,7 +13,7 @@ book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-25-img-1.jpg"
 ---
 
-**Then one day, in 1997, my Dad got a phone call that turned my world upside down.**
+**Then one day, in 1997, my dad got a phone call that turned my world upside down.**
 
 A human rights organization was searching for a boy named Roberto, the son of revolutionaries, who had been violently separated from his family in the early 80s during El Salvador's civil war. The organization believed I was that child, one of the country’s surviving disappeared children, and if I was willing to take a DNA test, it could reunite me with my missing past.
 

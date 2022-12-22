@@ -6,7 +6,7 @@ images = ['images/wfid_cover.png', 'images/bg.png']
 copyright = "[Nelson/Roberto](https://nelsonroberto.com)"
 
 ## Learn More Link for email sign up forms
-learnMoreLink = "/spread-the-word/#sign-up-for-my-email-list"
+learnMoreLink = "spread-the-word#sign-up-for-my-email-list"
 
 ## Set below parameter to define a favicon
 # favicon = "favicon.ico"

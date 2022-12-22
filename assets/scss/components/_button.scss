@@ -28,13 +28,13 @@ button,
   font-size: 0.8rem;
   font-weight: _font(weight-heading);
   letter-spacing: 0.075em;
-  height: 3rem;
-  line-height: 3rem;
+  min-height: 3rem;
+  line-height: 1rem;
   padding: 0 2rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap;
+  // white-space: nowrap;
 
   &.icon {
     &:before {
@@ -44,7 +44,7 @@ button,
     &.solo {
       position: relative;
       width: 4rem;
-      height: 4rem;
+      min-height: 4rem;
       line-height: 4rem;
       border-radius: 4rem;
       text-indent: 4rem;
@@ -58,7 +58,7 @@ button,
         top: 0;
         left: 0;
         width: inherit;
-        height: inherit;
+        min-height: inherit;
         line-height: inherit;
         font-size: 1.25rem;
         margin-right: 0;
@@ -74,27 +74,27 @@ button,
 
   &.small {
     font-size: 0.7rem;
-    height: 2.5rem;
+    min-height: 2.5rem;
     line-height: 2.5rem;
     padding: 0 1.5rem;
   }
 
   &.large {
     font-size: 1.2rem;
-    height: 3.5rem;
+    min-height: 3.5rem;
     line-height: 3.5rem;
     padding: 0 2.75rem;
   }
 
   @include breakpoint("<=medium") {
     font-size: 0.9rem;
-    height: 3.25rem;
+    min-height: 3.25rem;
     line-height: 3.25rem;
 
     &.large {
       font-size: 1rem;
-      height: 3.75rem;
-      line-height: 3.75rem;
+      min-height: 3.75rem;
+      line-height: 1.75rem;
     }
   }
 

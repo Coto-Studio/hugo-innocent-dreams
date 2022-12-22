@@ -4,7 +4,7 @@
     <h2>Notify Me</h2>
     <p>Enter your address below and I will email you when the book is available for purchase.</p>
   </header>
-  <form id="signup-form" method="post" action="https://submit-form.com/{{ .Get "formSparkID" }}" data-botpoison-public-key="pk_dd2eb71b-ac8a-4772-b8d0-02eed0d0f626" data-success-url="/" target="_blank">
+  <form id="signup-form" method="post" action="https://submit-form.com/{{ .Get "formSparkID" }}" data-botpoison-public-key="pk_dd2eb71b-ac8a-4772-b8d0-02eed0d0f626" data-success-url="/thank-you" target="_blank">
     <div class="fields">
       <div class="field">
         <input type="text" name="name" id="name" placeholder="Your Name" />
@@ -14,7 +14,7 @@
       </div>
       <div class="field">
         <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
-        <label for="newsletter">Subscribe to my bimonthly newsletter as well.</label>
+        <label for="newsletter" class="align-left">Subscribe to my bimonthly newsletter as well.<br /><a href="{{ .Site.Params.learnMoreLink }}">Learn more.</a></label>
       </div>
     </div>
     <ul class="actions">

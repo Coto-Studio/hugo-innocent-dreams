@@ -6,6 +6,8 @@
     <p>{{ i18n "CONTACT_FORM_TEASER" . }}</p>
   </header>
   <form id="signup-form" method="post" action="{{ . }}" data-botpoison-public-key="pk_dd2eb71b-ac8a-4772-b8d0-02eed0d0f626" target="_blank">
+    <input type="hidden" name="page" value="{{ $.Page.RelPermalink }}" />
+    <input type="hidden" name="component" value="footer-form" />
     <div class="fields">
       <div class="field">
         <label for="name">{{ i18n "CONTACT_FORM_FIELD_NAME" . }}</label>

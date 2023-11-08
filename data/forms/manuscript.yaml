@@ -1,0 +1,83 @@
+formID: Hu7KJyiM
+botpoisonKey: pk_4f6285aa-9fcf-44e2-b6d2-263c91d43061
+submitText: Submit Feedback
+fields:
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+    required: true
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+    required: true
+  - id: what-did-you-like
+    type: textarea
+    labelText: 1. What resonated with you?
+    helperText: Were there any themes, aspects, or ideas in the book that you found compelling?
+  - id: what-to-cut
+    type: textarea
+    labelText: 2. Would you cut anything?
+    helperText: Were there any parts that felt slow, unnecessary, or repetitive? (No, is a perfectly acceptable answer.)
+  - id: ending
+    type: textarea
+    labelText: 3. What did you think of the ending?
+    helperText: Did you find it satisfying, or was anything left unresolved? If so, what?
+  - id: review
+    type: textarea
+    labelText: 4. Write a review.
+    helperText: I know this isn't really a question, but could write a review for my book like you would for Amazon.com or any other review site? It doesn't have to be that long, a couple of sentences is fine.
+  - id: rating
+    type: starrating
+    labelText: 5. How many stars would you give it?
+    maxValue: 5
+  - type: radio
+    labelText: 6. May I use your review in promotional material?
+    helperText: This might be used on the website or blurbs on the book itself.
+    class: col-12-small
+    options:
+      - id: release-yes
+        name: media-release
+        class: col-4 col-12-small
+        labelText: Sure!
+        value: "Yes"
+      - id: release-no
+        name: media-release
+        class: col-4 col-12-small
+        labelText: No thanks.
+        value: "No"
+  - type: radio
+    labelText: 7. Would you be willing to speak with me?
+    helperText: I love hearing people's feedback "in person." Would you be interested in providing your feedback over the phone or on a video call?
+    class: col-12-small
+    options:
+      - id: call-yes
+        name: call
+        class: col-4 col-12-small
+        labelText: Sure!
+        value: Sure!
+      - id: call-no
+        name: call
+        class: col-4 col-12-small
+        labelText: Sure!
+        value: Sure!
+      - id: call-spoken
+        name: call
+        class: col-4 col-12-small
+        labelText: We've already spoken!
+        value: We've already spoken!
+  - type: label
+    labelText: 8. Would you like to sign up for my newsletter?
+    helperText: The emails are sent twice a month, first with content and then an author update.
+  - type: checkbox
+    class: col-12-small
+    options:
+      - id: newsletter
+        labelText: Sign me up!
+        value: "Yes"
+  - type: label
+    labelText:
+    helperText: Psssst... If you already receive my author updates form [nelsonroberto.com](https://nelsonroberto.com/newsletter/) there is no need to sign up, it is the same newsletter.

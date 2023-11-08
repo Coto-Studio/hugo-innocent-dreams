@@ -1,0 +1,47 @@
+{{ $data := index .Site.Data.forms "dartmouth" }}
+<form class="{{ $data.class | default "long-form" }}" method="post" action="https://submit-form.com/{{ $data.formID }}" data-botpoison-public-key="pk_4f6285aa-9fcf-44e2-b6d2-263c91d43061" data-success-url="{{ absURL "success" }}">
+	<div class="row gtr-uniform">
+		{{ range $data.fields }}
+			{{ if eq .type "textarea" }}
+				<div class="{{ .class | default "col-12" }}">
+					<label for="{{ .id }}">{{ .labelText }}</label>
+					{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
+					<textarea name="{{ .id }}" id="{{ .id }}" rows="{{ .rows | default 6 }}"></textarea>
+				</div>	
+			{{ end }}
+			
+			{{ if eq .type "label" }}
+			<div class="{{ .class | default "col-12" }}">
+				<label>{{ .labelText }}</label>			
+				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
+			</div>
+			{{ end }}
+			
+			{{ if eq .type "text" }}
+			<div class="{{ .class | default "col-12" }}">
+				<label for="{{ .id }}">{{ .labelText }}</label>
+				<input type="text" name="{{ .id }}" id="{{ .id }}" value="" placeholder="Full Name" {{ if .required }}required{{end}}/>
+				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
+			</div>
+			{{ end }}
+			
+			{{ if eq .type "checkbox" }}
+			<div class="{{ .class | default "col-12" }}">
+				{{ range .options }}
+					<input type="checkbox" name="{{ .id }}" id="{{ .id }}" value="{{ .value }}" {{ if .required }}required{{end}}/>
+					<label for="{{ .id }}">{{ .labelText }}</label>
+					{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
+				{{ end }}
+			</div>
+			{{ end }}
+		{{ end }}
+		
+		<!-- Submit -->
+		<div class="col-12">
+			<ul class="actions">
+				<li><button type="submit" class="primary">{{ $data.submitText | default "submit" }}</button></li>
+				<li><input type="reset" value="{{ $data.resetText | default "reset" }}" /></li>
+			</ul>
+		</div>
+	</div>
+</form>

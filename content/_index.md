@@ -1,8 +1,8 @@
 ---
 displayTitle: "About The Book"
-displayDescription: "Growing up, my parents couldn't tell me why I had been given up for adoption. All they knew was that I spent a year in an orphanage in Honduras. At night, I would sit on the edge of my bed, stare into the black, and wonder, where are the people who look like me?"
-image: "https://static.nelsonroberto.com/innocent-dreams/chapter-01-img-1.jpeg"
-imageTitle: "Nelson and Derek vacationing in Florida, 1997."
+displayDescription: "A combination of _The Distance Between Us_, _The Return_, and _The Hate U Give_, _**Waking From Innocent Dreams**_ is an auto-fiction novel that explores the question of “what becomes of *los desaparecidos*?”"
+image: "https://static.nelsonroberto.com/innocent-dreams/book-preview.png"
+# imageTitle: "Nelson and Derek vacationing in Florida, 1997."
 draft: false
 book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpg"
@@ -13,15 +13,13 @@ book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-25-img-1.jpg"
 ---
 
-**Then one day, in 1997, my dad got a phone call that turned my world upside down.**
+In the early 80s, an infant named Roberto, the son of revolutionaries, is disappeared along with his mother by government forces after a violent raid in Honduras.
 
-A human rights organization was searching for a boy named Roberto, the son of revolutionaries, who had been violently separated from his family in the early 80s during El Salvador's civil war. The organization believed I was that child, one of the country’s surviving disappeared children, and if I was willing to take a DNA test, it could reunite me with my missing past.
+Fourteen years later, an American high school student named Nelson is contacted by a human rights organization. Growing up, Nelson sensed that his adoption was unusual, but this phone call changes everything he thought he knew about himself.
 
-That fateful decision took me on an epic adventure to the city streets, volcanic hilltops, and rural countryside of Central America, eventually leading me back to my homeland of El Salvador. As I struggled to balance the demands of two distinct cultures, I fostered a deep connection with my biological father and siblings, and discovered a life taken from me.
+After a positive DNA test, Nelson/Roberto embarks on an epic adventure that takes him to the city streets, volcanic hilltops, and rural countryside of Central America. As he gets to know his biological family, he discovers a life taken from him and struggles to balance the demands of two distinct cultures.
 
-But when a family secret threatened the life I had worked so hard to build, I had to choose between facing the trauma of my past or letting go of my childhood dreams of what it means to be a family.
-
-Even now, over 20 years later, as I look back on these events, I'm not entirely sure if it all was a dream, reality, or a bit of both.
+Upon returning to his homeland of El Salvador, he is confronted with painful truths about his past and must find a way to let go of his childhood dreams about what it means to be a family so that he can learn to exist as both Nelson and Roberto.
 
 {{< box class="alt align-center">}}
 {{< modal title="Notify Me When Available" class="primary large icon fa-bell" formSparkID="3Jj2P1N3">}}
@@ -40,7 +38,13 @@ Nelson/Roberto
 
 My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year-long civil war.
 
-I am an author, marketer, and technologist who has worked on a wide range of entrepreneurial projects, such as helping to scale an embroidery business in Panamá, and consulting on a crowdfunding campaign to fight patent trolls.
+**I am currently seeking representation for my auto-fiction novel, which is complete at 118,000-words.** If you are a literary agent who is interested in taking a look at my project, [please get in touch](#contact-info), and I would be happy to forward a sample of any length.
+
+Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed.
+
+As someone who was forcibly disappeared and had a family member who was disappeared, I am able to write about this phenomenon from a unique perspective. Not only do I understand the ambiguous grief that comes from having a loved one taken this way, but I’ve also had to wrestle with complex issues such as identity confusion, family separation, and cultural bifurcation that affect many Latinx, Central American, and other marginalized communities.
+
+I believe what makes my story so powerful is that it exists at the interaction of two distinct cultures, allowing it to resonate with a wide range of people.
 
 In addition to this book, I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/). It centers around a week-long trip I took to El Salvador in 2011, where I got to connect with the other Disappeared Children, interview members of my birth family, and meet the country's president.
 
@@ -53,15 +57,9 @@ My work has been featured in [The Huffington Post](http://www.huffingtonpost.com
 Coming soon...
 {{< /subheader >}}
 
-After a lot of consideration I have decided to [pursue traditional publishing]({{< ref "pursuing-traditional-publishing" >}}). Unfortunately this means the book will not be available for some time as I seek representation for my 118,000-word autobiographical novel, _Waking From Innocent Dreams_.
+After much consideration I've decided to [pursue traditional publishing]({{< ref "pursuing-traditional-publishing" >}}). This can be a lengthy process so it could be months or years before my book is released.
 
-I've come to realize that there are very few stories about El Salvador that are told by Salvadorans. Most stories we hear about the country focus on the violence caused by the country's civil war and now gangs. I'm hoping to change that.
-
-While my story certainly deals with the aftermath of the war it is not a story about violence. Instead it is a story about a family trying to pick up the pieces of their fragmented life the best they can.
-
-It is this reason that I am delaying the release of my book to see if my story has a chance at being traditionally published and changing this narrative. The best way to stay informed about its progress is to [sign up for my newsletter](#subscribe).
-
-**If you work in the publishing industry** as an agent or publisher and would like to chat, you can contact me directly [using my email below](#contact-info).
+**If you are interested is purchasing a copy when it is available you should [sign up for my newsletter](#subscribe), and I will notify you when it is ready.**
 
 {{< subheader >}}
 

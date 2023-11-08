@@ -1,0 +1,48 @@
+formID: OlfOn0bH
+submitText: Submit Feedback
+fields:
+  - id: why-did-you-sign-up
+    type: textarea
+    labelText: 1. What made you sign up for this class?
+    helperText: Generally speaking, what is your interest in Latin American studies? Do you have a connection to the region that makes you curious about its history?
+  - id: what-resonated
+    type: textarea
+    labelText: 2. What aspects or themes of my film and book resonated with you the most?
+    helperText: Maybe you connected with navigating multiple identities or balancing the demands of two distinct cultures, whatever you connected with the most.
+  - id: how-do-you-relate
+    type: textarea
+    labelText: 3. Does my story remind you of any experiences in your own life?
+    helperText: Prephas, you have heard similar stories from family members. You don't need to give any specific or private information. I'm just wondering on a general level, and you are free to share as much or as little as you would like.
+  - id: where-do-you-find-content
+    type: textarea
+    labelText: 4. Where do you find interesting things to watch, listen to, or read?
+    helperText: Are there any Podcasts, YouTube Videos, Books, or Movies that deal with similar themes? If so, what are a few of your favorites?
+  - id: do-you-want-to-tell-a-story
+    type: textarea
+    labelText: 5. Do you have any desire to tell a story of your own?
+    helperText: Generally speaking, what kind of story do you want to tell? Do you want to write a book or make a film, like me, or something else entirely?
+  - id: additional-comments
+    type: textarea
+    labelText: 6. Any additional comments?
+    helperText: Is there anything else you would like to share with me?
+  - type: label
+    labelText: 7. Would you like to get email updates about my book and film?
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+  - type: checkbox
+    class: col-12-small
+    options:
+      - id: newsletter-book
+        labelText: I would like to receive updates about your book.
+        value: "Yes"
+      - id: newsletter-film
+        labelText: I would like to receive updates about your fim.
+        value: "Yes"

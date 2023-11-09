@@ -20,7 +20,7 @@
 			{{ if eq .type "text" }}
 			<div class="{{ .class | default "col-12" }}">
 				<label for="{{ .id }}">{{ .labelText }}</label>
-				<input type="text" name="{{ .id }}" id="{{ .id }}" value="" placeholder="Full Name" {{ if .required }}required{{end}}/>
+				<input type="text" name="{{ .id }}" id="{{ .id }}" value="" placeholder="{{ .placeholder }}" {{ if .required }}required{{end}}/>
 				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 			</div>
 			{{ end }}

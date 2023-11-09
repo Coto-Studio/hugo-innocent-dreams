@@ -8,20 +8,20 @@ fields:
     helperText: Generally speaking, what is your interest in Latin American studies? Do you have a connection to the region that makes you curious about its history?
   - id: what-resonated
     type: textarea
-    labelText: 2. What aspects or themes of my film and book resonated with you the most?
-    helperText: Maybe you connected with navigating multiple identities or balancing the demands of two distinct cultures, whatever you connected with the most.
+    labelText: 2. Are there aspects or themes of my film and book resonated with you?
+    helperText: Maybe you connected with the idea of navigating multiple identities or balancing the demands of two distinct cultures, whatever it was I'd love to know.
   - id: how-do-you-relate
     type: textarea
     labelText: 3. Does my story remind you of any experiences in your own life?
-    helperText: Prephas, you have heard similar stories from family members. You don't need to give any specific or private information. I'm just wondering on a general level, and you are free to share as much or as little as you would like.
-  - id: where-do-you-find-content
-    type: textarea
-    labelText: 4. Where do you find interesting things to watch, listen to, or read?
-    helperText: Are there any Podcasts, YouTube Videos, Books, or Movies that deal with similar themes? If so, what are a few of your favorites?
+    helperText: Please don't feel obligated to share any specific or private information, I'd just like to get a sense of how you relate to my story.
   - id: do-you-want-to-tell-a-story
     type: textarea
-    labelText: 5. Do you have any desire to tell a story of your own?
+    labelText: 4. Do you have any desire to tell a story of your own?
     helperText: Generally speaking, what kind of story do you want to tell? Do you want to write a book or make a film, like me, or something else entirely?
+  - id: where-do-you-find-content
+    type: textarea
+    labelText: 5. Where do you find interesting things to watch, listen to, or read?
+    helperText: Are there any Podcasts, YouTube Videos, Books, or Movies that deal with similar themes? If so, what are a few of your favorites?
   - id: additional-comments
     type: textarea
     labelText: 6. Any additional comments?

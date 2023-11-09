@@ -1,0 +1,35 @@
+formID: FX5AQY0q
+botpoisonKey: pk_48aba364-8452-40b5-aaf4-1d0191bd9749
+submitText: Submit Feedback
+fields:
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+    required: true
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+    required: true
+  - id: expectations
+    type: textarea
+    labelText: 1. How does this new introduction change your expectations for the story?
+    helperText: If you've read the book, do you feel like this rewrite sets up something different from what you remember reading?
+  - id: historical-prologue
+    type: textarea
+    labelText: 2. Did you find the historical prologue helpful and/or compelling?
+    helperText: My goal for this section was to provide some historical context but write it in a way that worked with the rest of the narrative. Do you think I achieved that goal?
+  - id: the-dissapeared
+    type: textarea
+    labelText: 3. Do you feel like you have a better understanding of what it means to be 'disappeared?'
+    helperText: I find that this term isn't well understood in the US, not only because of  language differences but also because it is rooted in the experiences of family members who are missing loved ones. Do you feel that the prologue does a good job of grounding this term?
+  - id: dna-test
+    type: textarea
+    labelText: 4. What are you feeling when Dad asks, "Do you want to take the DNA test?"
+    helperText: Do you feel like there is much more wieght to that question in the rewrite?
+  - id: additional-comments
+    type: textarea
+    labelText: 5. Do you have any additional thoughts or comments?

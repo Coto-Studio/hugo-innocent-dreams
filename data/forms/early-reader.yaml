@@ -1,6 +1,6 @@
 formID: I2btXeVH
 botpoisonKey: pk_9529e502-26f4-45bb-8107-644635c143de
-submitText: Submit Feedback
+submitText: Sign up
 fields:
   - id: name
     type: text

@@ -1,0 +1,93 @@
+formID: I2btXeVH
+botpoisonKey: pk_9529e502-26f4-45bb-8107-644635c143de
+submitText: Submit Feedback
+fields:
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+    required: true
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+    required: true
+  - id: mailing-address
+    type: textarea
+    rows: 4
+    labelText: 1. What is your mailing address?
+    placeholder: Mailing Address (US Only)
+  - type: select
+    id: affiliation
+    labelText: 2. What is your connection to me?
+    options:
+      - value: ""
+        text: "- Select a Connection -"
+      - value: Adoptee
+        text: ASA Member/Adoptee
+      - value: Beaver
+        text: Beaver Country Day School
+      - value: Camp Day
+        text: Camp Frank A. Day
+      - value: El Salvador
+        text: El Salvador
+      - value: Lasell
+        text: Lasell/Lasell Village
+      - value: Frisbee
+        text: Ultimate Frisbee
+      - value: Wentworth
+        text: Wentworth Institute of Technology
+      - value: WPI
+        text: Worcester Polytech/SAE
+      - value: Other
+        text: Other
+  - type: radio
+    labelText: 3. How confident are you that you can read it in 3 to 4 weeks?
+    helperText: The book is 470 pages but I've been told it's a fast read.
+    options:
+      - id: confidence-low
+        name: confidence
+        class: col-4 col-12-small
+        labelText: Fairly confident
+        value: Fairly
+      - id: confidence-medium
+        name: confidence
+        class: col-4 col-12-small
+        labelText: Somewhat confident
+        value: Somewhat
+      - id: confidence-unsure
+        name: confidence
+        class: col-4 col-12-small
+        labelText: Unsure
+        value: Unsure
+  - type: select
+    id: time-of-year
+    labelText: 4. When could you read it?
+    helperText: What is the best time of year for you to read the book.
+    options:
+      - value: ""
+        text: "- Select a time -"
+      - value: Winter 2024
+        text: Winter 2024 (Jan - March)
+      - value: Spring 2024
+        text: Spring 2024 (April - June)
+      - value: Summer 2024
+        text: Summer 2024 (July - Sept)
+      - value: Fall 2024
+        text: Fall 2024 (Oct - Dec)
+      - value: Anytime
+        text: No Preference/Anytime
+  - type: label
+    labelText: 5. Would you like to sign up for my newsletter?
+    helperText: The emails are sent twice a month, first with content and then an author update.
+  - type: checkbox
+    class: col-12-small
+    options:
+      - id: newsletter
+        labelText: Sign me up!
+        value: "Yes"
+  - type: label
+    labelText:
+    helperText: Psssst... If you already receive my author updates form [nelsonroberto.com](https://nelsonroberto.com/newsletter/) there is no need to sign up, it is the same newsletter.

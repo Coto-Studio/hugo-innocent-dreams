@@ -6,7 +6,7 @@
 				<div class="{{ .class | default "col-12" }}">
 					<label for="{{ .id }}">{{ .labelText }}</label>
 					{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
-					<textarea name="{{ .id }}" id="{{ .id }}" rows="{{ .rows | default 6 }}"></textarea>
+					<textarea name="{{ .id }}" id="{{ .id }}" rows="{{ .rows | default 6 }}" placeholder="{{ .placeholder }}"></textarea>
 				</div>	
 			{{ end }}
 			
@@ -42,7 +42,7 @@
 			</div>
 			{{ range .options }}
 			<div class="{{ .class }}">
-				<input type="radio" name="{{ .id }}" name="{{ .name }}" value="{{ .value }}" {{ if .required }}required{{end}}/>
+				<input type="radio" id="{{ .id }}" name="{{ .name }}" value="{{ .value }}" {{ if .required }}required{{end}}/>
 				<label for="{{ .id }}">{{ .labelText }}</label>
 				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 			</div>
@@ -66,6 +66,18 @@
 								<input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
 						</div>
 				</div>
+			{{ end }}
+			
+			{{ if eq .type "select" }}
+			<div class="{{ .class | default "col-12" }}">
+				<label for="{{ .id }}">{{ .labelText }}</label>
+				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
+				<select name="{{ .name | default .id }}" id="{{ .id }}">
+					{{ range .options }}
+					<option value="{{ .value }}">{{ .text }}</option>
+					{{ end }}
+				</select>
+			</div>
 			{{ end }}
 		{{ end }}
 		

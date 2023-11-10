@@ -17,4 +17,4 @@ Thanks again for reading my book, and I look forward to hearing what you thought
 
 ### Feedback Form
 
-{{< form-feedback >}}
+{{< form-builder data="manuscript" >}}

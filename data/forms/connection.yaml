@@ -1,0 +1,74 @@
+formID: EY2VX982
+botpoisonKey: pk_3b25dfe0-621c-4bd8-b379-aee496277fe7
+fields:
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+    required: true
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+    required: true
+  - id: contact-name
+    class: col-6 col-12-xsmall
+    type: text
+    labelText: Connection Name
+  - id: contact-email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Connection Email
+  - id: organization
+    type: text
+    labelText: Name of Associated Organization
+  - id: website
+    type: text
+    labelText: Their Website or Organization Website
+    placeholder: https://
+  - type: select
+    id: ecosystem-type
+    labelText: Connection Type
+    options:
+      - value: ""
+        text: "- Select a Type -"
+      - value: Media Hub
+        text: Media Hub (News Outlet, Podcast, Blog, etc.)
+      - value: Thought Leader/Influencer
+        text: Thought Leader/Influencer
+      - value: Event
+        text: Event (In Person/Online)
+      - value: Academic Institution
+        text: Academic Institution
+      - value: Government Institution
+        text: Government Institution
+      - value: For-Profit Company
+        text: For-Profit Company
+      - value: Non-Profit Company
+        text: Non-Profit Company
+      - value: Association or Club
+        text: Association or Club
+      - value: Faith Community
+        text: Faith Community
+      - value: Service Provider
+        text: Service Provider
+      - value: Other
+        text: Other
+  - type: radio
+    labelText: Would you be able to make an introduction?
+    options:
+      - id: introduction-yes
+        name: introduction
+        class: col-6 col-12-small
+        labelText: Sure, I'd be happy to!
+        value: "Yes"
+      - id: introduction-no
+        name: introduction
+        class: col-6 col-12-small
+        labelText: Sorry, I am unable to.
+        value: "No"
+  - id: other-ideas
+    type: textarea
+    labelText: Please add any other ideas, suggestions, or assets you might have that could help me get the word out.

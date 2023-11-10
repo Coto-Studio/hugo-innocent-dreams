@@ -18,4 +18,4 @@ If you would rather send me this information via email, or run into any problems
 
 ### Sign Up Form
 
-{{< form-early-reader >}}
+{{< form-builder data="early-reader" >}}

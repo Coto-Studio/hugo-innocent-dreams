@@ -69,9 +69,7 @@ As I mentioned above, getting my book in front of 10,000 people is going to be a
 
 Use the form below to suggest a connection. Just tell me who you are, who they are, and if you can make an introduction. You can also provide any other ideas, suggestions, or assets that you might have which might help me get the word out.
 
-{{< box >}}
-{{< form-connection >}}
-{{< /box >}}
+{{< form-builder data="connection" >}}
 
 [^1]: [The 10,000 Reader Rule](https://stevenpressfield.com/2015/11/the-10000-reader-rule/)
 [^2]: [Unforgetting: A Memoir of Family, Migration, Gangs, and Revolution in the Americas](https://amzn.to/3qZidkX)

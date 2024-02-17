@@ -1,0 +1,64 @@
+formID: 7icprOrf2
+botpoisonKey: pk_df019089-a636-4b6e-97ea-9c1c53bdc12d
+submitText: Submit Feedback
+fields:
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+    required: true
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+    required: true
+  - id: writting-journey
+    type: radio
+    labelText: 1. What best describes where you are in your writing journey?
+    options:
+      - id: journey-private
+        name: journey
+        class: col-12 col-12-small
+        labelText: My writing has been mostly private in a diary or journal.
+        value: mostly private
+      - id: journey-socail
+        name: journey
+        class: col-12 col-12-small
+        labelText: I've shared some writing publicly on a blog or social media but never attempted a more extensive project like an essay or book.
+        value: blog or social media
+      - id: journey-never-finished
+        name: journey
+        class: col-12 col-12-small
+        labelText: I've worked on a larger project like a long-form essay or book but never finished.
+        value: larger project, never finished
+      - id: journey-published
+        name: journey
+        class: col-12 col-12-small
+        labelText: I have "published" an essay or book. This does not have to be with a major publisher or media outlet. It could be something self-published.
+        value: published
+  - id: goals
+    type: textarea
+    labelText: 2. Goals and Intentions
+    helperText: What motivated you to sign up for this Workshop? What specific skills or knowledge are you hoping to gain?
+  - id: expectations
+    type: textarea
+    labelText: 3. Expectations and Needs
+    helperText: What are your expectations for the How to Tell A Personal Story Workshop? What is the one thing you hope to take away from this experience?
+  - id: challenges
+    type: textarea
+    labelText: 4. Current Challenges
+    helperText: What challenges have you faced (or anticipate facing) in writing this kind of story?
+  - id: vision
+    type: textarea
+    labelText: 5. Long-term Vision
+    helperText: Where do you see your writing going in the next year? What is your ultimate goal or vision for the story you want to tell?
+  - id: feedback
+    type: textarea
+    labelText: 6. Feedback and Improvement
+    helperText: Are you open to receiving and acting on feedback during the workshop? What areas do you think you might need the most guidance or improvement in?
+  - id: learning-style
+    type: textarea
+    labelText: 7. Learning Style
+    helperText: What are the ways you learn best? What is most helpful to you? For example, is being able to ask questions important? Do slides and visuals help you understand the information? Does participating in discussions help you? How do you best receive feedback? Does having some materials ahead of time to review in advance help you?

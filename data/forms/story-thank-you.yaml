@@ -1,0 +1,111 @@
+formID: h9fr399iM
+botpoisonKey: pk_497c3d12-67f3-4d54-82e2-6627d34b088c
+submitText: Submit Survey
+fields:
+  - id: name
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Name
+    placeholder: Full Name
+    required: true
+  - id: email
+    type: text
+    class: col-6 col-12-xsmall
+    labelText: Email
+    placeholder: Your Email
+    required: true
+  - id: describe-my-workshop
+    type: textarea
+    labelText: 1. In a few words, how would you describe my workshop on How To Tell A Personal Story?
+  - id: most-helpful
+    type: textarea
+    labelText: 2. What was the workshop's most helpful/valuable part for you? Why?
+  - id: lest-helpful
+    type: textarea
+    labelText: 3. What was the workshop's least helpful/valuable part for you? Why?
+  - id: biggest-takeaway
+    type: textarea
+    labelText: 4. What was your biggest takeaway? Why?
+    helperText: What challenges have you faced (or anticipate facing) in writing this kind of story?
+  - id: more-time
+    type: textarea
+    labelText: 5. Were there any topics you wish you could have spent more time on during the workshop?
+  - id: recommend-workshop
+    type: textarea
+    labelText: 6. Would you recommend this workshop to a friend? Why?
+  - id: match-value
+    type: radio
+    labelText: 7. Now that you've participated in the workshop, did the value match what you were expecting?
+    options:
+      - id: value-matched
+        name: workthop-value
+        class: col-12 col-12-small
+        labelText: The value I got matched what I expected
+        value: Matched what I expected
+      - id: value-exceeded
+        name: workthop-value
+        class: col-12 col-12-small
+        labelText: The value I got was more than what I expected
+        value: Exceeded what I expected
+      - id: value-insufficient
+        name: workshop-value
+        class: col-12 col-12-small
+        labelText: The value I got was less than what I expected
+        value: Less than what I expected
+  - id: continue-learning
+    type: textarea
+    labelText: 8. What do you need now to continue learning and telling your story?
+    helperText: Would having ongoing support and connection be helpful?
+  - id: breaks
+    type: radio
+    labelText: 9. Did you get enough breaks?
+    options:
+      - id: breaks-yes
+        name: enough-breaks
+        class: col-12 col-12-small
+        labelText: Yes, just the right amount
+        value: just the right amount
+      - id: breaks-no
+        name: enough-breaks
+        class: col-12 col-12-small
+        labelText: No, I needed a few more
+        value: I needed a few more
+  - id: sessions
+    type: radio
+    labelText: 10. Would this workshop work better if it took place as three separate one-hour sessions spanning several weeks?
+    options:
+      - id: separate-sessions-definitely
+        name: separate-sessions
+        class: col-12 col-12-small
+        labelText: Definitely, there was too much information for one session
+        value: Definitely, there was too much info
+      - id: separate-sessions-probably
+        name: separate-sessions
+        class: col-12 col-12-small
+        labelText: Probably, spreading the info out would make it feel less rushed
+        value: Probably, spreading it out would feel less rushed
+      - id: separate-sessions-possibly
+        name: separate-sessions
+        class: col-12 col-12-small
+        labelText: Possibly, but it's hard to tell
+        value: Possibly, but it's hard to tell
+      - id: separate-sessions-no
+        name: separate-sessions
+        class: col-12 col-12-small
+        labelText: No, I liked the format as it was
+        value: I liked the format as it was
+  - id: testimonial
+    type: textarea
+    labelText: 11. Would you be willing to share a testimonial about how my workshop on How To Tell A Personal Story helped you?
+  - id: comments
+    type: textarea
+    labelText: 12. Anything else you would like to share with me about the workshop?
+  - type: checkbox
+    class: col-12-small
+    options:
+      - id: newsletter-book
+        labelText: I would like to receive updates about your book, **Waking From Innocent Dreams**.
+        value: "Yes"
+      - id: newsletter-film
+        labelText: I would like to receive updates about your documentary, **Identifying Nelson/Buscando a Roberto**.
+        value: "Yes"

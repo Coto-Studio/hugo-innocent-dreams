@@ -4,7 +4,7 @@
 		{{ range $data.fields }}
 			{{ if eq .type "textarea" }}
 				<div class="{{ .class | default "col-12" }}">
-					<label for="{{ .id }}">{{ .labelText }}</label>
+					<label for="{{ .id }}">{{ .labelText | markdownify }}</label>
 					{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 					<textarea name="{{ .id }}" id="{{ .id }}" rows="{{ .rows | default 6 }}" placeholder="{{ .placeholder }}"></textarea>
 				</div>	
@@ -12,14 +12,14 @@
 			
 			{{ if eq .type "label" }}
 			<div class="{{ .class | default "col-12" }}">
-				<label>{{ .labelText }}</label>			
+				<label>{{ .labelText | markdownify }}</label>			
 				{{ with .helperText }}<p><em>{{. | markdownify }}</em></p>{{ end }}
 			</div>
 			{{ end }}
 			
 			{{ if eq .type "text" }}
 			<div class="{{ .class | default "col-12" }}">
-				<label for="{{ .id }}">{{ .labelText }}</label>
+				<label for="{{ .id }}">{{ .labelText | markdownify }}</label>
 				<input type="text" name="{{ .id }}" id="{{ .id }}" value="" placeholder="{{ .placeholder }}" {{ if .required }}required{{end}}/>
 				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 			</div>
@@ -29,7 +29,7 @@
 			<div class="{{ .class | default "col-12" }}">
 				{{ range .options }}
 					<input type="checkbox" name="{{ .id }}" id="{{ .id }}" value="{{ .value }}" {{ if .required }}required{{end}}/>
-					<label for="{{ .id }}">{{ .labelText }}</label>
+					<label for="{{ .id }}">{{ .labelText | markdownify }}</label>
 					{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 				{{ end }}
 			</div>
@@ -37,13 +37,13 @@
 			
 			{{ if eq .type "radio" }}
 			<div class="{{ .class | default "col-12" }}">
-				<label for="{{ .id }}">{{ .labelText }}</label>
+				<label for="{{ .id }}">{{ .labelText | markdownify }}</label>
 				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 			</div>
 			{{ range .options }}
 			<div class="{{ .class }}">
 				<input type="radio" id="{{ .id }}" name="{{ .name }}" value="{{ .value }}" {{ if .required }}required{{end}}/>
-				<label for="{{ .id }}">{{ .labelText }}</label>
+				<label for="{{ .id }}">{{ .labelText | markdownify }}</label>
 				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 			</div>
 			{{ end }}
@@ -51,7 +51,7 @@
 			
 			{{ if eq .type "starrating" }}
 			<div id="full-stars-example-two">
-						<label for="rating">{{ .labelText }}</label>
+						<label for="rating">{{ .labelText | markdownify }}</label>
 						<div class="rating-group">
 								<input disabled checked class="rating__input rating__input--none" name="rating" id="rating-none" value="0" type="radio">
 								<label aria-label="1 star" class="rating__label" for="rating-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
@@ -70,7 +70,7 @@
 			
 			{{ if eq .type "select" }}
 			<div class="{{ .class | default "col-12" }}">
-				<label for="{{ .id }}">{{ .labelText }}</label>
+				<label for="{{ .id }}">{{ .labelText | markdownify }}</label>
 				{{ with .helperText }}<p><em>{{.}}</em></p>{{ end }}
 				<select name="{{ .name | default .id }}" id="{{ .id }}">
 					{{ range .options }}

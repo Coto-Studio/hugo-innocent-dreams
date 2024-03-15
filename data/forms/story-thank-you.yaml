@@ -26,7 +26,6 @@ fields:
   - id: biggest-takeaway
     type: textarea
     labelText: 4. What was your biggest takeaway? Why?
-    helperText: What challenges have you faced (or anticipate facing) in writing this kind of story?
   - id: more-time
     type: textarea
     labelText: 5. Were there any topics you wish you could have spent more time on during the workshop?

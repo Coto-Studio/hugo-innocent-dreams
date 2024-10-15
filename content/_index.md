@@ -1,6 +1,6 @@
 ---
 displayTitle: "About The Book"
-displayDescription: "With themes similar to _Hades, Argentina_, and _Solito_, _**Waking From Innocent Dreams**_ combines memoir with magical realism and historical fiction. It explores the phenomenon of forced disappearances and asks the question, “Can a family reunited in the aftermath of war ever truly heal their broken bonds?"
+displayDescription: "With themes similar to _Hades, Argentina_, and _Solito_, _**Waking From Innocent Dreams**_ combines memoir with magical realism and historical fiction. It explores the phenomenon of forced disappearances and asks the question: Can a family who were reunited in the aftermath of war ever truly heal their broken bonds?"
 image: "https://static.nelsonroberto.com/innocent-dreams/book-preview.png"
 draft: false
 book-images:
@@ -45,7 +45,7 @@ I believe what makes my story so powerful is that it exists at the interaction o
 
 In addition to this book, I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/). It centers around a week-long trip I took to El Salvador in 2011, where I got to connect with the other Disappeared Children, interview members of my birth family, and meet the country's president.
 
-My work and story have been featured on [The BBC World Service](https://www.bbc.co.uk/programmes/w3ct6qpd), [The NACLA Report](https://www.tandfonline.com/doi/full/10.1080/10714839.2024.2356304?src=exp-la#d1e155), [The Christian Science Monitor](https://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/1019/Former-missing-child-in-El-Salvador-s-civil-war-tells-his-journey-in-film) and [The Huffington Post](http://www.huffingtonpost.com/2011/11/03/el-salvador-adoption-identifying-nelson_n_1073980.html). Besides appearing on several podcasts, I’ve also spoken about my story at a number of high schools and colleges, including Dartmouth College, [Yale University](https://erm.yale.edu/event/identifying-nelson-film-qa-filmmaker-nelson-de-witt), Wellesley College, and [University of Chicago](https://www.youtube.com/watch?v=YV57JTa9vlM).
+My work and story have been featured on [The BBC World Service](https://www.bbc.co.uk/programmes/w3ct6qpd), [The NACLA Report](https://www.tandfonline.com/doi/full/10.1080/10714839.2024.2356304?src=exp-la#d1e155), [The Christian Science Monitor](https://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/1019/Former-missing-child-in-El-Salvador-s-civil-war-tells-his-journey-in-film), [The Los Angels Times](https://www.latimes.com/world/la-xpm-2011-jul-13-la-fg-salvador-disappeared-20110713-story.html) and [The Huffington Post](http://www.huffingtonpost.com/2011/11/03/el-salvador-adoption-identifying-nelson_n_1073980.html). Besides appearing on [several podcasts](https://nelsonroberto.com/portfolio/public-speaking/), I’ve also spoken about my story at a number of high schools and colleges, including Dartmouth College, [Yale University](https://erm.yale.edu/event/identifying-nelson-film-qa-filmmaker-nelson-de-witt), Wellesley College, and [University of Chicago](https://www.youtube.com/watch?v=YV57JTa9vlM).
 
 {{< subheader >}}
 

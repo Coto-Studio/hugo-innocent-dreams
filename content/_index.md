@@ -35,7 +35,7 @@ Nelson/Roberto
 
 My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year-long civil war.
 
-**I am currently seeking representation for my auto-fiction novel, which is complete at 118,000-words.** If you are a literary agent who is interested in taking a look at my project, [please get in touch](#contact-info), and I would be happy to forward a sample of any length.
+**I am currently seeking representation for my novel, which is 115,000-words in its current draft.** If you are a literary agent who is interested in taking a look at my project, [please get in touch](#contact-info), and I would be happy to forward a sample of any length.
 
 Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed.
 

@@ -4,4 +4,4 @@ baseURL = "http://localhost:1313/"
 theme = "hugo-theme-massively"
 disableComments = 'true'
 enableRobotsTXT= true
-disableKinds = ["taxonomy", "term", "tag"]
+disableKinds = ["taxonomy", "term"]

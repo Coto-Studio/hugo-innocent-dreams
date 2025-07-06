@@ -1,8 +1,6 @@
 FROM ghcr.io/gohugoio/hugo:latest AS build
 
-ARG ENVIRONMENT
-
-ENV ENVIRONMENT=${ENVIRONMENT:-main}
+ARG ENVIRONMENT=main
 
 ADD --chown=hugo:hugo . . 
 

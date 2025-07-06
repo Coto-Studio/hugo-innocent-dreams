@@ -19,7 +19,7 @@ jobs:
 
   cs-docker-stack-deploy:
     name: CS Workflow
-    needs: cs-ghost-imgae-build
+    needs: cs-docker-imgae-build
     uses: Coto-Studio/workflows/.github/workflows/docker-stack-deploy-v3.yml@main
     secrets:
       OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}

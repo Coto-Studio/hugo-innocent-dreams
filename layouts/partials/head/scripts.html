@@ -15,3 +15,7 @@
 <!-- Scripts -->
 <script type="application/javascript" src='{{ $js.RelPermalink }}' defer></script>
 <script type="application/javascript" src='/js/lightbox.min.js' defer></script>
+
+{{ with .Site.Params.plausibleDomain }}
+<script defer data-domain="{{ . }}" src="https://stats.coto.studio/js/script.outbound-links.js"></script>
+{{ end }}

@@ -1,3 +1,5 @@
+@use '../libs' as *;
+
 ///
 /// Massively by HTML5 UP
 /// html5up.net | @ajlkn
@@ -8,12 +10,12 @@
 
 .image {
   border: 0;
-  border-radius: _size(border-radius);
+  border-radius: size(border-radius);
   display: inline-block;
   position: relative;
 
   img {
-    border-radius: _size(border-radius);
+    border-radius: size(border-radius);
     // display: block;
   }
 
@@ -40,7 +42,7 @@
 
   &.fit {
     display: block;
-    margin: (_size(element-margin) * 1.25) 0;
+    margin: (size(element-margin) * 1.25) 0;
     width: 100%;
 
     &:first-child {
@@ -54,7 +56,7 @@
 
   &.main {
     // display: block;
-    margin: (_size(element-margin) * 2) 0;
+    margin: (size(element-margin) * 2) 0;
     width: 100%;
     a {
       border-bottom-color: transparent;
@@ -71,11 +73,11 @@
 
   @include breakpoint("<=small") {
     &.fit {
-      margin: _size(element-margin) 0;
+      margin: size(element-margin) 0;
     }
 
     &.main {
-      margin: _size(element-margin) 0;
+      margin: size(element-margin) 0;
     }
   }
 }
@@ -86,7 +88,7 @@ a.image {
   img {
     @include vendor(
       "transition",
-      "transform #{_duration(transition)} ease-out"
+      "transform #{duration(transition)} ease-out"
     );
   }
 

@@ -1,3 +1,5 @@
+@use '../libs' as *;
+
 @forward "wrapper";
 @forward "intro";
 @forward "header";

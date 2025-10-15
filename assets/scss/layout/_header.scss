@@ -1,3 +1,6 @@
+@use '../libs' as *;
+@use '../base/typography' as *;
+
 ///
 /// Massively by HTML5 UP
 /// html5up.net | @ajlkn
@@ -15,7 +18,7 @@
   @include vendor("pointer-events", "none");
   @include vendor("user-select", "none");
   height: 20rem;
-  padding-bottom: (_size(padding) * 4);
+  padding-bottom: (size(padding) * 4);
   position: relative;
   text-align: center;
   z-index: 2;
@@ -24,8 +27,8 @@
     @include vendor(
       "transition",
       (
-        "border-color #{_duration(transition)} ease-in-out",
-        "color #{_duration(transition)} ease-in-out",
+        "border-color #{duration(transition)} ease-in-out",
+        "color #{duration(transition)} ease-in-out",
         "opacity 0.5s ease",
         "transform 0.5s ease",
         "visibility 0.5s"
@@ -33,11 +36,11 @@
     );
     @include vendor("pointer-events", "auto");
     border-style: solid;
-    border-color: _palette(invert, border);
+    border-color: palette(invert, border);
     border-width: 5px !important;
-    font-family: _font(family-heading);
+    font-family: font(family-heading);
     font-size: 2.25rem;
-    font-weight: _font(weight-heading);
+    font-weight: font(weight-heading);
     letter-spacing: 0.075em;
     line-height: 1;
     padding: 1rem 1.75rem;
@@ -45,18 +48,18 @@
     visibility: visible;
     width: min(90%, 24ch);
     &:hover {
-      border-color: _palette(invert, accent) !important;
-      color: _palette(invert, accent) !important;
+      border-color: palette(invert, accent) !important;
+      color: palette(invert, accent) !important;
     }
   }
 
   @include breakpoint("<=medium") {
     height: 14rem;
-    padding-bottom: (_size(padding) * 2);
+    padding-bottom: (size(padding) * 2);
   }
 
   @include breakpoint("<=small") {
-    padding-bottom: (_size(padding) * 1.5);
+    padding-bottom: (size(padding) * 1.5);
 
     .logo {
       font-size: 2rem;
@@ -65,7 +68,7 @@
   }
 
   @include breakpoint("<=xsmall") {
-    padding-bottom: (_size(padding) * 1.5);
+    padding-bottom: (size(padding) * 1.5);
 
     .logo {
       font-size: 1.6rem;

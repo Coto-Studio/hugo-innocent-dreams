@@ -5,6 +5,7 @@
 ///
 @use "../libs/breakpoints";
 @use '../libs/vendor';
+@use '../libs/functions' as *;
 /* Basic */
 
 	// MSIE: Required for IEMobile.

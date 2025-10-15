@@ -209,7 +209,7 @@ $vendor-values: (
 /// @param {string} $replace Replacement.
 /// @return {string} Updated string.
 @function str-replace($string, $search, $replace: "") {
-  $index: list.index($string, $search);
+  $index: string.index($string, $search);
 
   @if $index {
     @return string.slice($string, 1, $index - 1) + $replace +

@@ -1,3 +1,5 @@
+@use '../libs' as *;
+
 ///
 /// Massively by HTML5 UP
 /// html5up.net | @ajlkn
@@ -8,7 +10,7 @@
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 		padding-left: 1.25rem;
 
 		li {
@@ -18,7 +20,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 		padding-left: 1rem;
 
 		li {
@@ -42,16 +44,16 @@
 	}
 
 	dl {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 
 		dt {
 			display: block;
-			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			font-weight: font(weight-bold);
+			margin: 0 0 (size(element-margin) * 0.5) 0;
 		}
 
 		dd {
-			margin-left: _size(element-margin);
+			margin-left: size(element-margin);
 		}
 	}
 
@@ -59,7 +61,7 @@
 		ul {
 			&.divided {
 				li {
-					border-top-color: _palette($p, border);
+					border-top-color: palette($p, border);
 				}
 			}
 
@@ -68,7 +70,7 @@
 					a.icon {
 						&:hover {
 							&:before {
-								color: _palette($p, accent);
+								color: palette($p, accent);
 							}
 						}
 					}
@@ -78,14 +80,14 @@
 					li {
 						.icon {
 							&:before {
-								box-shadow: inset 0 0 0 2px _palette($p, border);
+								box-shadow: inset 0 0 0 2px palette($p, border);
 							}
 						}
 
 						a.icon {
 							&:hover {
 								&:before {
-									box-shadow: inset 0 0 0 2px _palette($p, accent);
+									box-shadow: inset 0 0 0 2px palette($p, accent);
 								}
 							}
 						}

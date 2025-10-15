@@ -1,3 +1,8 @@
+@use 'sass:color';
+@use '../libs' as *;
+@use '../base/typography' as *;
+@use '../components/list' as *;
+
 ///
 /// Massively by HTML5 UP
 /// html5up.net | @ajlkn
@@ -18,8 +23,8 @@
   overflow: hidden;
   // padding: 0 0 0 0;
   position: relative;
-  width: calc(100% - #{_size(padding) * 2});
-  max-width: _size(wrapper);
+  width: calc(100% - #{size(padding) * 2});
+  max-width: size(wrapper);
   z-index: 2;
 
   ul {
@@ -27,8 +32,8 @@
       @include vendor("display", "flex");
       @include vendor("flex-grow", "1");
       @include vendor("flex-shrink", "1");
-      font-family: _font(family-heading);
-      font-weight: _font(weight-heading);
+      font-family: font(family-heading);
+      font-weight: font(weight-heading);
       // letter-spacing: 0.075em;
       text-align: center;
       list-style: none;
@@ -43,7 +48,7 @@
         a {
           @include vendor(
             "transition",
-            ("background-color #{_duration(transition)} ease-in-out", "color #{_duration(transition)} ease-in-out")
+            ("background-color #{duration(transition)} ease-in-out", "color #{duration(transition)} ease-in-out")
           );
           display: block;
           font-size: 1rem;
@@ -53,18 +58,18 @@
 
           &:hover {
             color: inherit !important;
-            background-color: transparentize(_palette(invert, fg), 0.9);
+            background-color: color.adjust(palette(invert, fg), $alpha: -0.9);
           }
         }
 
         &.active {
-          background-color: _palette(invert, fg);
+          background-color: palette(invert, fg);
 
           a {
-            color: _palette(invert, bg);
+            color: palette(invert, bg);
 
             &:hover {
-              color: _palette(invert, accent) !important;
+              color: palette(invert, accent) !important;
             }
           }
         }

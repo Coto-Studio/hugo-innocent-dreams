@@ -1,6 +1,8 @@
 // breakpoints.scss v1.0 | @ajlkn | MIT licensed */
 @use 'sass:string';
 @use 'sass:map';
+@use 'sass:meta';
+@use 'sass:list';
 // Vars.
 
 /// Breakpoints.
@@ -70,12 +72,12 @@ $breakpoints: ();
 
   // Build media.
   @if ($breakpoint and map.has-key($breakpoints, $breakpoint)) {
-    $a: map-get($breakpoints, $breakpoint);
+    $a: map.get($breakpoints, $breakpoint);
 
     // Range.
-    @if (type-of($a) == "list") {
-      $x: nth($a, 1);
-      $y: nth($a, 2);
+    @if (meta.type-of($a) == "list") {
+      $x: list.nth($a, 1);
+      $y: list.nth($a, 2);
 
       // Max only.
       @if ($x == null) {

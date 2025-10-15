@@ -1,3 +1,5 @@
+@use '../libs' as *;
+
 @forward "reset";
 @forward "page";
 @forward "typography";

@@ -3,7 +3,9 @@
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
-
+@use '../libs/breakpoints';
+@use '../libs/vendor';
+@use '../libs/functions' as *;
 /* Type */
 
 html {
@@ -13,11 +15,11 @@ html {
   //   font-size: 14pt;
   // }
 
-  @include breakpoint("<=large") {
+  @include breakpoints.breakpoint("<=large") {
     font-size: 14pt;
   }
 
-  @include breakpoint("<=xxsmall") {
+  @include breakpoints.breakpoint("<=xxsmall") {
     font-size: 12pt;
   }
 }
@@ -38,7 +40,7 @@ textarea {
 }
 
 a {
-  @include vendor(
+  @include vendor.vendor(
     "transition",
     (
       "color #{_duration(transition)} ease-in-out",

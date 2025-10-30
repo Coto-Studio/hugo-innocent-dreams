@@ -1,0 +1,10 @@
+@use '../libs' as *;
+
+@forward "wrapper";
+@forward "intro";
+@forward "header";
+@forward "nav";
+@forward "main";
+@forward "footer";
+@forward "navPanel";
+@forward "404";

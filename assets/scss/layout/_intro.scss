@@ -1,3 +1,7 @@
+@use '../libs' as *;
+@use '../base/typography' as *;
+@use '../components/button' as *;
+
 ///
 /// Massively by HTML5 UP
 /// html5up.net | @ajlkn
@@ -9,7 +13,7 @@
 #intro {
   @include color-typography(invert);
   @include color-button(invert);
-  @include padding(_size(padding) * 4, _size(padding) * 2);
+  @include padding(size(padding) * 4, size(padding) * 2);
   @include vendor("align-items", "center");
   @include vendor("display", "flex");
   @include vendor("flex-direction", "column");
@@ -81,13 +85,13 @@
   }
 
   @include breakpoint("<=medium") {
-    @include padding(_size(padding) * 2, _size(padding) * 2);
+    @include padding(size(padding) * 2, size(padding) * 2);
     min-height: 90vh;
 
     h1 {
       font-size: 3.75rem;
       line-height: 1.1;
-      margin-bottom: _size(element-margin) * 0.5;
+      margin-bottom: size(element-margin) * 0.5;
     }
 
     p {
@@ -102,13 +106,13 @@
   }
 
   @include breakpoint("<=small") {
-    @include padding(_size(padding) * 1.5, _size(padding) * 1);
+    @include padding(size(padding) * 1.5, size(padding) * 1);
     min-height: 80vh;
 
     h1 {
       font-size: 3.25rem;
       line-height: 1.1;
-      margin-bottom: _size(element-margin) * 0.5;
+      margin-bottom: size(element-margin) * 0.5;
     }
     p {
       font-size: 1.8rem;
@@ -120,7 +124,7 @@
   }
 
   @include breakpoint("<=xxsmall") {
-    padding-bottom: (_size(padding) * 1.5);
+    padding-bottom: (size(padding) * 1.5);
     p {
       font-size: 1.5rem;
       margin-top: 0rem;

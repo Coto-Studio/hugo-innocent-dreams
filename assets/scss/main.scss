@@ -1,11 +1,45 @@
-@import "libs/vars";
-@import "libs/functions";
-@import "libs/mixins";
-@import "libs/vendor";
-@import "libs/breakpoints";
-@import "libs/html-grid";
-@import "libs/fixed-grid";
-@import "font-awesome.min.css";
+// Libs
+@use "libs/vars";
+@use "libs/functions";
+@use "libs/mixins";
+@use "libs/vendor";
+@use "libs/breakpoints";
+@use "libs/html-grid";
+@use "libs/fixed-grid";
+
+// Base.
+@use "base/reset";
+@use "base/page";
+@use "base/typography";
+
+// Components.
+@use "components/row";
+@use "components/box";
+@use "components/button";
+@use "components/modal";
+@use "components/form";
+@use "components/icon";
+@use "components/image";
+@use "components/actions";
+@use "components/icons";
+@use "components/list";
+@use "components/section";
+@use "components/stars";
+@use "components/table";
+@use "components/pagination";
+
+// Layout.
+@use "layout/wrapper";
+@use "layout/intro";
+@use "layout/header";
+@use "layout/nav";
+@use "layout/main";
+@use "layout/footer";
+@use "layout/navPanel";
+@use "layout/404" as fourofour;
+
+// Imports
+@import "/css/font-awesome.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
 
 /*
@@ -16,7 +50,7 @@
 
 // Breakpoints.
 
-@include breakpoints(
+@include breakpoints.breakpoints(
   (
     default: (
       1681px,
@@ -62,36 +96,3 @@
   @include color-pagination($p);
 }
 
-// Base.
-
-@import "base/reset";
-@import "base/page";
-@import "base/typography";
-
-// Component.
-
-@import "components/row";
-@import "components/box";
-@import "components/button";
-@import "components/modal";
-@import "components/form";
-@import "components/icon";
-@import "components/image";
-@import "components/actions";
-@import "components/icons";
-@import "components/list";
-@import "components/section";
-@import "components/stars";
-@import "components/table";
-@import "components/pagination";
-
-// Layout.
-
-@import "layout/wrapper";
-@import "layout/intro";
-@import "layout/header";
-@import "layout/nav";
-@import "layout/main";
-@import "layout/footer";
-@import "layout/navPanel";
-@import "layout/404";

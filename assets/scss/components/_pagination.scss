@@ -1,3 +1,5 @@
+@use '../libs' as *;
+
 ///
 /// Massively by HTML5 UP
 /// html5up.net | @ajlkn
@@ -11,7 +13,7 @@
   @include vendor("user-select", "none");
   cursor: default;
   list-style: none;
-  margin: 0 0 _size(element-margin) 2px;
+  margin: 0 0 size(element-margin) 2px;
   padding: 0;
 
   a,
@@ -19,23 +21,23 @@
     @include vendor(
       "transition",
       (
-        "background-color #{_duration(transition)} ease-in-out",
-        "border-color #{_duration(transition)} ease-in-out",
-        "box-shadow #{_duration(transition)} ease-in-out",
-        "color #{_duration(transition)} ease-in-out"
+        "background-color #{duration(transition)} ease-in-out",
+        "border-color #{duration(transition)} ease-in-out",
+        "box-shadow #{duration(transition)} ease-in-out",
+        "color #{duration(transition)} ease-in-out"
       )
     );
     border: solid 2px;
     display: inline-block;
-    font-family: _font(family-heading);
+    font-family: font(family-heading);
     font-size: 0.8rem;
-    font-weight: _font(weight-heading);
-    height: _size(element-height);
+    font-weight: font(weight-heading);
+    height: size(element-height);
     letter-spacing: 0.075em;
-    letter-spacing: _font(letter-spacing-heading);
-    line-height: calc(#{_size(element-height)} - 4px);
+    letter-spacing: font(letter-spacing-heading);
+    line-height: calc(#{size(element-height)} - 4px);
     margin-left: -2px;
-    min-width: _size(element-height);
+    min-width: size(element-height);
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -87,30 +89,30 @@
   .pagination {
     a,
     span {
-      border-color: _palette($p, border);
+      border-color: palette($p, border);
     }
 
     a {
-      color: _palette($p, fg-bold) !important;
+      color: palette($p, fg-bold) !important;
 
       &:hover {
-        color: _palette($p, accent) !important;
-        border-color: _palette($p, accent);
+        color: palette($p, accent) !important;
+        border-color: palette($p, accent);
         z-index: 1;
 
         & + a,
         & + span {
-          border-left-color: _palette($p, accent);
+          border-left-color: palette($p, accent);
         }
       }
 
       &.active {
-        background-color: _palette($p, border);
+        background-color: palette($p, border);
       }
     }
 
     span {
-      color: _palette($p, border);
+      color: palette($p, border);
     }
   }
 }

@@ -37,5 +37,7 @@ In terms of the type of feedback I’m looking for, **I’m mostly looking for y
 
 That should about cover it. If this sounds good to you, you can sign up using the links below. If you have any additional questions, check out the [Los Testigos - FAQ page](https://nelsonroberto.com/about-los-testigos/#faqs), and please don’t hesitate to ask. My email is: <hello@nelsonroberto.com>
 
-{{< button link="https://nelsonroberto.com/wfid-early-reader" title="Early Reader Sign Up" class="primary" >}}
-{{< button link="https://nelsonroberto.com/#/portal/signup" title="Compañero Sign Up" class="secondary" >}}
+{{< button-group class="fit" >}}
+<li>{{< button link="https://nelsonroberto.com/wfid-early-reader" title="Join as an Early Reader" class="primary small" >}}</li>
+<li>{{< button link="https://nelsonroberto.com/#/portal/signup" title="Join as a Compañero" class="secondary small" >}}</li>
+{{< /button-group >}}

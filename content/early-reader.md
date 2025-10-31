@@ -15,7 +15,7 @@ As I work on the rewrite, I will share chapters with _Los Testigos_ members who 
 There are two ways to join _Los Testigos_:
 
 1. As an [Early Reader](https://nelsonroberto.com/wfid-early-reader) (free in exchange for feedback)
-2. As a [Compañero](https://nelsonroberto.com/#/portal/signup) ($5/month or $60/year)
+2. As a [Compañero](https://nelsonroberto.com/los-testigos/#/portal/signup) ($5/month or $60/year)
 
 Both tiers get you access to my manuscript and Craft Notes, but Compañeros get a few extra perks:
 
@@ -35,9 +35,9 @@ In terms of the type of feedback I’m looking for, **I’m mostly looking for y
 
 **Please don’t share the manuscript with anyone outside of the program,** as I plan to pursue traditional publishing, and sharing the text widely could jeopardize a book deal. I’m trusting _Los Testigos_ members to keep this work private. You can, of course, discuss the book in general terms with anyone you’d like.
 
-That should about cover it. If this sounds good to you, you can sign up using the links below. If you have any additional questions, check out the [Los Testigos - FAQ page](https://nelsonroberto.com/about-los-testigos/#faqs), and please don’t hesitate to ask. My email is: <hello@nelsonroberto.com>
+That should about cover it. If this sounds good to you, you can sign up using the links below. If you have any additional questions, check out the [Los Testigos - FAQ page](https://nelsonroberto.com/los-testigos/#faqs), and please don’t hesitate to ask. My email is: <hello@nelsonroberto.com>
 
 {{< button-group class="fit" >}}
 <li>{{< button link="https://nelsonroberto.com/wfid-early-reader" title="Join as an Early Reader" class="primary small" >}}</li>
-<li>{{< button link="https://nelsonroberto.com/#/portal/signup" title="Join as a Compañero" class="secondary small" >}}</li>
+<li>{{< button link="https://nelsonroberto.com/los-testigos/#/portal/signup" title="Join as a Compañero" class="secondary small" >}}</li>
 {{< /button-group >}}

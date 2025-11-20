@@ -35,6 +35,8 @@ In terms of the type of feedback I’m looking for, **I’m mostly looking for y
 
 **Please don’t share the manuscript with anyone outside of the program,** as I plan to pursue traditional publishing, and sharing the text widely could jeopardize a book deal. I’m trusting _Los Testigos_ members to keep this work private. You can, of course, discuss the book in general terms with anyone you’d like.
 
+One final note: **When signing up to be an Early Reader you will be asked for your credit card, but you will not be charged.** I apologize for the inconvenience, this is requirement of the publishing software I'm using.
+
 That should about cover it. If this sounds good to you, you can sign up using the links below. If you have any additional questions, check out the [Los Testigos - FAQ page](https://nelsonroberto.com/los-testigos/#faqs), and please don’t hesitate to ask. My email is: <hello@nelsonroberto.com>
 
 {{< button-group class="fit" >}}

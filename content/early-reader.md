@@ -12,6 +12,8 @@ I would like to invite you to join _Los Testigos_ (The Witnesses), a membership 
 
 As I work on the rewrite, I will share chapters with _Los Testigos_ members who will be able to comment and leave feedback on the material. I will also publish monthly Craft Notes that go into more detail about how I’m building the story and the decisions I’m making. For example, the first note will focus on my recent breakthroughs regarding the book's theme.
 
+_This will probably be your last chance to read my manuscript before the book is published._
+
 There are two ways to join _Los Testigos_:
 
 1. As an [Early Reader](https://nelsonroberto.com/wfid-early-reader) (free in exchange for feedback)

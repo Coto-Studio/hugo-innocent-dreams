@@ -9,7 +9,7 @@
 /* Wrapper */
 
 #wrapper {
-  @include vendor("transition", "opacity #{duration(menu)} ease");
+  transition: opacity duration(menu) ease;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -38,9 +38,9 @@
 
   &.fade-in {
     &:before {
-      @include vendor("pointer-events", "none");
-      @include vendor("transition", "opacity 1s ease-in-out");
-      @include vendor("transition-delay", "0.75s");
+      pointer-events: none;
+      transition: opacity 1s ease-in-out;
+      transition-delay: 0.75s;
       background: palette(invert, bg);
       content: "";
       display: block;
@@ -56,12 +56,6 @@
       &:before {
         opacity: 1;
       }
-    }
-  }
-
-  @include orientation(portrait) {
-    > .bg {
-      // background-size: auto, auto, auto 175%;
     }
   }
 }

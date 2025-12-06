@@ -22,18 +22,10 @@ form {
     margin-top: 0;
     &.success {
       color: palette(accent);
-
-      &:before {
-        // content: "\f00c";
-      }
     }
 
     &.failure {
       color: palette(fg);
-
-      &:before {
-        // content: "\f119";
-      }
     }
   }
 
@@ -44,14 +36,14 @@ form {
   > .fields {
     $gutter: (size(element-margin) * 0.75);
 
-    @include vendor("display", "flex");
-    @include vendor("flex-wrap", "wrap");
+    display: flex;
+    flex-wrap: wrap;
     width: calc(100% + #{$gutter * 2});
     margin: ($gutter * -1) 0 size(element-margin) ($gutter * -1);
 
     > .field {
-      @include vendor("flex-grow", "0");
-      @include vendor("flex-shrink", "0");
+      flex-grow: 0;
+      flex-shrink: 0;
       padding: $gutter 0 0 $gutter;
       width: calc(100% - #{$gutter * 1});
 
@@ -115,7 +107,7 @@ input[type="password"],
 input[type="email"],
 select,
 textarea {
-  @include vendor("appearance", "none");
+  appearance: none;
   background: transparent;
   border-radius: 0;
   border: solid 2px;
@@ -163,7 +155,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  @include vendor("appearance", "none");
+  appearance: none;
   display: block;
   float: left;
   margin-right: -2rem;
@@ -222,19 +214,7 @@ input[type="radio"] {
   }
 }
 
-::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-:-moz-placeholder {
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
+::placeholder {
   opacity: 1;
 }
 
@@ -297,23 +277,7 @@ input[type="radio"] {
     }
   }
 
-  ::-webkit-input-placeholder {
-    color: palette($p, fg-light) !important;
-  }
-
-  :-moz-placeholder {
-    color: palette($p, fg-light) !important;
-  }
-
-  ::-moz-placeholder {
-    color: palette($p, fg-light) !important;
-  }
-
-  :-ms-input-placeholder {
-    color: palette($p, fg-light) !important;
-  }
-
-  .formerize-placeholder {
+  ::placeholder {
     color: palette($p, fg-light) !important;
   }
 }

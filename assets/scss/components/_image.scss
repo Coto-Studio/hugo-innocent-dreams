@@ -86,15 +86,12 @@ a.image {
   overflow: hidden;
 
   img {
-    @include vendor(
-      "transition",
-      "transform #{duration(transition)} ease-out"
-    );
+    transition: transform duration(transition) ease-out;
   }
 
   &:hover {
     img {
-      @include vendor("transform", "scale(1.05)");
+      transform: scale(1.05);
     }
   }
 }

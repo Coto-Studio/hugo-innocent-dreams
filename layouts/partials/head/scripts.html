@@ -9,9 +9,6 @@
 {{ $main := resources.Get "js/main.js" }}
 {{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $botpoison $modal $main | resources.Concat "assets/js/bundle.js" }}
 
-<!-- Botpoison Script -->
-<script type="application/javascript" src="https://unpkg.com/@botpoison/browser" async></script>
-
 <!-- Scripts -->
 <script type="application/javascript" src='{{ $js.RelPermalink }}' defer></script>
 <script type="application/javascript" src='/js/lightbox.min.js' defer></script>

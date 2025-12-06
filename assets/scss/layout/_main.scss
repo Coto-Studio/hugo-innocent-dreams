@@ -35,7 +35,12 @@
 
 		> .post {
 			@include padding((size(padding) * 4), (size(padding) * 4));
-			
+
+			// Add breathing room to text content
+			p, ul, ol, blockquote {
+				max-width: 60ch;
+			}
+
 			header {
 				&.major {
 					> .date {

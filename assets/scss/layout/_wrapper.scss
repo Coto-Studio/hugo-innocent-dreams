@@ -29,6 +29,10 @@
     background-attachment: scroll, scroll, scroll;
     z-index: -1;
 
+    @media screen and (min-width: 981px) {
+      background-position: center, center, center 20%;
+    }
+
     &.fixed {
       position: fixed;
       width: 100vw;

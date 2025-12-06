@@ -34,7 +34,10 @@
 		}
 
 		> .post {
-			@include padding((size(padding) * 4), (size(padding) * 4));
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 6rem clamp(2rem, 5vw, 8rem) 4rem;
 
 			// Add breathing room to text content
 			p, ul, ol, blockquote {
@@ -59,13 +62,7 @@
 				text-align: center;
 			}
 
-			@include breakpoint('<=large') {
-				@include padding((size(padding) * 3), (size(padding) * 2));
-			}
-
 			@include breakpoint('<=small') {
-				@include padding((size(padding) * 2), (size(padding) * 1));
-
 				header {
 					&.major {
 						> .date {
@@ -78,7 +75,7 @@
 							line-height: 1.2;
 							margin: 0 0 (size(element-margin) * 0.75) 0;
 						}
-						
+
 						@include breakpoint('<=xsmall') {
 							> h1, h2 {
 								font-size: 2rem;

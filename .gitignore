@@ -4,3 +4,5 @@ public/
 resources/
 .hugo_build.lock
 /docker-stack-op.yaml
+node_modules/
+.env

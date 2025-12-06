@@ -1,5 +1,4 @@
 const btnOpenModal = document.querySelector(".open-modal");
-const btnClose = document.querySelector(".close-modal");
 const modal = document.querySelector(".notify-modal");
 
 if (modal != undefined) {
@@ -7,7 +6,11 @@ if (modal != undefined) {
     modal.showModal();
   });
 
-  btnClose.addEventListener("click", () => {
-    modal.close();
+  // Handle all close buttons (X button and "Never mind" button)
+  const closeButtons = modal.querySelectorAll(".close-modal-x, .close-modal");
+  closeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      modal.close();
+    });
   });
 }

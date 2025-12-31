@@ -28,7 +28,7 @@ One final note: **When signing up to be an Early Reader, you will be asked for y
 
 *This will probably be your last chance to read my manuscript before the book is published.*
 
-If this sounds good to you, you can [sign up here](https://nelsonroberto.com/wfid-early-reader). If you have any additional questions or want to sign up as a Compañero, check out the [Los Testigos FAQ page](https://nelsonroberto.com/los-testigos/#faqs), and please don’t hesitate to reach out. My email is: hello@nelsonroberto.com
+If you have any additional questions, check out the [Los Testigos FAQ page](https://nelsonroberto.com/los-testigos/#faqs), and please don’t hesitate to reach out. My email is: hello@nelsonroberto.com
 
 {{< button-group class="fit" >}}
 <li>{{< button link="https://nelsonroberto.com/wfid-early-reader" title="Join as an Early Reader" class="primary small" >}}</li>

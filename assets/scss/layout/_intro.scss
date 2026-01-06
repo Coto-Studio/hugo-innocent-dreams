@@ -14,11 +14,11 @@
   @include color-typography(invert);
   @include color-button(invert);
   @include padding(size(padding) * 4, size(padding) * 2);
-  @include vendor("align-items", "center");
-  @include vendor("display", "flex");
-  @include vendor("flex-direction", "column");
-  @include vendor("justify-content", "flex-end");
-  @include vendor("transition", ("opacity 1s ease", "transform 1s ease"));
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: opacity 1s ease, transform 1s ease;
   position: relative;
   cursor: default;
   text-align: center;
@@ -26,13 +26,13 @@
   min-height: 100vh;
 
   h1 {
-    font-size: 5rem;
-    line-height: 1;
+    font-size: 3.5rem;
+    line-height: 1.1;
     text-shadow: 2px 2px 2px black;
   }
 
   p {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-style: italic;
     margin-top: -0.25rem;
     text-align: center;
@@ -43,7 +43,7 @@
     margin-top: -20rem;
 
     .logo {
-      @include vendor("transform", "translateY(2rem)");
+      transform: translateY(2rem);
       opacity: 0;
       visibility: hidden;
       text-shadow: 2px 2px 2px black;
@@ -57,15 +57,15 @@
   }
 
   &.hidden {
-    @include vendor("pointer-events", "none");
-    @include vendor("transform", "translateY(2rem)");
-    @include vendor("transition", ("opacity 0.5s ease", "transform 0.5s ease", "visibility 0.5s"));
+    pointer-events: none;
+    transform: translateY(2rem);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
     opacity: 0;
     visibility: hidden;
 
     & + #header {
       .logo {
-        @include vendor("transform", "translateY(0)");
+        transform: translateY(0);
         opacity: 1;
         visibility: visible;
       }
@@ -73,12 +73,12 @@
   }
 
   body.is-preload & {
-    @include vendor("transform", "translateY(2rem)");
+    transform: translateY(2rem);
     opacity: 0;
 
     &:not(.hidden) {
       & + #header + #nav {
-        @include vendor("transform", "translateY(4rem)");
+        transform: translateY(4rem);
         opacity: 0;
       }
     }
@@ -89,7 +89,7 @@
     min-height: 90vh;
 
     h1 {
-      font-size: 3.75rem;
+      font-size: 2.75rem;
       line-height: 1.1;
       margin-bottom: size(element-margin) * 0.5;
     }
@@ -110,12 +110,12 @@
     min-height: 80vh;
 
     h1 {
-      font-size: 3.25rem;
+      font-size: 2.25rem;
       line-height: 1.1;
       margin-bottom: size(element-margin) * 0.5;
     }
     p {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
 
     .actions {
@@ -126,7 +126,7 @@
   @include breakpoint("<=xxsmall") {
     padding-bottom: (size(padding) * 1.5);
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin-top: 0rem;
     }
   }

@@ -21,7 +21,7 @@ After a positive DNA test, Nelson/Roberto embarks on an epic adventure that take
 Upon returning to his homeland of El Salvador, he is confronted with painful truths about his past and must find a way to let go of his childhood dreams about what it means to be a family so that he can learn to exist as both Nelson and Roberto.
 
 {{< box class="alt align-center">}}
-{{< modal title="Notify Me When Available" class="primary large icon fa-bell" formSparkID="3Jj2P1N3">}}
+{{< modal title="Notify Me When Available" class="primary large icon fa fa-bell" formSparkID="3Jj2P1N3">}}
 {{< /box >}}
 
 {{< subheader >}}

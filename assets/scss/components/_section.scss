@@ -98,6 +98,10 @@ header {
   @include breakpoint("<=small") {
     &.major {
       margin: 0 0 size(element-margin) 0;
+
+      > p {
+        text-align: left;
+      }
     }
   }
 

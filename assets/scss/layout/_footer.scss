@@ -29,7 +29,7 @@
 
 #footer {
   @include color(alt);
-  @include vendor("display", "flex");
+  display: flex;
   border-top: solid 2px palette(border);
   background-color: palette(alt, bg);
   color: palette(fg-light);
@@ -41,20 +41,15 @@
   z-index: 2;
 
   > section {
-    @include vendor("flex-basis", "50%");
-    @include vendor("flex-grow", "1");
-    @include vendor("flex-shrink", "1");
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
     @include padding((size(padding) * 2), (size(padding) * 2));
-    // border-left: solid 2px palette(alt, border);
     border-inline: solid 2px palette(alt, border);
 
-    &:first-child {
-      // border-left: 0;
-    }
-
     &.split {
-      @include vendor("display", "flex");
-      @include vendor("flex-direction", "column");
+      display: flex;
+      flex-direction: column;
       padding: 0;
 
       > section {
@@ -81,8 +76,8 @@
 
       &.contact {
         > section {
-          @include vendor("display", "flex");
-          @include vendor("align-items", "center");
+          display: flex;
+          align-items: center;
           padding: (size(padding) * 1.575) (size(padding) * 2);
 
           > * {
@@ -90,14 +85,14 @@
           }
 
           > :first-child {
-            @include vendor("flex-shrink", "0");
-            @include vendor("flex-grow", "0");
+            flex-shrink: 0;
+            flex-grow: 0;
             width: 6rem;
           }
 
           > :last-child {
-            @include vendor("flex-shrink", "1");
-            @include vendor("flex-grow", "1");
+            flex-shrink: 1;
+            flex-grow: 1;
           }
 
           &:first-child {
@@ -111,7 +106,7 @@
           }
 
           &.alt {
-            @include vendor("align-items", "flex-start");
+            align-items: flex-start;
 
             > :last-child {
               margin-top: -0.325rem;

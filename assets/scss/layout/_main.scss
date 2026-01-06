@@ -34,8 +34,16 @@
 		}
 
 		> .post {
-			@include padding((size(padding) * 4), (size(padding) * 4));
-			
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 6rem clamp(2rem, 5vw, 8rem) 4rem;
+
+			// Add breathing room to text content
+			p, ul, ol, blockquote {
+				max-width: 60ch;
+			}
+
 			header {
 				&.major {
 					> .date {
@@ -43,8 +51,8 @@
 					}
 
 					> h1, h2 {
-						font-size: clamp(1.4rem, 4vw + 1rem, 3.75rem);
-						line-height: 1.1;
+						font-size: clamp(1.3rem, 3vw + 0.75rem, 2.5rem);
+						line-height: 1.15;
 						margin: 0 0 size(element-margin) 0;
 					}
 				}
@@ -54,13 +62,7 @@
 				text-align: center;
 			}
 
-			@include breakpoint('<=large') {
-				@include padding((size(padding) * 3), (size(padding) * 2));
-			}
-
 			@include breakpoint('<=small') {
-				@include padding((size(padding) * 2), (size(padding) * 1));
-
 				header {
 					&.major {
 						> .date {
@@ -73,7 +75,7 @@
 							line-height: 1.2;
 							margin: 0 0 (size(element-margin) * 0.75) 0;
 						}
-						
+
 						@include breakpoint('<=xsmall') {
 							> h1, h2 {
 								font-size: 2rem;
@@ -85,13 +87,11 @@
 		}
 
 		> .posts {
-			@include fixed-grid((
-				columns:			2,
-				gutters:			(size(padding) * 4),
-				horizontal-align:	center,
-				vertical-align:		flex-start,
-				flush:				false
-			));
+			// CSS Grid layout (replaces fixed-grid mixin)
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: (size(padding) * 4);
+			align-items: start;
 			width: 100%;
 			padding: 0;
 
@@ -101,27 +101,26 @@
 				border-style: solid;
 				border-top-width: 2px;
 				text-align: center;
+				padding: (size(padding) * 2);
 
 				> :last-child {
 					margin-bottom: 0;
 				}
 
+				// First column: no left border
 				&:nth-child(2n - 1) {
 					border-left-width: 0;
 				}
 
+				// First row: no top border
 				&:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
 			}
 
 			@include breakpoint('<=medium') {
-				@include fixed-grid-resize((
-					columns:			2,
-					gutters:			(size(padding) * 2.5),
-					flush:				false
-				));
-				
+				gap: (size(padding) * 2.5);
+
 				header {
 					> p {
 						line-height: 1;
@@ -130,27 +129,21 @@
 			}
 
 			@include breakpoint('<=small') {
-				@include fixed-grid-resize((
-					columns:			1,
-					gutters:			(size(padding) * 2),
-					prev-columns:		2,
-					flush:				false
-				));
+				grid-template-columns: 1fr;
+				gap: (size(padding) * 2);
 
 				> article {
+					// Reset 2-column border rules
 					&:nth-child(2n - 1) {
-						border-left-width: 2px;
+						border-left-width: 0;
 					}
 
 					&:nth-child(-n + 2) {
 						border-top-width: 2px;
 					}
 
-					&:nth-child(n) {
-						border-left-width: 0;
-					}
-
-					&:nth-child(-n + 1) {
+					// Single column: only first has no top border
+					&:first-child {
 						border-top-width: 0;
 					}
 

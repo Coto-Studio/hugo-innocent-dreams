@@ -11,11 +11,9 @@
 
 	#navPanelToggle {
 		@include icon;
-		@include vendor('transition', (
-			'color #{duration(transition)} ease-in-out',
-			'background-color #{duration(transition)} ease-in-out',
-			'box-shadow #{duration(transition)} ease-in-out'
-		));
+		transition: color duration(transition) ease-in-out,
+			background-color duration(transition) ease-in-out,
+			box-shadow duration(transition) ease-in-out;
 		display: none;
 		position: fixed;
 		top: 0.75rem;
@@ -56,8 +54,10 @@
 	}
 
 	#navPanel {
-		@include vendor('transform', 'translateX(20rem)');
-		@include vendor('transition', ('transform #{duration(menu)} ease', 'box-shadow #{duration(menu)} ease', 'visibility #{duration(menu)}'));
+		transform: translateX(20rem);
+		transition: transform duration(menu) ease,
+			box-shadow duration(menu) ease,
+			visibility duration(menu);
 		display: none;
 		-webkit-overflow-scrolling: touch;
 		background: palette(bg);
@@ -101,7 +101,7 @@
 
 		.close {
 			@include icon;
-			@include vendor('transition', 'color #{duration(transition)} ease-in-out');
+			transition: color duration(transition) ease-in-out;
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 			border: 0;
 			color: palette(fg-light);
@@ -148,7 +148,7 @@
 			}
 
 			#navPanel {
-				@include vendor('transform', 'translateX(0)');
+				transform: translateX(0);
 				box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.2);
 				visibility: visible;
 			}

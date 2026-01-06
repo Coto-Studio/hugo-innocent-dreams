@@ -14,14 +14,11 @@
 #nav {
   @include color-list(invert);
   @include color-typography(invert);
-  @include vendor("display", "flex");
-  @include vendor("transition", ("transform 1s ease", "opacity 1s ease"));
+  display: flex;
+  transition: transform 1s ease, opacity 1s ease;
   background: rgba(255, 255, 255, 0.175);
-  // min-height: 2rem;
-  // line-height: 4rem;
   margin: -4rem auto 0 auto;
   overflow: hidden;
-  // padding: 0 0 0 0;
   position: relative;
   width: calc(100% - #{size(padding) * 2});
   max-width: size(wrapper);
@@ -29,9 +26,9 @@
 
   ul {
     &.links {
-      @include vendor("display", "flex");
-      @include vendor("flex-grow", "1");
-      @include vendor("flex-shrink", "1");
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
       font-family: font(family-heading);
       font-weight: font(weight-heading);
       // letter-spacing: 0.075em;
@@ -46,14 +43,12 @@
         padding-left: 0;
 
         a {
-          @include vendor(
-            "transition",
-            ("background-color #{duration(transition)} ease-in-out", "color #{duration(transition)} ease-in-out")
-          );
+          transition: background-color duration(transition) ease-in-out,
+            color duration(transition) ease-in-out;
           display: block;
           font-size: 1rem;
           outline: none;
-          padding: 1rem;
+          padding: 1.125rem 1.25rem;
           border-bottom-color: transparent;
 
           &:hover {
@@ -77,8 +72,8 @@
     }
 
     &.icons {
-      @include vendor("flex-grow", "0");
-      @include vendor("flex-shrink", "0");
+      flex-grow: 0;
+      flex-shrink: 0;
       margin-bottom: 0;
       padding: 1rem;
     }

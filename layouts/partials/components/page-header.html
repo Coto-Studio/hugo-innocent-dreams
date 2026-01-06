@@ -1,7 +1,9 @@
 <!-- Page Header -->
 <header class="major">
-  {{ with .PublishDate }}
-    <span class="date">{{ .Format ($.Site.Params.DateFormat | default "January 2, 2006") }}</span>
+  {{ if not .IsHome }}
+    {{ with .PublishDate }}
+      <span class="date">{{ .Format ($.Site.Params.DateFormat | default "January 2, 2006") }}</span>
+    {{ end }}
   {{ end }}
   <h2>{{with .Params.DisplayTitle}}{{.}}{{else}}{{.Title}}{{end}}</h2>
   <p>{{with .Params.DisplayDescription}}{{. | markdownify}}{{else}}{{.Description}}{{end}}</p>

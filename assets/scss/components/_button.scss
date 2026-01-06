@@ -13,15 +13,10 @@ input[type="reset"],
 input[type="button"],
 button,
 .button {
-  @include vendor("appearance", "none");
-  @include vendor(
-    "transition",
-    (
-      "background-color #{duration(transition)} ease-in-out",
-      "box-shadow #{duration(transition)} ease-in-out",
-      "color #{duration(transition)} ease-in-out"
-    )
-  );
+  appearance: none;
+  transition: background-color duration(transition) ease-in-out,
+    box-shadow duration(transition) ease-in-out,
+    color duration(transition) ease-in-out;
   border: 0;
   border-radius: 0;
   cursor: pointer;
@@ -30,9 +25,9 @@ button,
   font-size: 0.8rem;
   font-weight: font(weight-heading);
   letter-spacing: 0.075em;
-  min-height: 3rem;
-  line-height: 3rem;
-  padding: 0 2rem;
+  min-height: 2.75rem;
+  line-height: 2.75rem;
+  padding: 0 1.75rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -76,33 +71,47 @@ button,
 
   &.small {
     font-size: 0.7rem;
-    min-height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 1.5rem;
+    min-height: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0 1.25rem;
   }
 
   &.large {
-    font-size: 1.2rem;
-    min-height: 3.5rem;
-    line-height: 3.5rem;
-    padding: 0 2.75rem;
+    font-size: 1.1rem;
+    min-height: 3.25rem;
+    line-height: 3.25rem;
+    padding: 0 2.25rem;
   }
 
   @include breakpoint("<=medium") {
-    font-size: 0.9rem;
-    min-height: 3.25rem;
-    line-height: 3.25rem;
+    font-size: 0.85rem;
+    min-height: 3rem;
+    line-height: 3rem;
 
     &.large {
-      font-size: 1rem;
-      min-height: 3.75rem;
-      line-height: 1.75rem;
+      font-size: 0.95rem;
+      min-height: 3.5rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  @include breakpoint("<=small") {
+    font-size: 0.7rem;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.25rem;
+
+    &.large {
+      font-size: 0.8rem;
+      min-height: 2.75rem;
+      line-height: 2.75rem;
+      padding: 0 1.5rem;
     }
   }
 
   &.disabled,
   &:disabled {
-    @include vendor("pointer-events", "none");
+    pointer-events: none;
     opacity: 0.25;
   }
 }

@@ -1,7 +1,6 @@
 ---
 displayTitle: "About The Book"
 displayDescription: "With themes similar to _Hades, Argentina_, and _Solito_, _**Waking From Innocent Dreams**_ is a coming-of-age tale based on true events that blurs the line between imagination and memory. It follows a young man haunted by what he's lost, and by a ghostly boy he refuses to see for what it truly is."
-image: "https://static.nelsonroberto.com/innocent-dreams/book-preview.png"
 draft: false
 book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpg"

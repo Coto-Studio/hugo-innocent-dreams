@@ -10,13 +10,17 @@ This is a Hugo static site for the book "Waking From Innocent Dreams" by Nelson/
 
 ### Local Development
 ```bash
-# Start Hugo development server (default environment)
-hugo server
+# Start Hugo development server (includes drafts, accessible on network)
+hugo server -D --bind 0.0.0.0
 
 # Start with specific environment
-hugo server --environment main
-hugo server --environment dev
+hugo server -D --bind 0.0.0.0 --environment main
+hugo server -D --bind 0.0.0.0 --environment dev
+```
 
+**Note:** Run the dev server as a background task using `run_in_background: true`.
+
+```bash
 # Build site for specific environment
 hugo --minify --environment main
 hugo --minify --environment dev

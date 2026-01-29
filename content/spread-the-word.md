@@ -11,11 +11,7 @@ With my manuscript done, most of the hard work of writing and editing is behind 
 
 > "Exposing 10,000 people who care about the arena of your book gives you a chance that enough of them will actually read it and then recommend it to someone else. That word of mouth will keep the book alive from one year to the next."[^1]
 
-I'm not going to lie, getting my book into the hands of that many people feels like an impossible mountain to climb. So why bother trying? Because as Salvadoran author [Roberto Lovato](https://robertolovato.com) points out:
-
-> With the exception of a few Salvadoran writers publishing with independent presses, [Joan Didion](https://en.wikipedia.org/wiki/Joan_Didion) and other white US writers were the only tellers of Salvadoran stories in the English language.[^2]
-
-I truly believe my book has a chance at changing this, or at the very least making a significant contribution to the conversation.
+I'm not going to lie, getting my book into the hands of that many people feels like an impossible mountain to climb.
 
 Growing up with a story like this often left me feeling lost and alone, because my friends and family had a difficult time relating to what I was going through. It took nearly a decade before I met another person from El Salvador that had been forcibly separated from their family.
 
@@ -72,4 +68,3 @@ Use the form below to suggest a connection. Just tell me who you are, who they a
 {{< form-builder data="connection" >}}
 
 [^1]: [The 10,000 Reader Rule](https://stevenpressfield.com/2015/11/the-10000-reader-rule/)
-[^2]: [Unforgetting: A Memoir of Family, Migration, Gangs, and Revolution in the Americas](https://amzn.to/3qZidkX)

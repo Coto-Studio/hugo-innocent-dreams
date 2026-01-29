@@ -130,6 +130,14 @@ blockquote {
   font-style: italic;
   margin: 0 0 size(element-margin) 0;
   padding: calc(size(element-margin) / 4) 0 calc(size(element-margin) / 4) size(element-margin);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  + p {
+    margin-top: 0;
+  }
 }
 
 code {

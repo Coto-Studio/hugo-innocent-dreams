@@ -13,6 +13,8 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
 
   > .bg {
     position: absolute;
@@ -23,20 +25,24 @@
     background-color: palette(wrapper-bg);
     background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url("../../images/bg1.webp");
-    background-size: cover;
-    background-position: center, center, top center;
+    background-size: auto, cover, 190vh;
+    background-position: center, center, right -108px top 0;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
     z-index: -1;
 
-    @media screen and (min-width: 981px) {
-      background-position: center, center, center 20%;
+    @include breakpoint("<=small") {
+      background-position: center, center, right -275px top 0;
     }
 
     &.fixed {
       position: fixed;
-      width: 100vw;
+      width: 100%;
+      max-width: 1400px;
       height: 100vh;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
     }
   }
 

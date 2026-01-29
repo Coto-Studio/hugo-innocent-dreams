@@ -4,12 +4,6 @@ services:
     image: {{ op://${VAULT_ID}/$ITEM_ID/deploy/image }}:main
     networks:
       - traefik-public
-    healthcheck:
-      test: ["CMD", "nc", "-z", "localhost", "3000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 10s
     deploy:
       replicas: 2
       update_config:
@@ -49,12 +43,6 @@ services:
     image: {{ op://${VAULT_ID}/$ITEM_ID/deploy/image }}:dev
     networks:
       - traefik-public
-    healthcheck:
-      test: ["CMD", "nc", "-z", "localhost", "3000"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 10s
     deploy:
       update_config:
         parallelism: 1

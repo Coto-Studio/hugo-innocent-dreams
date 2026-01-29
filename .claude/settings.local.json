@@ -12,7 +12,14 @@
       "Bash(git commit:*)",
       "Bash(git checkout:*)",
       "Bash(git rebase:*)",
-      "Bash(xargs git checkout --ours)"
+      "Bash(xargs git checkout --ours)",
+      "Bash(git reset:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_take_screenshot",
+      "Bash(sips:*)",
+      "mcp__playwright__browser_close",
+      "Bash(pgrep:*)"
     ],
     "deny": [],
     "ask": []

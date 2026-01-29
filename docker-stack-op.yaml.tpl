@@ -4,8 +4,27 @@ services:
     image: {{ op://${VAULT_ID}/$ITEM_ID/deploy/image }}:main
     networks:
       - traefik-public
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
     deploy:
       replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+        monitor: 60s
+        max_failure_ratio: 0
+      rollback_config:
+        parallelism: 1
+        order: stop-first
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
       labels:
         # Enable Traefik
         - "traefik.enable=true"
@@ -30,7 +49,26 @@ services:
     image: {{ op://${VAULT_ID}/$ITEM_ID/deploy/image }}:dev
     networks:
       - traefik-public
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
     deploy:
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+        monitor: 60s
+        max_failure_ratio: 0
+      rollback_config:
+        parallelism: 1
+        order: stop-first
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
       labels:
         # Enable Traefik
         - "traefik.enable=true"

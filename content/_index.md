@@ -19,7 +19,7 @@ After a tearful reunion, Nelson/Roberto is given something almost no other _desa
 
 His journey takes him across Central America, from volcanic hilltops to the rural countryside, into a magical world where past and present blend and ancient trees serve as doorways between worlds. For the first time in his life, everyone around him looks like him. As he discovers a life taken from him, he must learn to navigate two distinct fathers, families, and cultures.
 
-But when his father's rigid, black-and-white worldview threatens to shatter the family unity Nelson has dreamed of since childhood, he faces an impossible choice. He must learn to embrace the painful truths his ghost has been trying to show him before his fantasies leave him lost between worlds, _ni de aquí ni de allá_.
+But when his father's rigid, black-and-white worldview threatens to shatter the family unity Nelson has dreamed of since childhood, he faces an impossible choice. He must learn to see what the ghost has been trying to show him before his fantasies leave him lost between worlds, _ni de aquí ni de allá_.
 
 {{< box class="alt align-center">}}
 {{< modal title="Notify Me When Available" class="primary large icon fa fa-bell" formSparkID="3Jj2P1N3">}}

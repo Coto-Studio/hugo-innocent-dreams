@@ -38,6 +38,8 @@ When Javier Zamora's memoir [_Solito_](https://www.javierzamora.net/solito) beca
 
 > "Joan Didion and other white US writers were the only tellers of Salvadoran stories in the English language."
 
+Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed.
+
 There are many more diaspora stories waiting to be told. _Waking From Innocent Dreams_ is the first novel about the _desaparecidos_ written by one of them.
 
 {{< subheader >}}
@@ -51,17 +53,20 @@ Nelson/Roberto
 
 My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year-long civil war.
 
-**I am currently seeking representation for my novel, which is 115,000 words in its current draft.** If you are a literary agent interested in my project, [please get in touch](mailto:hello@nelsonroberto.com). I'm happy to send sample chapters upon request.
-
-Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed.
-
 As someone who was forcibly disappeared and had a family member who was disappeared, I am able to write about this phenomenon from a unique perspective. Not only do I understand the ambiguous grief that comes from having a loved one taken this way, but I’ve also had to wrestle with complex issues such as identity confusion, family separation, and cultural bifurcation that affect many Latinx, Central American, and other marginalized communities.
 
 In 2024, my essay ["'You're One of the Disappeared?' How I Came to Accept My Place in History"](https://www.tandfonline.com/doi/full/10.1080/10714839.2024.2356304?src=exp-la#d1e155) was published in the NACLA Report. That commitment to writing my truth continued at the [Under The Volcano](https://underthevolcano.org/) writing residency in Tepoztlán, Mexico, where I joined its Writing of Witness program in 2025 to continue developing my novel.
 
 In addition to this book, I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/). It centers around a week-long trip I took to El Salvador in 2011, where I got to connect with the other Disappeared Children, interview members of my birth family, and meet the country's president.
 
-My story has also been featured on [The BBC World Service](https://www.bbc.co.uk/programmes/w3ct6qpd), [The Christian Science Monitor](https://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/1019/Former-missing-child-in-El-Salvador-s-civil-war-tells-his-journey-in-film), [The Los Angeles Times](https://www.latimes.com/world/la-xpm-2011-jul-13-la-fg-salvador-disappeared-20110713-story.html), and [The Huffington Post](http://www.huffingtonpost.com/2011/11/03/el-salvador-adoption-identifying-nelson_n_1073980.html). Besides appearing on [several podcasts](https://nelsonroberto.com/portfolio/public-speaking/), I've also spoken about my story at a number of high schools and colleges, including Dartmouth College, [Yale University](https://erm.yale.edu/event/identifying-nelson-film-qa-filmmaker-nelson-de-witt), Wellesley College, and [University of Chicago](https://www.youtube.com/watch?v=YV57JTa9vlM).
+My story has been featured in:
+
+- ["El Salvador's missing children: Part one"](https://www.bbc.co.uk/programmes/w3ct6qpd) — BBC World Service
+- ["Salvadoran group dogged in search for children missing years ago in civil war"](https://www.latimes.com/world/la-xpm-2011-jul-13-la-fg-salvador-disappeared-20110713-story.html) — Los Angeles Times
+- ["Former 'missing child' in El Salvador's civil war tells his journey in film"](https://www.csmonitor.com/World/Americas/Latin-America-Monitor/2013/1019/Former-missing-child-in-El-Salvador-s-civil-war-tells-his-journey-in-film) — Christian Science Monitor
+- ["'Identifying Nelson': El Salvador Born, U.S. Man Searched For His Roots"](http://www.huffingtonpost.com/2011/11/03/el-salvador-adoption-identifying-nelson_n_1073980.html) — HuffPost
+
+I've also appeared on [several podcasts](https://nelsonroberto.com/portfolio/public-speaking/) and spoken at Dartmouth College, [Yale University](https://erm.yale.edu/event/identifying-nelson-film-qa-filmmaker-nelson-de-witt), Wellesley College, and [University of Chicago](https://www.youtube.com/watch?v=YV57JTa9vlM).
 
 {{< subheader >}}
 
@@ -70,17 +75,17 @@ My story has also been featured on [The BBC World Service](https://www.bbc.co.uk
 Coming soon...
 {{< /subheader >}}
 
-After much consideration I've decided to [pursue traditional publishing]({{< ref "pursuing-traditional-publishing" >}}). This can be a lengthy process so it could be months or years before my book is released.
+I'm currently seeking representation as I pursue traditional publishing for my novel, which is 115,000 words in its current draft. If you are a literary agent interested in my project, [please get in touch](mailto:hello@nelsonroberto.com). I'm happy to send sample chapters upon request.
 
-**If you are interested in purchasing a copy when it is available you should [sign up for my newsletter](#subscribe), and I will notify you when it is ready.**
+Traditional publishing can take a long time, so if you are interested in purchasing a copy when it is available, [sign up for my newsletter](#subscribe) and I will notify you when it is ready.
 
 {{< subheader >}}
 
-## Spread The Word
+## Get Involved
 
-Help me get this book into the world
+Help this story find its readers
 {{< /subheader >}}
 
-With my manuscript done, most of the hard work of writing and editing is behind me. However, now begins the potentially even harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
+Stories like this need to be told. They also need to be found. If you know someone who'd connect with this, please share it with them.
 
-Please visit the [Spread the Word]({{< ref "spread-the-word" >}}) page to see if there is something you can do to help me with this endeavor.
+If you want to be part of the process, [Los Testigos](https://nelsonroberto.com/los-testigos/) is a membership program where you can follow along as I write, offer feedback, and witness the story's creation.

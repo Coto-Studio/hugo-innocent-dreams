@@ -11,7 +11,7 @@ book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-25-img-1.jpg"
 ---
 
-With themes similar to _Hades, Argentina_, and _Solito_, _**Waking From Innocent Dreams**_ is a coming-of-age tale based on true events that blurs the line between imagination and memory. It follows a young man haunted by what he's lost, and by a ghostly boy he refuses to see for what it truly is.
+With themes similar to _Hades, Argentina_, and _Solito_, _**Waking From Innocent Dreams**_ is a coming-of-age tale based on true events that blurs the line between imagination and memory. It follows a young man haunted by what he's lost, and by a ghostly boy whose true nature he refuses to see.
 
 On the verge of adulthood, an adoptee is contacted by a human rights organization with news that changes everything. Growing up, Nelson lived in a family that loved him but looked nothing like him. He has spent years longing to meet the one person he believes will make him whole, and trying to ignore the ghost that won’t leave him alone.
 

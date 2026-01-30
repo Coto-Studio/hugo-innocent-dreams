@@ -1,6 +1,6 @@
 ---
 title: "Success!"
-description: "I have recieved your submission and will be in touch shortly, if applicable."
+description: "I have received your submission and will be in touch shortly, if applicable."
 draft: false
 disallow: true
 disableNewsletter: true

@@ -1,6 +1,6 @@
 ---
 title: "Success!"
-description: "You have signed up to recive updates about the book."
+description: "You have signed up to receive updates about the book."
 draft: false
 disallow: true
 disableNewsletter: true

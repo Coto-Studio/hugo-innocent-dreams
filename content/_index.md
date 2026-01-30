@@ -47,7 +47,7 @@ There are many more diaspora stories waiting to be told. _Waking From Innocent D
 Nelson/Roberto
 {{< /subheader >}}
 
-{{< image src="<https://static.nelsonroberto.com/images/profile_square.jpg>" class="left" name="author" title="Nelson de Witt/Roberto Coto" >}}
+{{< image src="https://static.nelsonroberto.com/images/profile_square.jpg" class="left" name="author" title="Nelson de Witt/Roberto Coto" >}}
 
 My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the country's 13-year-long civil war.
 

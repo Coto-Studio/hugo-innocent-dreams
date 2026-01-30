@@ -38,7 +38,7 @@ When Javier Zamora's memoir [_Solito_](https://www.javierzamora.net/solito) beca
 
 > "Joan Didion and other white US writers were the only tellers of Salvadoran stories in the English language."
 
-Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed.
+One story that has rarely been told from the inside is that of the disappeared. Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed. In El Salvador alone, nearly 1,000 children were disappeared during the country's 13-year-long civil war.
 
 There are many more diaspora stories waiting to be told. _Waking From Innocent Dreams_ is the first novel about the _desaparecidos_ written by one of them.
 

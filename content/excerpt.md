@@ -1,7 +1,6 @@
 ---
 title: "Read an Excerpt"
 draft: false
-disableNewsletter: true
 ---
 
 ## Chapter 1: I Don't Exist

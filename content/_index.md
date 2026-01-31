@@ -17,7 +17,7 @@ On the verge of adulthood, an adoptee is contacted by a human rights organizatio
 
 A positive DNA test reveals him to be Roberto, the son of revolutionaries who, as an infant, was _desaparecido_, disappeared, along with his mother, during a violent government raid.
 
-After a tearful reunion, Nelson/Roberto finds a family ready to welcome him home, and something almost no other _desaparecido_ receives, a second chance. As one of only a handful of survivors, he sets out on an epic adventure to discover a life taken from him and the sense of belonging he has yearned for his entire life.
+After a miraculous reunion, Nelson/Roberto finds a family ready to welcome him home, and something almost no other _desaparecido_ receives, a second chance. As one of only a handful of survivors, he sets out on an epic adventure to discover a life taken from him and the sense of belonging he has yearned for his entire life.
 
 His journey takes him across Central America and into a magical world where past and present blend and ancient trees serve as doorways between worlds. As he travels from volcanic hilltops to the rural countryside, where, for the first time in his life, everyone around him looks like him, he must learn to navigate two distinct fathers, families, and cultures.
 

@@ -77,6 +77,11 @@
       margin-bottom: 0;
       padding: 1rem;
     }
+
+    // Hide action buttons on desktop - only show in mobile navPanel
+    &.actions {
+      display: none;
+    }
   }
 
   @include breakpoint("<=medium") {

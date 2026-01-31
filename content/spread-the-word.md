@@ -5,7 +5,7 @@ draft: false
 disableNewsletter: true
 ---
 
-With my manuscript done, most of the hard work of writing and editing is behind me. However, now begins the potentially even harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
+With my manuscript done, most of the writing and editing is behind me. However, now begins the potentially harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
 
 [Shawn Coyne](https://storygrid.com/about/), a former editor at [Doubleday](<https://en.wikipedia.org/wiki/Doubleday_(publisher)>), with over 30 years of publishing experience, says that the key to a book's long-term success is getting 10,000 people to "sincerely give it a try."
 
@@ -15,7 +15,7 @@ I'm not going to lie, getting my book into the hands of that many people feels l
 
 Growing up with a story like this often left me feeling lost and alone, because my friends and family had a difficult time relating to what I was going through. It took nearly a decade before I met another person from El Salvador that had been forcibly separated from their family.
 
-In recent years, stories like _Encanto_, _Gentefied_, and _In The Heights_ have meant so much to me, because they have given a voice to some of the difficult emotions I've had to deal with. It is my hope that my book will act in a similar manner for Salvadorans who live with the messy aftermath of our country's 13-year-long civil war.
+In recent years, stories like _Encanto_, _Gentefied_, and _In The Heights_ have meant so much to me, because they have given a voice to some of the difficult emotions I've had to deal with. It is my hope that my book will act in a similar manner for Salvadorans who live with the messy aftermath of the war.
 
 That's where you come in. If my story is going to get any real traction in a crowded marketplace it will be because of your efforts. **So I hope you will help me spread the word about my book by acting on least one of the steps below:**
 

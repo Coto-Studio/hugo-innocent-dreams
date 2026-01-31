@@ -53,7 +53,7 @@ Nelson/Roberto
 
 My name is Nelson de Witt, but it's also Roberto Coto. I am one of El Salvador's Disappeared Children, kids who were separated from their families during the conflict.
 
-As someone who was forcibly disappeared and had a family member who was disappeared, I am able to write about this phenomenon from a unique perspective. Not only do I understand the ambiguous grief that comes from having a loved one taken this way, but I’ve also had to wrestle with complex issues such as identity confusion, family separation, and cultural bifurcation that affect many Latinx, Central American, and other marginalized communities.
+As someone who was forcibly disappeared and had a loved one taken the same way, I am able to write about this phenomenon from a unique perspective. Not only do I understand the ambiguous grief that comes from having a loved one taken this way, but I’ve also had to wrestle with complex issues such as identity confusion, family separation, and cultural bifurcation that affect many Latinx, Central American, and other marginalized communities.
 
 In 2024, my essay ["'You're One of the Disappeared?' How I Came to Accept My Place in History"](https://www.tandfonline.com/doi/full/10.1080/10714839.2024.2356304?src=exp-la#d1e155) was published in the NACLA Report. That commitment to writing my truth continued at the [Under The Volcano](https://underthevolcano.org/) writing residency in Tepoztlán, Mexico, where I joined its Writing of Witness program in 2025 to continue developing my novel.
 

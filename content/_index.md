@@ -86,6 +86,6 @@ Traditional publishing can take a long time, so if you are interested in purchas
 Help this story find its readers
 {{< /subheader >}}
 
-Stories like this need to be told. They also need to be found. If you know someone who'd connect with this, please share it with them.
+Stories like this need to be told. They also need to be found. If you know someone who'd connect with this, {{< share-button text="please share it with them" >}}.
 
 If you want to be part of the process, [Los Testigos](https://nelsonroberto.com/los-testigos/) is a membership program where you can follow along as I write, offer feedback, and witness the story's creation.

@@ -1,0 +1,75 @@
+{{- $url := .Site.BaseURL -}}
+{{- $title := .Site.Title | default "Waking From Innocent Dreams" -}}
+{{- $description := .Site.Params.description | default "A coming-of-age tale about El Salvador's disappeared children" -}}
+{{- $encodedUrl := $url | urlquery -}}
+{{- $encodedTitle := $title | urlquery -}}
+{{- $encodedDescription := $description | urlquery -}}
+
+<dialog id="share-modal" class="share-modal">
+  <button class="close-modal-x" aria-label="Close modal"><span class="icon fa-times"></span></button>
+  <header>
+    <h2>Share This Story</h2>
+  </header>
+
+  <div class="share-grid">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $encodedUrl }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="share-link share-facebook"
+       aria-label="Share on Facebook">
+      <span class="icon fa-facebook"></span>
+      <span class="share-label">Facebook</span>
+    </a>
+
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $encodedUrl }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="share-link share-linkedin"
+       aria-label="Share on LinkedIn">
+      <span class="icon fa-linkedin"></span>
+      <span class="share-label">LinkedIn</span>
+    </a>
+
+    <a href="https://api.whatsapp.com/send?text={{ $encodedTitle }}%20{{ $encodedUrl }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="share-link share-whatsapp"
+       aria-label="Share on WhatsApp">
+      <span class="icon fa-whatsapp"></span>
+      <span class="share-label">WhatsApp</span>
+    </a>
+
+    <a href="https://bsky.app/intent/compose?text={{ $encodedTitle }}%20{{ $encodedUrl }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="share-link share-bluesky"
+       aria-label="Share on Bluesky">
+      <span class="share-icon-text">B</span>
+      <span class="share-label">Bluesky</span>
+    </a>
+
+    <a href="https://www.reddit.com/submit?url={{ $encodedUrl }}&title={{ $encodedTitle }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="share-link share-reddit"
+       aria-label="Share on Reddit">
+      <span class="icon fa-reddit"></span>
+      <span class="share-label">Reddit</span>
+    </a>
+
+    <a href="mailto:?subject={{ $encodedTitle }}&body={{ $encodedDescription }}%0A%0A{{ $encodedUrl }}"
+       class="share-link share-email"
+       aria-label="Share via Email">
+      <span class="icon fa-envelope"></span>
+      <span class="share-label">Email</span>
+    </a>
+  </div>
+
+  <div class="copy-url-section">
+    <label for="share-url-input" class="visually-hidden">Page URL</label>
+    <input type="text" id="share-url-input" class="share-url-input" value="{{ $url }}" readonly>
+    <button type="button" class="button small copy-url-btn">
+      <span class="copy-text">Copy Link</span>
+    </button>
+  </div>
+</dialog>

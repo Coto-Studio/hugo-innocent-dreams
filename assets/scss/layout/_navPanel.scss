@@ -77,6 +77,7 @@
 		.links {
 			list-style: none;
 			padding-left: 0;
+			margin-bottom: 0;
 
 			li {
 				border-top: solid 2px palette(border);
@@ -95,6 +96,10 @@
 
 				&:first-child {
 					border-top: 0;
+				}
+
+				&:last-child {
+					border-bottom: solid 2px palette(border);
 				}
 			}
 		}
@@ -129,6 +134,25 @@
 			@include breakpoint('<=small') {
 				height: 4rem;
 				line-height: 4rem;
+			}
+		}
+
+		.actions {
+			margin-top: 1rem;
+			padding-left: 0;
+			list-style: none;
+
+			li {
+				border: 0;
+				padding: 0;
+			}
+
+			&.stacked li {
+				margin-bottom: 0.5rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 

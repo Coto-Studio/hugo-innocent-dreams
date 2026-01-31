@@ -4,23 +4,22 @@
   {{ if not .Params.disableNewsletter }}
     {{ partial "components/form-newsletter-sign-up" . }}
   {{ end }}
+    {{- $url := $.Site.BaseURL | urlquery -}}
+    {{- $title := $.Site.Title | urlquery -}}
+    {{- $description := $.Site.Params.description | urlquery -}}
     <section id="contact-info" class="split contact">
-        {{ with $data.contactinfo.address }}
-        <section class="alt">
-            <h3>{{ i18n "CONTACT_ADDRESS" . }}</h3>
-            <p>
-                {{ range $i, $e := . }}
-                    {{ if $i }} <br/> {{ end }} {{ .line }}
-                {{ end }}
-            </p>
-        </section>
-        {{ end }}
-        {{ with $data.contactinfo.phone }}
         <section>
-            <h3>{{ i18n "CONTACT_PHONE" . }}</h3>
-            <p><a href="tel:{{ . }}">{{ . }}</a></p>
+            <h3>Share</h3>
+            <ul class="icons alt share-icons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}" target="_blank" rel="noopener" class="icon alt fa-facebook" aria-label="Share on Facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}" target="_blank" rel="noopener" class="icon alt fa-linkedin" aria-label="Share on LinkedIn"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://api.whatsapp.com/send?text={{ $title }}%20{{ $url }}" target="_blank" rel="noopener" class="icon alt fa-whatsapp" aria-label="Share on WhatsApp"><span class="label">WhatsApp</span></a></li>
+                <li><a href="https://bsky.app/intent/compose?text={{ $title }}%20{{ $url }}" target="_blank" rel="noopener" class="icon alt bluesky-icon" aria-label="Share on Bluesky"><span class="label">Bluesky</span></a></li>
+                <li><a href="https://www.reddit.com/submit?url={{ $url }}&amp;title={{ $title }}" target="_blank" rel="noopener" class="icon alt fa-reddit" aria-label="Share on Reddit"><span class="label">Reddit</span></a></li>
+                <li><a href="mailto:?subject={{ $title }}&amp;body={{ $description }}%0A%0A{{ $url }}" class="icon alt fa-envelope" aria-label="Share via Email"><span class="label">Email</span></a></li>
+                <li><a href="#" class="icon alt fa-link copy-url-footer" data-url="{{ $.Site.BaseURL }}" aria-label="Copy link"><span class="label">Copy Link</span></a></li>
+            </ul>
         </section>
-        {{ end }}
         {{ with $data.contactinfo.email }}
         <section>
             <h3>{{ i18n "CONTACT_EMAIL" . }}</h3>
@@ -29,7 +28,7 @@
         {{ end }}
         {{ with $data.social }}
         <section>
-            <h3>{{ i18n "CONTACT_SOCIAL" . }}</h3>
+            <h3>Follow</h3>
             <ul class="icons alt">
                 {{ range . }}
                 <li><a href="{{ .url }}" class="icon alt {{ .icon }}"><span class="label">{{ .name }}</span></a></li>
@@ -37,9 +36,5 @@
             </ul>
         </section>
         {{ end }}
-        <section>
-            <h3>Share</h3>
-            <p><a href="#" class="share-trigger">Share this page</a></p>
-        </section>
     </section>
 </footer>

@@ -201,3 +201,25 @@
   white-space: nowrap;
   border: 0;
 }
+
+// Footer share icons
+.icons.share-icons {
+  // Add vertical spacing between icon rows
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  // Bluesky custom icon (needs high specificity to override .icon)
+  .icon.bluesky-icon::before {
+    content: 'B' !important;
+    font-family: font(family-heading) !important;
+    font-weight: font(weight-heading) !important;
+    font-style: normal !important;
+  }
+}
+
+// Footer copy link feedback
+.copy-url-footer.copied {
+  color: #28a745 !important;
+  border-color: #28a745 !important;
+}

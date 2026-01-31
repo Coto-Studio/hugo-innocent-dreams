@@ -63,7 +63,7 @@
     }
   });
 
-  // Copy URL functionality
+  // Copy URL functionality (modal)
   if (copyUrlBtn && shareUrlInput) {
     copyUrlBtn.addEventListener("click", async () => {
       const copyText = copyUrlBtn.querySelector(".copy-text");
@@ -85,6 +85,37 @@
 
         setTimeout(() => {
           copyText.textContent = "Copy Link";
+        }, 2000);
+      }
+    });
+  }
+
+  // Footer copy URL functionality
+  const footerCopyBtn = document.querySelector(".copy-url-footer");
+  if (footerCopyBtn) {
+    footerCopyBtn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const url = footerCopyBtn.dataset.url || window.location.origin;
+
+      try {
+        await navigator.clipboard.writeText(url);
+        footerCopyBtn.classList.add("copied");
+
+        setTimeout(() => {
+          footerCopyBtn.classList.remove("copied");
+        }, 2000);
+      } catch (err) {
+        // Fallback
+        const textarea = document.createElement("textarea");
+        textarea.value = url;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        footerCopyBtn.classList.add("copied");
+
+        setTimeout(() => {
+          footerCopyBtn.classList.remove("copied");
         }, 2000);
       }
     });

@@ -1,6 +1,7 @@
 ---
 displayTitle: "About The Book"
 displayDescription: ""
+lastmod: 2026-02-01
 draft: false
 book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpg"

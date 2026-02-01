@@ -1,16 +1,15 @@
 <title>{{ with .Title }}{{ . }} &middot; {{ end }}{{ .Site.Params.Title }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{else}}{{ .Site.Params.Description}}{{end}}" />
-<meta name="keywords" content="{{ if .Keywords }}{{ .Keywords }}{{else}}{{ .Site.Params.Keywords}}{{end}}">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 {{ range .Site.Params.themeColor }}
-  <meta 
-    name="theme-color" 
+  <meta
+    name="theme-color"
     content="{{ .content }}"
     {{ if .customMedia }}
       media="{{ .customMedia }}"
     {{ else }}
-      {{ with .schema }} media="(prefers-color-scheme: {{ . }})" {{ end }} 
+      {{ with .schema }} media="(prefers-color-scheme: {{ . }})" {{ end }}
     {{ end }}
   />
 {{ end }}
@@ -19,3 +18,5 @@
 {{ if .Params.disallow }}
 <meta name="robots" content="noindex">
 {{ end }}
+
+{{ partial "head/structured-data" . }}

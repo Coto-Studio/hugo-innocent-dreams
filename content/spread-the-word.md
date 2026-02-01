@@ -1,6 +1,7 @@
 ---
 title: "Spread the Word"
 description: "How you can help bring this book into the world."
+lastmod: 2026-02-01
 draft: false
 disableNewsletter: true
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Read an Excerpt"
+description: "Read the opening chapter of Waking From Innocent Dreams, a novel about El Salvador's Disappeared Children by Nelson/Roberto."
+lastmod: 2026-02-01
 draft: false
 ---
 

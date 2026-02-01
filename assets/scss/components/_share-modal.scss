@@ -1,68 +1,30 @@
+@use 'sass:map';
 @use '../libs' as *;
-@use '../libs/breakpoints';
+@use 'modal';
+
+// Social brand colors
+$social-colors: (
+  facebook: #1877f2,
+  linkedin: #0a66c2,
+  whatsapp: #25d366,
+  bluesky: #1185fe,
+  reddit: #ff4500,
+  success: #28a745,
+);
+
+@function social-color($name) {
+  @return map.get($social-colors, $name);
+}
 
 // Share trigger link styling
 .share-trigger {
   cursor: pointer;
 }
 
-// Share modal - extends base modal patterns
+// Share modal - extends base modal
 .share-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: size(padding) * 1.5;
+  @extend %modal-base;
   max-width: 32rem;
-  width: calc(100% - 2rem);
-  border: none;
-  border-radius: 4px;
-
-  @include breakpoints.breakpoint('<=small') {
-    padding: size(padding);
-    font-size: 0.9rem;
-
-    header h2 {
-      font-size: 1.5rem;
-    }
-  }
-
-  .close-modal-x {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    line-height: 1;
-    color: palette(null, fg-light);
-    font-size: 1.25rem;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: palette(null, fg);
-    }
-
-    .icon::before {
-      margin: 0;
-    }
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: size(element-margin);
-
-    h2 {
-      margin-top: 0;
-    }
-  }
-
-  &::backdrop {
-    background: palette(null, fg-bold);
-    opacity: 0.95;
-  }
 }
 
 // Share links grid
@@ -72,7 +34,7 @@
   gap: 1rem;
   margin-bottom: size(element-margin);
 
-  @include breakpoints.breakpoint('<=xsmall') {
+  @include breakpoint('<=xsmall') {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -121,27 +83,27 @@
 
   // Platform-specific hover colors
   &.share-facebook:hover {
-    background-color: #1877f2;
+    background-color: social-color(facebook);
     color: #fff;
   }
 
   &.share-linkedin:hover {
-    background-color: #0a66c2;
+    background-color: social-color(linkedin);
     color: #fff;
   }
 
   &.share-whatsapp:hover {
-    background-color: #25d366;
+    background-color: social-color(whatsapp);
     color: #fff;
   }
 
   &.share-bluesky:hover {
-    background-color: #1185fe;
+    background-color: social-color(bluesky);
     color: #fff;
   }
 
   &.share-reddit:hover {
-    background-color: #ff4500;
+    background-color: social-color(reddit);
     color: #fff;
   }
 
@@ -157,7 +119,7 @@
   gap: 0.5rem;
   align-items: stretch;
 
-  @include breakpoints.breakpoint('<=xsmall') {
+  @include breakpoint('<=xsmall') {
     flex-direction: column;
   }
 }
@@ -183,23 +145,10 @@
   min-width: 6rem;
 
   &.copied {
-    background-color: #28a745;
+    background-color: social-color(success);
     box-shadow: none;
     color: #fff !important;
   }
-}
-
-// Visually hidden but accessible
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 // Footer share icons
@@ -220,6 +169,6 @@
 
 // Footer copy link feedback
 .copy-url-footer.copied {
-  color: #28a745 !important;
-  border-color: #28a745 !important;
+  color: social-color(success) !important;
+  border-color: social-color(success) !important;
 }

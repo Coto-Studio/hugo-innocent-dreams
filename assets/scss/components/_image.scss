@@ -16,7 +16,6 @@
 
   img {
     border-radius: size(border-radius);
-    // display: block;
   }
 
   &.left,
@@ -55,19 +54,15 @@
   }
 
   &.main {
-    // display: block;
     margin: (size(element-margin) * 2) 0;
     width: 100%;
+
     a {
       border-bottom-color: transparent;
     }
 
     &:first-child {
       margin-top: 0;
-    }
-
-    img {
-      // width: 100%;
     }
   }
 

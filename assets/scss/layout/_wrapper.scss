@@ -58,7 +58,7 @@
 
     // Desktop: enhanced side fades via mask-image
     // Creates seamless memory-fade effect without pseudo-element edge artifacts
-    @media screen and (min-width: 1401px) {
+    @include breakpoint('>large') {
       // Remove side shadows on desktop (mask handles it)
       box-shadow: inset 0 180px 120px -80px $fade-color;
 

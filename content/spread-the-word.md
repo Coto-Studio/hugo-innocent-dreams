@@ -49,13 +49,11 @@ In my 2013 essay [Why you should support (and share) your friend’s work](https
 >
 > We live in an attention economy where ideas that spread win, and every time you share or comment on a friend’s work, you are letting other people know this is something worth paying attention to. **So if you want your friend to succeed, you should support them, and share their work.**
 
-Even though I wrote this post almost a decade ago, I think the advice still holds up. Sharing this site on social media, or sending it to someone who might be interested in it, is one of the best actions you can take to help this project succeed.
+Even though I wrote this post over a decade ago, I think the advice still holds up. Sharing this site on social media, or sending it to someone who might be interested in it, is one of the best actions you can take to help this project succeed.
 
-{{% box %}}
-I realize that the website address is a bit long so I created this handy short link for you to share:
-
-[https://wfid.link/](https://wfid.link/)
-{{% /box %}}
+<div style="text-align: center">
+{{< share-button text="Share This Story" class="button primary" >}}
+</div>
 
 ---
 

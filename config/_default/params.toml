@@ -1,3 +1,7 @@
+## Custom share URL (used for social sharing links)
+## Falls back to site BaseURL if not set
+shareURL = "https://wfid.link/"
+
 ## Open Graph Data
 title = "Waking From Innocent Dreams"
 keywords = "Book, Author, Novel, Autobiographical, El Salvador, Nelson/Roberto"

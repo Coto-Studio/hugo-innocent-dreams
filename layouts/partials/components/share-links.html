@@ -1,5 +1,5 @@
 {{- $variant := .variant | default "footer" -}}
-{{- $url := .Site.BaseURL -}}
+{{- $url := .Site.Params.shareURL | default .Site.BaseURL -}}
 {{- $title := .Site.Title | default "Waking From Innocent Dreams" -}}
 {{- $description := .Site.Params.description | default "" -}}
 {{- $encodedUrl := $url | urlquery -}}

@@ -1,4 +1,4 @@
-{{- $url := .Site.BaseURL -}}
+{{- $url := .Site.Params.shareURL | default .Site.BaseURL -}}
 
 <dialog id="share-modal" class="share-modal">
   <button class="close-modal-x" aria-label="Close modal"><span class="icon fa-times"></span></button>

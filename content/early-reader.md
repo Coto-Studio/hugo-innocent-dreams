@@ -8,7 +8,7 @@ disallow: true
 
 Hello Friend,
 
-I want to invite you to be an Early Reader of my book as I prepare the final manuscript. Over the course of 2026, I will be rewriting my book to weave in elements of magical realism and historical fiction. Every week or so, I will share one or two chapters for you to read.
+I want to invite you to be an Early Reader of my book as I prepare the final manuscript. Over the course of 2026, I will be rewriting my book to weave in elements of magical realism and historical fiction. To learn more about the story and these new elements, visit the [homepage](/). Every week or so, I will share one or two chapters for you to read.
 
 As an Early Reader, you will be able to comment and leave feedback on the material. I will also publish monthly Craft Notes that go into more detail about how I’m building the story and the decisions I’m making. For example, the first note will focus on my recent breakthroughs regarding the book’s theme.
 

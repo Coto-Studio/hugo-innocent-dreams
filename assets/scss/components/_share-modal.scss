@@ -1,0 +1,185 @@
+@use 'sass:map';
+@use '../libs' as *;
+@use 'modal';
+
+// Social brand colors
+$social-colors: (
+  facebook: #1877f2,
+  linkedin: #0a66c2,
+  whatsapp: #25d366,
+  bluesky: #1185fe,
+  reddit: #ff4500,
+  success: #28a745,
+);
+
+@function social-color($name) {
+  @return map.get($social-colors, $name);
+}
+
+// Share trigger link styling
+.share-trigger {
+  cursor: pointer;
+}
+
+// Share modal - extends base modal
+.share-modal {
+  @extend %modal-base;
+  max-width: 32rem;
+}
+
+// Share links grid
+.share-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: size(element-margin);
+
+  @include breakpoint('<=xsmall') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.share-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color duration(transition) ease,
+              color duration(transition) ease,
+              transform duration(transition) ease;
+  background-color: palette(null, border-bg);
+  color: palette(null, fg);
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  .icon,
+  .share-icon-text {
+    font-size: 1.5rem;
+    line-height: 1;
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  // Bluesky text icon styling
+  .share-icon-text {
+    font-family: font(family-heading);
+    font-weight: font(weight-heading);
+  }
+
+  .share-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: font(family-heading);
+  }
+
+  // Platform-specific hover colors
+  &.share-facebook:hover {
+    background-color: social-color(facebook);
+    color: #fff;
+  }
+
+  &.share-linkedin:hover {
+    background-color: social-color(linkedin);
+    color: #fff;
+  }
+
+  &.share-whatsapp:hover {
+    background-color: social-color(whatsapp);
+    color: #fff;
+  }
+
+  &.share-bluesky:hover {
+    background-color: social-color(bluesky);
+    color: #fff;
+  }
+
+  &.share-reddit:hover {
+    background-color: social-color(reddit);
+    color: #fff;
+  }
+
+  &.share-email:hover {
+    background-color: palette(null, fg-bold);
+    color: palette(null, bg);
+  }
+}
+
+// Copy URL section
+.copy-url-section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+
+  @include breakpoint('<=xsmall') {
+    flex-direction: column;
+  }
+}
+
+.share-url-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid palette(null, border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background: palette(null, bg);
+  color: palette(null, fg);
+  min-width: 0;
+
+  &:focus {
+    outline: 2px solid palette(null, accent);
+    outline-offset: 1px;
+  }
+}
+
+.copy-url-btn {
+  white-space: nowrap;
+  min-width: 6rem;
+
+  &.copied {
+    background-color: social-color(success);
+    box-shadow: none;
+    color: #fff !important;
+  }
+}
+
+.native-share-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+
+  .share-icon {
+    flex-shrink: 0;
+  }
+}
+
+// Footer share icons
+.icons.share-icons {
+  // Add vertical spacing between icon rows
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  // Bluesky custom icon (needs high specificity to override .icon)
+  .icon.bluesky-icon::before {
+    content: 'B' !important;
+    font-family: font(family-heading) !important;
+    font-weight: font(weight-heading) !important;
+    font-style: normal !important;
+  }
+}
+
+// Footer copy link feedback
+.copy-url-footer.copied {
+  color: social-color(success) !important;
+  border-color: social-color(success) !important;
+}

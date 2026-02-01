@@ -6,8 +6,9 @@
 {{ $util := resources.Get "js/util.js" }}
 {{ $botpoison := resources.Get "js/botpoison-ajax.js" }}
 {{ $modal := resources.Get "js/modal.js" }}
+{{ $share := resources.Get "js/share.js" }}
 {{ $main := resources.Get "js/main.js" }}
-{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $botpoison $modal $main | resources.Concat "assets/js/bundle.js" }}
+{{ $js := slice $jQuery $scrollex $scrolly $browser $breakpoints $util $botpoison $modal $share $main | resources.Concat "assets/js/bundle.js" }}
 
 <!-- Scripts -->
 <script type="application/javascript" src='{{ $js.RelPermalink }}' defer></script>

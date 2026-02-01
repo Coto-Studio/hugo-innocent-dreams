@@ -15,11 +15,8 @@
         {{ end }}
       {{ end }}
     </ul>
-    {{ with $data.social }}
-    <ul class="icons">
-      {{ range . }}
-        <li><a href="{{ .url }}" class="icon alt {{ .icon }}"><span class="label">{{ .name }}</span></a></li>
-      {{ end }}
+    <ul class="actions stacked">
+      <li><button class="button primary fit subscribe-trigger">Subscribe</button></li>
+      <li><button class="button fit share-trigger">Share</button></li>
     </ul>
-    {{ end }}
 </nav>

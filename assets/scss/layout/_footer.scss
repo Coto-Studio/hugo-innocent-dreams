@@ -40,6 +40,11 @@
   max-width: size(wrapper);
   z-index: 2;
 
+  // Reset h2 top margin when it's the first element in a section header
+  header:first-child h2:first-child {
+    margin-top: 0;
+  }
+
   > section {
     flex-basis: 50%;
     flex-grow: 1;

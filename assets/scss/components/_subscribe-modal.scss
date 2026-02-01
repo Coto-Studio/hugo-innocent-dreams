@@ -1,0 +1,47 @@
+@use '../libs' as *;
+@use 'modal';
+
+// Subscribe trigger styling
+.subscribe-trigger {
+  cursor: pointer;
+}
+
+// Subscribe modal - extends base modal
+.subscribe-modal {
+  @extend %modal-base;
+  max-width: 28rem;
+
+  // Form fields within modal
+  .fields {
+    margin-bottom: size(element-margin);
+
+    .field {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Bot check honeypot - hidden from real users
+  .bot-check {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  // Actions at bottom
+  .actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}

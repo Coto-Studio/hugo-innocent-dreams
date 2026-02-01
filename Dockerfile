@@ -14,3 +14,5 @@ LABEL org.opencontainers.image.source="https://github.com/Coto-Studio/hugo-innoc
 ADD httpd.conf .
 
 COPY --from=build /project/public .
+
+CMD ["/busybox-httpd", "-f", "-v", "-p", "3000", "-c", "/home/static/httpd.conf"]

@@ -5,22 +5,10 @@
     {{ partial "components/form-newsletter-sign-up" . }}
   {{ end }}
     <section id="contact-info" class="split contact">
-        {{ with $data.contactinfo.address }}
-        <section class="alt">
-            <h3>{{ i18n "CONTACT_ADDRESS" . }}</h3>
-            <p>
-                {{ range $i, $e := . }}
-                    {{ if $i }} <br/> {{ end }} {{ .line }}
-                {{ end }}
-            </p>
-        </section>
-        {{ end }}
-        {{ with $data.contactinfo.phone }}
         <section>
-            <h3>{{ i18n "CONTACT_PHONE" . }}</h3>
-            <p><a href="tel:{{ . }}">{{ . }}</a></p>
+            <h3>Share</h3>
+            {{ partial "components/share-links" (dict "Site" .Site "variant" "footer") }}
         </section>
-        {{ end }}
         {{ with $data.contactinfo.email }}
         <section>
             <h3>{{ i18n "CONTACT_EMAIL" . }}</h3>
@@ -29,7 +17,7 @@
         {{ end }}
         {{ with $data.social }}
         <section>
-            <h3>{{ i18n "CONTACT_SOCIAL" . }}</h3>
+            <h3>Follow</h3>
             <ul class="icons alt">
                 {{ range . }}
                 <li><a href="{{ .url }}" class="icon alt {{ .icon }}"><span class="label">{{ .name }}</span></a></li>

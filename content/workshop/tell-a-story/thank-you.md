@@ -8,11 +8,11 @@ disallow: true
 
 Hello,
 
-Thank you so much for being part of the first draft of my workshop. My gaol while creating it was to help people just like you find their voice and tell their stories.
+Thank you so much for being part of the first draft of my workshop. My goal while creating it was to help people just like you find their voice and tell their stories.
 
-If you missed the workshop in person or want a refresher on what was discussed [you can watch the replay here](https://youtu.be/xRhMZ5WA4rI). Just keep in mind I did not edit the video so there are some dead air time when we are on break and in break out rooms.
+If you missed the workshop in person or want a refresher on what was discussed [you can watch the replay here](https://youtu.be/xRhMZ5WA4rI). Just keep in mind I did not edit the video so there is some dead air when we are on break and in breakout rooms.
 
-Don't forget to [check out the resources and bonus material](https://cloud.nelsonroberto.com/s/32AXrKSXzkky44c) which incudes:
+Don't forget to [check out the resources and bonus material](https://cloud.nelsonroberto.com/s/32AXrKSXzkky44c) which includes:
 
 - My slide deck
 - My NACLA Essay on being disappeared with notes\*

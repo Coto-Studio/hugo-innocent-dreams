@@ -1,0 +1,35 @@
+platforms:
+  - id: facebook
+    name: Facebook
+    icon: fa-facebook
+    url: "https://www.facebook.com/sharer/sharer.php?u=%s"
+    params: ["url"]
+  - id: linkedin
+    name: LinkedIn
+    icon: fa-linkedin
+    url: "https://www.linkedin.com/sharing/share-offsite/?url=%s"
+    params: ["url"]
+  - id: whatsapp
+    name: WhatsApp
+    icon: fa-whatsapp
+    url: "https://api.whatsapp.com/send?text=%s%%20%s"
+    params: ["title", "url"]
+  - id: bluesky
+    name: Bluesky
+    iconText: "B"
+    url: "https://bsky.app/intent/compose?text=%s%%20%s"
+    params: ["title", "url"]
+  - id: reddit
+    name: Reddit
+    icon: fa-reddit
+    url: "https://www.reddit.com/submit?url=%s&title=%s"
+    params: ["url", "title"]
+  - id: email
+    name: Email
+    icon: fa-envelope
+    url: "mailto:?subject=%s&body=%s%%0A%%0A%s"
+    params: ["title", "description", "url"]
+  - id: copy
+    name: Copy Link
+    icon: fa-link
+    isCopyLink: true

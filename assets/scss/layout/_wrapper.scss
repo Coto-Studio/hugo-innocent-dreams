@@ -13,6 +13,8 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
 
   > .bg {
     position: absolute;
@@ -20,23 +22,71 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: palette(wrapper-bg);
+    background-color: #000000;
     background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url("../../images/bg1.webp");
-    background-size: cover;
-    background-position: center, center, top center;
+    background-size: auto, cover, 190vh;
+    background-position: center, center, right -108px top 0;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
     z-index: -1;
 
-    @media screen and (min-width: 981px) {
-      background-position: center, center, center 20%;
+    @include breakpoint("<=small") {
+      background-position: center, center, right -275px top 0;
     }
 
     &.fixed {
       position: fixed;
-      width: 100vw;
+      width: 100%;
+      max-width: 1600px;
       height: 100vh;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    // Memory fade effect - the image dissolves at edges like a fading memory
+    // Fades to black - memories slipping into the void
+    $fade-color: #000000;
+
+    // Vignette effect via box-shadow - top and subtle sides
+    // Mobile/tablet: top + gentle side fades
+    box-shadow:
+      inset 0 180px 120px -80px $fade-color,
+      inset 80px 0 60px -40px $fade-color,
+      inset -80px 0 60px -40px $fade-color;
+
+    // Desktop: enhanced side fades via mask-image
+    // Creates seamless memory-fade effect without pseudo-element edge artifacts
+    @include breakpoint('>large') {
+      // Remove side shadows on desktop (mask handles it)
+      box-shadow: inset 0 180px 120px -80px $fade-color;
+
+      // Use mask-image for seamless edge fading
+      // Fade pushes toward center for a memory-dissolving effect
+      mask-image:
+        linear-gradient(
+          to right,
+          transparent 0%,
+          black 28%,
+          black 72%,
+          transparent 100%
+        );
+      mask-size: 100% 100%;
+      mask-repeat: no-repeat;
+
+      // Subtle breathing via opacity (not mask position) - barely perceptible
+      animation: memory-fade 7s ease-in-out infinite;
+
+      @keyframes memory-fade {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.92;
+        }
+      }
     }
   }
 

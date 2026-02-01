@@ -16,6 +16,7 @@
 	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
 		<!-- Wrapper -->
 		<div id="wrapper" class="fade-in">
+			{{ block "intro" . }}{{ end }}
 			{{ partial "header/site-header" . }}
 			{{ partial "header/site-nav" . }}
 
@@ -27,5 +28,8 @@
 			{{ partial "footer/site-footer" . }}
 			{{ partial "footer/copyright" . }}
 		</div>
+
+		{{ partial "components/share-modal" . }}
+		{{ partial "components/subscribe-modal" . }}
 	</body>
 </html>

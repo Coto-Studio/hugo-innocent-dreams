@@ -4,6 +4,11 @@
   url = "/"
   weight = 10
 [[main]]
+  identifier = "excerpt"
+  name = "Read an Excerpt"
+  url = "/excerpt/"
+  weight = 15
+[[main]]
   identifier = "news"
   name = "The Latest News"
   url = "/news/"

@@ -6,9 +6,21 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
-/* Icons */
+/* Icon */
 
-	ul.icons {
+.icon {
+	@include icon;
+	border-bottom: none;
+	position: relative;
+
+	> .label {
+		display: none;
+	}
+}
+
+/* Icons List */
+
+ul.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
@@ -39,13 +51,11 @@
 			li {
 				.icon {
 					&:before {
-						@include vendor('transition', (
-							'color #{duration(transition)} ease-in-out',
-							'background-color #{duration(transition)} ease-in-out',
-							'border-color #{duration(transition)} ease-in-out',
-							'box-shadow #{duration(transition)} ease-in-out'
-						));
-
+						transition:
+							color duration(transition) ease-in-out,
+							background-color duration(transition) ease-in-out,
+							border-color duration(transition) ease-in-out,
+							box-shadow duration(transition) ease-in-out;
 						font-size: 1rem;
 					}
 				}

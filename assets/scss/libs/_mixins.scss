@@ -65,3 +65,16 @@
 	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
 
 }
+
+/// Standard heading typography pattern used across components.
+/// @param {string} $size Optional font-size override.
+@mixin heading-typography($size: null) {
+	font-family: font(family-heading);
+	font-weight: font(weight-heading);
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+
+	@if $size {
+		font-size: $size;
+	}
+}

@@ -1,19 +1,18 @@
 @use '../libs' as *;
-@use '../libs/breakpoints';
 
-.notify-modal {
+// Base modal styles - extend this in specific modal components
+%modal-base {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: size(padding) * 1.5;
-  max-width: 40rem;
   width: calc(100% - 2rem);
   border: none;
   border-radius: 4px;
 
-  @include breakpoints.breakpoint('<=small') {
+  @include breakpoint('<=small') {
     padding: size(padding);
     font-size: 0.9rem;
 
@@ -33,16 +32,14 @@
     line-height: 1;
     color: palette(null, fg-light);
     font-size: 1.25rem;
-    transition: color 0.2s ease;
+    transition: color duration(transition) ease;
 
     &:hover {
       color: palette(null, fg);
     }
 
-    .icon {
-      &::before {
-        margin: 0;
-      }
+    .icon::before {
+      margin: 0;
     }
   }
 
@@ -51,7 +48,6 @@
     margin-bottom: size(element-margin);
 
     h2 {
-      // Reset the global h2 top margin for modal context
       margin-top: 0;
     }
 
@@ -60,12 +56,17 @@
     }
   }
 
-  .actions {
-    justify-content: center;
-  }
-
   &::backdrop {
     background: palette(null, fg-bold);
     opacity: 0.95;
+  }
+}
+
+.notify-modal {
+  @extend %modal-base;
+  max-width: 40rem;
+
+  .actions {
+    justify-content: center;
   }
 }

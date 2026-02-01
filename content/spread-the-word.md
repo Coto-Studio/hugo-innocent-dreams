@@ -1,25 +1,22 @@
 ---
 title: "Spread the Word"
 description: "How you can help bring this book into the world."
+lastmod: 2026-02-01
 draft: false
 disableNewsletter: true
 ---
 
-With my manuscript done, most of the hard work of writing and editing is behind me. However, now begins the potentially even harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
+With my manuscript done, most of the writing and editing is behind me. However, now begins the potentially harder work of getting my book into the world. Each year hundreds of thousands of books are published. Most of them languish in obscurity, only selling a handful of copies.
 
 [Shawn Coyne](https://storygrid.com/about/), a former editor at [Doubleday](<https://en.wikipedia.org/wiki/Doubleday_(publisher)>), with over 30 years of publishing experience, says that the key to a book's long-term success is getting 10,000 people to "sincerely give it a try."
 
 > "Exposing 10,000 people who care about the arena of your book gives you a chance that enough of them will actually read it and then recommend it to someone else. That word of mouth will keep the book alive from one year to the next."[^1]
 
-I'm not going to lie, getting my book into the hands of that many people feels like an impossible mountain to climb. So why bother trying? Because as Salvadoran author [Roberto Lovato](https://robertolovato.com) points out:
-
-> With the exception of a few Salvadoran writers publishing with independent presses, [Joan Didion](https://en.wikipedia.org/wiki/Joan_Didion) and other white US writers were the only tellers of Salvadoran stories in the English language.[^2]
-
-I truly believe my book has a chance at changing this, or at the very least making a significant contribution to the conversation.
+I'm not going to lie, getting my book into the hands of that many people feels like an impossible mountain to climb.
 
 Growing up with a story like this often left me feeling lost and alone, because my friends and family had a difficult time relating to what I was going through. It took nearly a decade before I met another person from El Salvador that had been forcibly separated from their family.
 
-In recent years, stories like _Encanto_, _Gentefied_, and _In The Heights_ have meant so much to me, because they have given a voice to some of the difficult emotions I've had to deal with. It is my hope that my book will act in a similar manner for Salvadorans who live with the messy aftermath of our country's 13-year-long civil war.
+In recent years, stories like _Encanto_, _Gentefied_, and _In The Heights_ have meant so much to me, because they have given a voice to some of the difficult emotions I've had to deal with. It is my hope that my book will act in a similar manner for Salvadorans who live with the messy aftermath of the war.
 
 That's where you come in. If my story is going to get any real traction in a crowded marketplace it will be because of your efforts. **So I hope you will help me spread the word about my book by acting on least one of the steps below:**
 
@@ -53,13 +50,11 @@ In my 2013 essay [Why you should support (and share) your friend’s work](https
 >
 > We live in an attention economy where ideas that spread win, and every time you share or comment on a friend’s work, you are letting other people know this is something worth paying attention to. **So if you want your friend to succeed, you should support them, and share their work.**
 
-Even though I wrote this post almost a decade ago, I think the advice still holds up. Sharing this site on social media, or sending it to someone who might be interested in it, is one of the best actions you can take to help this project succeed.
+Even though I wrote this post over a decade ago, I think the advice still holds up. Sharing this site on social media, or sending it to someone who might be interested in it, is one of the best actions you can take to help this project succeed.
 
-{{% box %}}
-I realize that the website address is a bit long so I created this handy short link for you to share:
-
-[https://wfid.link/](https://wfid.link/)
-{{% /box %}}
+<div style="text-align: center">
+{{< share-button text="Share This Story" class="button primary" >}}
+</div>
 
 ---
 
@@ -72,4 +67,3 @@ Use the form below to suggest a connection. Just tell me who you are, who they a
 {{< form-builder data="connection" >}}
 
 [^1]: [The 10,000 Reader Rule](https://stevenpressfield.com/2015/11/the-10000-reader-rule/)
-[^2]: [Unforgetting: A Memoir of Family, Migration, Gangs, and Revolution in the Americas](https://amzn.to/3qZidkX)

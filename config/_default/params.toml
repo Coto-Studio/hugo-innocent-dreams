@@ -1,12 +1,19 @@
+## Custom share URL (used for social sharing links)
+## Falls back to site BaseURL if not set
+shareURL = "https://wfid.link/"
+
 ## Open Graph Data
 title = "Waking From Innocent Dreams"
 keywords = "Book, Author, Novel, Autobiographical, El Salvador, Nelson/Roberto"
-description = "An upcoming novel by Nelson/Roberto."
-images = ['images/wfid_cover.png', 'images/bg.png']
+description = "A novel about a boy who survived and the ghost who remembers, written by one of El Salvador's Disappeared Children."
+images = ['images/wfid_og.png']
 copyright = "[Nelson/Roberto](https://nelsonroberto.com)"
 
 ## Learn More Link for email sign up forms
 learnMoreLink = "spread-the-word#sign-up-for-my-email-list"
+
+## BotPoison public key for form spam protection
+botpoisonPublicKey = "pk_dd2eb71b-ac8a-4772-b8d0-02eed0d0f626"
 
 ## Set below parameter to define a favicon
 # favicon = "favicon.ico"

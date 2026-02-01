@@ -1,0 +1,3 @@
+{{- $text := .Get "text" | default "share it" -}}
+{{- $class := .Get "class" | default "" -}}
+<a href="#" class="share-trigger {{ $class }}" role="button" aria-haspopup="dialog">{{ $text }}</a>

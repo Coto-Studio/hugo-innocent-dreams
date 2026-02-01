@@ -9,8 +9,8 @@
 /* Pagination */
 
 .pagination {
-  @include vendor("display", "inline-flex");
-  @include vendor("user-select", "none");
+  display: inline-flex;
+  user-select: none;
   cursor: default;
   list-style: none;
   margin: 0 0 size(element-margin) 2px;
@@ -18,15 +18,11 @@
 
   a,
   span {
-    @include vendor(
-      "transition",
-      (
-        "background-color #{duration(transition)} ease-in-out",
-        "border-color #{duration(transition)} ease-in-out",
-        "box-shadow #{duration(transition)} ease-in-out",
-        "color #{duration(transition)} ease-in-out"
-      )
-    );
+    transition:
+      background-color duration(transition) ease-in-out,
+      border-color duration(transition) ease-in-out,
+      box-shadow duration(transition) ease-in-out,
+      color duration(transition) ease-in-out;
     border: solid 2px;
     display: inline-block;
     font-family: font(family-heading);
@@ -34,7 +30,6 @@
     font-weight: font(weight-heading);
     height: size(element-height);
     letter-spacing: 0.075em;
-    letter-spacing: font(letter-spacing-heading);
     line-height: calc(#{size(element-height)} - 4px);
     margin-left: -2px;
     min-width: size(element-height);

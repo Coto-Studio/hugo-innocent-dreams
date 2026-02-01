@@ -6,6 +6,19 @@ services:
       - traefik-public
     deploy:
       replicas: 2
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+        monitor: 60s
+        max_failure_ratio: 0
+      rollback_config:
+        parallelism: 1
+        order: stop-first
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
       labels:
         # Enable Traefik
         - "traefik.enable=true"
@@ -31,6 +44,19 @@ services:
     networks:
       - traefik-public
     deploy:
+      update_config:
+        parallelism: 1
+        delay: 10s
+        order: start-first
+        failure_action: rollback
+        monitor: 60s
+        max_failure_ratio: 0
+      rollback_config:
+        parallelism: 1
+        order: stop-first
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
       labels:
         # Enable Traefik
         - "traefik.enable=true"

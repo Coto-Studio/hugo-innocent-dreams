@@ -1,0 +1,64 @@
+{{- $variant := .variant | default "footer" -}}
+{{- $url := .Site.Params.shareURL | default .Site.BaseURL -}}
+{{- $title := .Site.Title | default "Waking From Innocent Dreams" -}}
+{{- $description := .Site.Params.description | default "" -}}
+{{- $encodedUrl := $url | urlquery -}}
+{{- $encodedTitle := $title | urlquery -}}
+{{- $encodedDescription := $description | urlquery -}}
+
+{{- $platforms := site.Data.sharePlatforms.platforms -}}
+
+{{- if eq $variant "footer" -}}
+<ul class="icons alt share-icons">
+  {{- range $platforms -}}
+    {{- if .isCopyLink }}
+  <li><a href="#" class="icon alt {{ .icon }} copy-url-footer" data-url="{{ $url }}" aria-label="{{ .name }}"><span class="label">{{ .name }}</span></a></li>
+    {{- else }}
+      {{- $href := "" -}}
+      {{- if eq (len .params) 1 -}}
+        {{- $href = printf .url $encodedUrl -}}
+      {{- else if eq (len .params) 2 -}}
+        {{- if eq (index .params 0) "title" -}}
+          {{- $href = printf .url $encodedTitle $encodedUrl -}}
+        {{- else -}}
+          {{- $href = printf .url $encodedUrl $encodedTitle -}}
+        {{- end -}}
+      {{- else if eq (len .params) 3 -}}
+        {{- $href = printf .url $encodedTitle $encodedDescription $encodedUrl -}}
+      {{- end }}
+  <li><a href="{{ $href }}" target="_blank" rel="noopener" class="icon alt {{ .icon }}{{ if .iconText }} bluesky-icon{{ end }}" aria-label="Share on {{ .name }}"><span class="label">{{ .name }}</span></a></li>
+    {{- end -}}
+  {{- end }}
+</ul>
+{{- else if eq $variant "modal" -}}
+<div class="share-grid">
+  {{- range $platforms -}}
+    {{- if not .isCopyLink -}}
+      {{- $href := "" -}}
+      {{- if eq (len .params) 1 -}}
+        {{- $href = printf .url $encodedUrl -}}
+      {{- else if eq (len .params) 2 -}}
+        {{- if eq (index .params 0) "title" -}}
+          {{- $href = printf .url $encodedTitle $encodedUrl -}}
+        {{- else -}}
+          {{- $href = printf .url $encodedUrl $encodedTitle -}}
+        {{- end -}}
+      {{- else if eq (len .params) 3 -}}
+        {{- $href = printf .url $encodedTitle $encodedDescription $encodedUrl -}}
+      {{- end }}
+  <a href="{{ $href }}"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="share-link share-{{ .id }}"
+     aria-label="Share on {{ .name }}">
+    {{- if .iconText }}
+    <span class="share-icon-text">{{ .iconText }}</span>
+    {{- else }}
+    <span class="icon {{ .icon }}"></span>
+    {{- end }}
+    <span class="share-label">{{ .name }}</span>
+  </a>
+    {{- end -}}
+  {{- end }}
+</div>
+{{- end -}}

@@ -151,6 +151,17 @@ $social-colors: (
   }
 }
 
+.native-share-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+
+  .share-icon {
+    flex-shrink: 0;
+  }
+}
+
 // Footer share icons
 .icons.share-icons {
   // Add vertical spacing between icon rows

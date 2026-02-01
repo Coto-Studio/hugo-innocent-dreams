@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}  
+  {{ $postPerPage := .Site.Params.Posts.pageSize | default 6 }}  
   {{ $featuredPostEnabled := .Site.Params.Posts.featuredPost | default true }}
   {{ $allPosts := .Pages }}
   {{ $remainingPosts := slice }}

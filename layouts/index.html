@@ -1,65 +1,24 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang='{{ .Site.Language.Lang | default "en-us" }}'>
-	<head>
-		{{ partial "head/metadata" . }}
-		{{ partial "head/favicons" . }}
-		{{ partial "head/css" . }}
-		{{ partial "head/rss" . }}
-		{{ partial "head/scripts" . }}
-		{{ template "_internal/opengraph.html" . }}
-	</head>
-	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
-		{{ $postPerPage := .Site.Params.Posts.pageSize | default 6 }}
-		{{ $featuredPostEnabled := .Site.Params.Posts.featuredPost | default true }}
-		{{ $folderName :=  .Site.Params.Posts.folderName | default "posts" }}
-		{{ $allPosts := where .Site.RegularPages "Section" $folderName }}
-		{{ $remainingPosts := slice }}
-		{{ $featuredPost := slice }}
-		
-		{{ if $featuredPostEnabled }}
-			{{ $featuredPost = index (first 1 $allPosts) 0 }}
-			{{ $remainingPosts = (.Paginate (after 1 $allPosts) $postPerPage) }}
-		{{ else }}
-			{{ $remainingPosts = .Paginate $allPosts $postPerPage }}
-		{{ end }}
-			
-		{{ $isFirstPage := eq $remainingPosts.PageNumber 1 }}
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
-			{{ if $isFirstPage }}
-				{{ partial "header/intro" . }}
-			{{ end }}
-			
-			{{ partial "header/site-header" . }}
-			{{ partial "header/site-nav" . }}
+{{ define "intro" }}
+  {{ $folderName := .Site.Params.Posts.folderName | default "posts" }}
+  {{ $allPosts := where .Site.RegularPages "Section" $folderName }}
+  {{ $postPerPage := .Site.Params.Posts.pageSize | default 6 }}
+  {{ $featuredPostEnabled := .Site.Params.Posts.featuredPost | default true }}
 
-			<!-- Main -->
-			<div id="main">
-				<article class="post">
-					{{ partial "components/page-header" . }}
-					
-					{{ .Content }}
+  {{ if $featuredPostEnabled }}
+    {{ .Scratch.Set "remainingPosts" (.Paginate (after 1 $allPosts) $postPerPage) }}
+  {{ else }}
+    {{ .Scratch.Set "remainingPosts" (.Paginate $allPosts $postPerPage) }}
+  {{ end }}
 
-					{{ partial "postcustom" . }}					
-				</article>
-				
-				{{ if and $featuredPost $isFirstPage }}
-					{{/* partial "posts/featured.html" $featuredPost */}}
-				{{ end }}
-				
-				{{/* partial "posts/list.html" $remainingPosts.Pages */}}
-			</div>
+  {{ if eq (.Scratch.Get "remainingPosts").PageNumber 1 }}
+    {{ partial "header/intro" . }}
+  {{ end }}
+{{ end }}
 
-			{{ partial "footer/site-footer" . }}
-			{{ partial "footer/copyright" . }}
-		</div>
-
-		{{ partial "components/share-modal" . }}
-		{{ partial "components/subscribe-modal" . }}
-	</body>
-</html>
+{{ define "main" }}
+  <article class="post">
+    {{ partial "components/page-header" . }}
+    {{ .Content }}
+    {{ partial "postcustom" . }}
+  </article>
+{{ end }}

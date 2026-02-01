@@ -3,10 +3,6 @@
 {{ $style := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "main.scss" . | toCSS (dict "targetPath" "assets/css/main.css" "enableSourceMap" true "transpiler" "dartsass") }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-{{ with .Site.Params.favicon }}
-  <link rel="shortcut icon" href="{{ . }}">
-{{ end }}
-
 {{ $noscript := resources.Get "scss/noscript.scss" | resources.ExecuteAsTemplate "noscript.scss" . | toCSS (dict "targetPath" "assets/css/noscript.css" "enableSourceMap" false "transpiler" "dartsass") }}
 <noscript><link rel="stylesheet" href='{{ $noscript.RelPermalink }}' /></noscript>
 

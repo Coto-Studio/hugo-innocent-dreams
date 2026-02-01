@@ -1,9 +1,10 @@
-// Share functionality with Web Share API fallback to modal
+// Share functionality - modal first, with optional native share button
 (function () {
   const shareModal = document.getElementById("share-modal");
   const shareTriggers = document.querySelectorAll(".share-trigger");
   const copyUrlBtn = document.querySelector(".copy-url-btn");
   const shareUrlInput = document.getElementById("share-url-input");
+  const nativeShareBtn = document.querySelector(".native-share-btn");
 
   if (!shareModal || shareTriggers.length === 0) return;
 
@@ -18,26 +19,18 @@
 
   // Check if Web Share API is available and can share this data
   function canUseWebShare() {
-    return navigator.share && navigator.canShare && navigator.canShare(shareData);
+    try {
+      return navigator.share && navigator.canShare && navigator.canShare(shareData);
+    } catch (err) {
+      return false;
+    }
   }
 
-  // Handle share trigger clicks
+  // Handle share trigger clicks - always show modal first (set up early to ensure it works)
   shareTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", async (e) => {
+    trigger.addEventListener("click", (e) => {
       e.preventDefault();
-
-      if (canUseWebShare()) {
-        try {
-          await navigator.share(shareData);
-        } catch (err) {
-          // User cancelled or error - fall back to modal
-          if (err.name !== "AbortError") {
-            shareModal.showModal();
-          }
-        }
-      } else {
-        shareModal.showModal();
-      }
+      shareModal.showModal();
     });
   });
 
@@ -62,6 +55,22 @@
       shareModal.close();
     }
   });
+
+  // Show/hide native share button based on API availability
+  if (nativeShareBtn) {
+    if (canUseWebShare()) {
+      nativeShareBtn.style.display = "";
+      nativeShareBtn.addEventListener("click", async () => {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          // User cancelled - do nothing
+        }
+      });
+    } else {
+      nativeShareBtn.style.display = "none";
+    }
+  }
 
   // Copy URL functionality (modal)
   if (copyUrlBtn && shareUrlInput) {

@@ -1,5 +1,8 @@
 [[imports]]
- path = 'github.com/lokesh/lightbox2'
- [[imports.mounts]]
- source = "dist"
- target = "static/"
+  path = 'github.com/Coto-Studio/botpoison-js'
+
+[[imports]]
+  path = 'github.com/lokesh/lightbox2'
+  [[imports.mounts]]
+    source = "dist"
+    target = "static/"

@@ -1,6 +1,5 @@
 ---
 title: "The Latest News"
-description: "Updates on Waking From Innocent Dreams, a novel by Nelson/Roberto about his journey as one of El Salvador's Disappeared Children."
 lastmod: 2026-02-01
 ---
 

@@ -25,7 +25,7 @@ His journey takes him across Central America and into a magical world where past
 But when his father's rigid, black-and-white worldview threatens to shatter the family unity Nelson has dreamed of since childhood, he faces an impossible choice. He must learn to see what the ghost has been trying to show him before his fantasies leave him lost between worlds, _ni de aquí ni de allá_.
 
 {{< box class="alt align-center">}}
-{{< modal title="Notify Me When Available" class="primary large icon fa fa-bell" formSparkID="3Jj2P1N3">}}
+{{< modal title="Join The Journey" class="primary large icon fa fa-envelope" formSparkID="3Jj2P1N3">}}
 {{< /box >}}
 
 {{< subheader >}}
@@ -78,7 +78,7 @@ Coming soon...
 
 I'm currently seeking representation as I pursue traditional publishing for my novel, which is 115,000 words in its current draft. If you are a literary agent interested in my project, [please get in touch](mailto:hello@nelsonroberto.com). I'm happy to send sample chapters upon request.
 
-Traditional publishing can take a long time, so if you are interested in purchasing a copy when it is available, [sign up for my newsletter](#subscribe) and I will notify you when it is ready.
+Traditional publishing can take a long time, so if you want to follow along and be the first to know when the book is available, [join the journey](#subscribe).
 
 {{< subheader >}}
 

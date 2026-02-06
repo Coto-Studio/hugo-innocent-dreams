@@ -20,5 +20,5 @@ Another critical issue for me is to show a side of our culture that isn’t root
 While my story touches on and is shaped by the country’s civil war, it is not a story _about_ that violence or “terror.” Instead, it is a story about a family that is trying to do their best with what they have been given. For these reasons think it’s worth pursuing the somewhat lengthy process of traditional publishing.
 
 {{< box >}}
-**Note:** The best way to keep update to date with the book is to sign up for my [newsletter updates](#footer).
+**Note:** The best way to stay up to date with the book is to [join the journey](#footer).
 {{</ box >}}

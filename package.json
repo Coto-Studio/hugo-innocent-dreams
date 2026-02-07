@@ -1,11 +1,5 @@
 {
   "name": "hugo-innocent-dreams",
   "type": "module",
-  "private": true,
-  "scripts": {
-    "update:botpoison": "cp node_modules/@coto-studio/botpoison-js/dist/*.js assets/js/"
-  },
-  "dependencies": {
-    "@coto-studio/botpoison-js": "^1.0.0"
-  }
+  "private": true
 }

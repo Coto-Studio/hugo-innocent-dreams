@@ -2,8 +2,8 @@
 <dialog class="notify-modal">
   <button class="close-modal-x" aria-label="Close modal"><span class="icon fa-times"></span></button>
   <header>
-    <h2>Notify Me</h2>
-    <p>Enter your address below and I will email you when the book is available for purchase.</p>
+    <h2>{{ i18n "CONTACT_FORM_HEADER" . }}</h2>
+    <p>{{ i18n "CONTACT_FORM_TEASER" . }}</p>
   </header>
   <form id="signup-form" method="post" action="https://submit-form.com/{{ .Get "formSparkID" }}" data-botpoison-public-key="{{ $.Site.Params.botpoisonPublicKey }}" data-success-url="/thank-you" target="_blank">
     <input type="hidden" name="page" value="{{ $.Page.RelPermalink }}" />
@@ -15,9 +15,9 @@
       <div class="field">
         <input type="text" name="email" id="email" placeholder="Your Email" required/>
       </div>
-      <div class="field">
-        <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
-        <label for="newsletter" class="align-left">Subscribe to my bimonthly newsletter as well.<br /><a href="{{ relref $.Page $.Site.Params.learnMoreLink }}">Learn more.</a></label>
+      <div class="field field--extra">
+        <label for="modal-website">Website</label>
+        <input id="modal-website" type="text" name="website" tabindex="-1" autocomplete="off" />
       </div>
     </div>
     <ul class="actions">

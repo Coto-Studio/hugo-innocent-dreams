@@ -3,9 +3,9 @@
 [CONTACT_EMAIL]
   other = "Email"
 [CONTACT_FORM_HEADER]
-  other = "Notify Me"
+  other = "Join The Journey"
 [CONTACT_FORM_TEASER]
-  other = "Enter your address below and I will email you when the book is available for purchase."
+  other = "Sign up to read the Prologue and Chapter One, and follow along as I bring this story to life."
 [CONTACT_FORM_FIELD_EMAIL]
   other = "Email"
 [CONTACT_FORM_FIELD_MESSAGE]
@@ -13,7 +13,7 @@
 [CONTACT_FORM_FIELD_NAME]
   other = "Name"
 [CONTACT_FORM_SUBMIT_SEND_MESSAGE]
-  other = "Sign Up"
+  other = "Count Me In"
 [CONTACT_PHONE]
   other = "Txt"
 [CONTACT_SOCIAL]

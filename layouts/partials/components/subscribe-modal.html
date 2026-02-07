@@ -20,15 +20,9 @@
         <label for="subscribe-email">{{ i18n "CONTACT_FORM_FIELD_EMAIL" . }}</label>
         <input type="email" name="email" id="subscribe-email" required />
       </div>
-      <div class="field">
-        <input type="checkbox" id="subscribe-newsletter" name="newsletter" value="Yes" checked>
-        <label for="subscribe-newsletter">Subscribe to my bimonthly newsletter as well.<br />
-          <a href="{{ relref $.Page $.Site.Params.learnMoreLink }}">Learn more.</a>
-        </label>
-      </div>
-      <div class="field bot-check">
-        <input id="subscribe-bot-check" type="checkbox" name="isHuman" tabindex="-1" autocomplete="off" />
-        <label for="subscribe-bot-check">Are you human?</label>
+      <div class="field field--extra">
+        <label for="subscribe-website">Website</label>
+        <input id="subscribe-website" type="text" name="website" tabindex="-1" autocomplete="off" />
       </div>
     </div>
     <ul class="actions">

@@ -24,8 +24,7 @@
     }
   }
 
-  // Bot check honeypot - hidden from real users
-  .bot-check {
+  .field--extra {
     position: absolute;
     left: -9999px;
     opacity: 0;

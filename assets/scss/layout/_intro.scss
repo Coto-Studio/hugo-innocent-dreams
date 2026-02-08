@@ -26,18 +26,22 @@
   min-height: 100vh;
 
   h1 {
-    font-size: clamp(2rem, 6vw + 0.5rem, 3.5rem);
+    font-size: clamp(2.25rem, 5vw + 0.5rem, 3.5rem);
     line-height: 1.1;
     text-shadow: 2px 2px 2px black;
   }
 
   p {
-    font-size: clamp(1.1rem, 3vw + 0.25rem, 1.75rem);
+    font-size: clamp(1.25rem, 2vw + 0.75rem, 1.75rem);
     font-style: italic;
     margin-top: -0.25rem;
     text-align: center;
     line-height: 1.2;
     text-shadow: 2px 2px 2px black;
+  }
+
+  .actions {
+    margin-left: 0;
   }
 
   & + #header {

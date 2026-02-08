@@ -17,7 +17,7 @@
   display: flex;
   transition: transform 1s ease, opacity 1s ease;
   background: rgba(255, 255, 255, 0.175);
-  margin: -4rem auto 0 auto;
+  margin: (-4rem + size(padding) * 2) auto 0 auto;
   overflow: hidden;
   position: relative;
   width: calc(100% - #{size(padding) * 2});

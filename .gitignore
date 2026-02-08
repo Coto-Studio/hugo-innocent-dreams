@@ -6,12 +6,8 @@ resources/
 /docker-stack-op.yaml
 node_modules/
 .env
-.playwright-mcp/
-
-# Playwright
-test-results/
-playwright-report/
-playwright/.cache/
+# Playwright CLI
+.playwright-cli/
 
 # Claude Code
 .claude/settings.local.json

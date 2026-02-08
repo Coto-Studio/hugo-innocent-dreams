@@ -16,15 +16,8 @@
       "Bash(grep:*)",
       "Bash(echo:*)",
       "Bash(pgrep:*)",
-      "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_resize",
-      "mcp__playwright__browser_take_screenshot",
-      "mcp__playwright__browser_close",
-      "mcp__playwright__browser_evaluate",
-      "mcp__playwright__browser_click",
-      "mcp__playwright__browser_snapshot",
-      "mcp__playwright__browser_console_messages",
-      "mcp__playwright__browser_wait_for",
+      "Skill(playwright-cli)",
+      "Bash(playwright-cli:*)",
       "Bash(pkill -f 'hugo server':*)"
     ],
     "deny": []

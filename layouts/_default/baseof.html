@@ -15,7 +15,7 @@
 	</head>
 	<body lang='{{ .Site.Language.Lang | default "en-us" }}' class="is-preload">
 		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+		<div id="wrapper"{{ if .IsHome }} class="fade-in"{{ end }}>
 			{{ block "intro" . }}{{ end }}
 			{{ partial "header/site-header" . }}
 			{{ partial "header/site-nav" . }}

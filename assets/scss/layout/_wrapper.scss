@@ -25,14 +25,14 @@
     background-color: #000000;
     background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
       url("../../images/bg1.webp");
-    background-size: auto, cover, 190vh;
+    background-size: auto, cover, max(190vh, 120%);
     background-position: center, center, right -108px top 0;
     background-repeat: repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll;
     z-index: -1;
 
     @include breakpoint("<=small") {
-      background-size: auto, cover, 135vh;
+      background-size: auto, cover, max(135vh, 120%);
       background-position: center, center, right -130px top 0;
     }
 

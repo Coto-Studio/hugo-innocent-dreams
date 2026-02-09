@@ -17,7 +17,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   transition: opacity 1s ease, transform 1s ease;
   position: relative;
   cursor: default;
@@ -78,6 +78,23 @@
         transform: translateY(4rem);
         opacity: 0;
       }
+    }
+  }
+
+  @include breakpoint("<=large") {
+    @include padding(size(padding) * 2.5, size(padding) * 2);
+    min-height: 92vh;
+
+    h1 {
+      font-size: clamp(2.25rem, 5vw + 0.5rem, 3.25rem);
+    }
+
+    p {
+      font-size: clamp(1.25rem, 2vw + 0.75rem, 1.625rem);
+    }
+
+    & + #header {
+      margin-top: -17rem;
     }
   }
 

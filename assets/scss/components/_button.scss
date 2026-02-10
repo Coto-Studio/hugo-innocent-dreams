@@ -100,6 +100,18 @@ button,
     line-height: 2.5rem;
     padding: 0 1.25rem;
 
+    &.icon.solo {
+      width: 3rem;
+      min-height: 3rem;
+      line-height: 3rem;
+      border-radius: 3rem;
+      text-indent: 3rem;
+
+      &:before {
+        font-size: 1rem;
+      }
+    }
+
     &.large {
       font-size: 0.8rem;
       min-height: 2.75rem;

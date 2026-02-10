@@ -17,7 +17,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   transition: opacity 1s ease, transform 1s ease;
   position: relative;
   cursor: default;
@@ -26,18 +26,26 @@
   min-height: 100vh;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.25rem, 5vw + 0.5rem, 3.5rem);
     line-height: 1.1;
     text-shadow: 2px 2px 2px black;
   }
 
   p {
-    font-size: 1.75rem;
+    font-size: clamp(1.25rem, 2vw + 0.75rem, 1.75rem);
     font-style: italic;
     margin-top: -0.25rem;
     text-align: center;
     line-height: 1.2;
     text-shadow: 2px 2px 2px black;
+  }
+
+  .actions {
+    margin-left: 0;
+
+    li {
+      padding-left: 0;
+    }
   }
 
   & + #header {
@@ -59,18 +67,6 @@
 
   &.hidden {
     pointer-events: none;
-    transform: translateY(2rem);
-    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
-    opacity: 0;
-    visibility: hidden;
-
-    & + #header {
-      .logo {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-      }
-    }
   }
 
   body.is-preload & {
@@ -85,12 +81,28 @@
     }
   }
 
+  @include breakpoint("<=large") {
+    @include padding(size(padding) * 2.5, size(padding) * 2);
+    min-height: 92vh;
+
+    h1 {
+      font-size: clamp(2.25rem, 5vw + 0.5rem, 3.25rem);
+    }
+
+    p {
+      font-size: clamp(1.25rem, 2vw + 0.75rem, 1.625rem);
+    }
+
+    & + #header {
+      margin-top: -17rem;
+    }
+  }
+
   @include breakpoint("<=medium") {
     @include padding(size(padding) * 2, size(padding) * 2);
     min-height: 90vh;
 
     h1 {
-      font-size: 2.75rem;
       line-height: 1.1;
       margin-bottom: size(element-margin) * 0.5;
     }
@@ -111,24 +123,30 @@
     min-height: 80vh;
 
     h1 {
-      font-size: 2.25rem;
       line-height: 1.1;
       margin-bottom: size(element-margin) * 0.5;
     }
     p {
-      font-size: 1.5rem;
       text-wrap: balance;
     }
 
-    .actions {
-      display: none;
+    .button.icon.solo {
+      width: 2.5rem;
+      min-height: 2.5rem;
+      line-height: 2.5rem;
+      border-radius: 2.5rem;
+      text-indent: 2.5rem;
+
+      &:before {
+        font-size: 0.85rem;
+        margin-left: 0;
+      }
     }
   }
 
   @include breakpoint("<=xxsmall") {
     padding-bottom: (size(padding) * 1.5);
     p {
-      font-size: 1.25rem;
       margin-top: 0rem;
     }
   }

@@ -95,6 +95,10 @@ ul.actions {
 							&:before {
 								margin-left: -0.5rem;
 							}
+
+							&.solo {
+								width: 3rem;
+							}
 						}
 					}
 				}

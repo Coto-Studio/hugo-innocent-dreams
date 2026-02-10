@@ -161,6 +161,21 @@ The project uses Hugo modules:
 - `.gitmodules` - Theme submodule configuration
 - Theme has local modifications and is modified (see git status)
 
+## Visual Testing
+
+Use `playwright-cli` to verify changes that affect the visual appearance of the site. Start the dev server, then screenshot the affected pages.
+
+**Always test:**
+- SCSS/CSS changes
+- Layout or template changes (partials, shortcodes, base templates)
+- Component changes (forms, buttons, modals, navigation)
+- Substantial content changes that could alter page layout (new paragraphs, restructured sections, added/removed content blocks)
+
+**No need to test:**
+- Minor copy edits (fixing a typo, changing "Join Here" to "Subscribe Here")
+- Metadata changes (front matter, config values not affecting layout)
+- Data-only changes that don't affect rendering
+
 ## Development Notes
 
 ### Working with Forms

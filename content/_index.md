@@ -1,5 +1,5 @@
 ---
-displayTitle: "About The Manuscript"
+displayTitle: "About My Manuscript"
 displayDescription: ""
 lastmod: 2026-10-28
 draft: false
@@ -11,8 +11,6 @@ book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-20-img-1.jpg"
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-25-img-1.jpg"
 ---
-
-_**Waking From Innocent Dreams**_ is upmarket literary fiction with elements of magical realism. A cross between _Hades, Argentina_ and _The Volcano Daughters_, it will also appeal to readers who liked _A Beast Slinks Towards Beijing_. This coming-of-age story, complete at 110,000 words, spans twenty years and follows a boy who survived and a ghost who remembers.
 
 Growing up, Nelson's family loved him but looked nothing like him. He longs to meet the one person he believes will make him whole, while trying to ignore the ghost that won't leave him alone. Then a positive DNA test reveals him to be Roberto, the son of Salvadoran revolutionaries who, as an infant, was _desaparecido_ by a Honduran death squad. At a miraculous reunion, Nelson meets a family ready to welcome him home, except for the one person who was disappeared alongside him: his mother.
 
@@ -72,7 +70,9 @@ I've also appeared on [several podcasts](https://nelsonroberto.com/portfolio/pub
 Coming soon...
 {{< /subheader >}}
 
-I'm currently seeking representation as I pursue traditional publishing for my novel, which is complete at 110,000 words. If you are a literary agent interested in reading _Waking From Innocent Dreams_, [please get in touch](mailto:hello@nelsonroberto.com). I would be happy to send a sample of any length you suggest.
+I'm currently seeking representation as I pursue traditional publishing for my novel. _Waking From Innocent Dreams_ is upmarket literary fiction with elements of magical realism. A cross between _Hades, Argentina_ and _The Volcano Daughters_, it will also appeal to readers who liked _A Beast Slinks Towards Beijing_. This coming-of-age story, complete at 110,000 words, spans twenty years and follows a boy who survived and a ghost who remembers.
+
+If you are a literary agent interested in reading the manuscript, [please get in touch](mailto:hello@nelsonroberto.com). I would be happy to send a sample of any length you suggest.
 
 Traditional publishing can take a long time, so if you want to follow along and be the first to know when the book is available, [join the journey](#subscribe).
 

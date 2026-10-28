@@ -17,7 +17,7 @@ fields:
   - id: expectations
     type: textarea
     labelText: 1. How does this new introduction change your expectations for the story?
-    helperText: If you've read the book, do you feel like this rewrite sets up something different from what you remember reading?
+    helperText: If you've read the manuscript, do you feel like this rewrite sets up something different from what you remember reading?
   - id: historical-prologue
     type: textarea
     labelText: 2. Did you find the historical prologue helpful and/or compelling?

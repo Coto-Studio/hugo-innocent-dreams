@@ -10,5 +10,5 @@ draft: true
 **Post Content Here**
 
 {{< box >}}
-**Note:** The best way to stay up to date with the book is to [join the journey](#footer).
+**Note:** The best way to stay up to date with the manuscript is to [join the journey](#footer).
 {{</ box >}}

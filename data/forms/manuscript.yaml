@@ -17,7 +17,7 @@ fields:
   - id: what-did-you-like
     type: textarea
     labelText: 1. What resonated with you?
-    helperText: Were there any themes, aspects, or ideas in the book that you found compelling?
+    helperText: Were there any themes, aspects, or ideas in the manuscript that you found compelling?
   - id: what-to-cut
     type: textarea
     labelText: 2. Would you cut anything?
@@ -29,7 +29,7 @@ fields:
   - id: review
     type: textarea
     labelText: 4. Write a review.
-    helperText: I know this isn't really a question, but could write a review for my book like you would for Amazon.com or any other review site? It doesn't have to be that long, a couple of sentences is fine.
+    helperText: I know this isn't really a question, but could write a review for my manuscript like you would for Amazon.com or any other review site? It doesn't have to be that long, a couple of sentences is fine.
   - id: rating
     type: starrating
     labelText: 5. How many stars would you give it?

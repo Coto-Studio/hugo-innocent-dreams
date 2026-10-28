@@ -1,7 +1,7 @@
 ---
-displayTitle: "About The Book"
+displayTitle: "About The Manuscript"
 displayDescription: ""
-lastmod: 2026-02-01
+lastmod: 2026-10-28
 draft: false
 book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-02-img-1.jpg"
@@ -12,17 +12,11 @@ book-images:
   - "https://static.nelsonroberto.com/innocent-dreams/chapter-25-img-1.jpg"
 ---
 
-With themes similar to _Hades, Argentina_, and _Solito_, _**Waking From Innocent Dreams**_ is a coming-of-age tale based on true events that blurs the line between imagination and memory. It follows a young man haunted by what he's lost, and by a ghostly boy whose true nature he refuses to see.
+_**Waking From Innocent Dreams**_ is upmarket literary fiction with elements of magical realism. A cross between _Hades, Argentina_ and _The Volcano Daughters_, it will also appeal to readers who liked _A Beast Slinks Towards Beijing_. This coming-of-age story, complete at 110,000 words, spans twenty years and follows a boy who survived and a ghost who remembers.
 
-On the verge of adulthood, an adoptee is contacted by a human rights organization with news that changes everything. Growing up, Nelson lived in a family that loved him but looked nothing like him. He has spent years longing to meet the one person he believes will make him whole, and trying to ignore the ghost that won’t leave him alone.
+Growing up, Nelson's family loved him but looked nothing like him. He longs to meet the one person he believes will make him whole, while trying to ignore the ghost that won't leave him alone. Then a positive DNA test reveals him to be Roberto, the son of Salvadoran revolutionaries who, as an infant, was _desaparecido_ by a Honduran death squad. At a miraculous reunion, Nelson meets a family ready to welcome him home, except for the one person who was disappeared alongside him: his mother.
 
-A positive DNA test reveals him to be Roberto, the son of revolutionaries who, as an infant, was _desaparecido_, disappeared, along with his mother, during a violent government raid.
-
-After a miraculous reunion, Nelson/Roberto finds a family ready to welcome him home, and something almost no other _desaparecido_ receives, a second chance. As one of only a handful of survivors, he sets out on an epic adventure to discover a life taken from him and the sense of belonging he has yearned for his entire life.
-
-His journey takes him across Central America and into a magical world where past and present blend and ancient trees serve as doorways between worlds. As he travels from volcanic hilltops to the rural countryside, where, for the first time in his life, everyone around him looks like him, he must learn to navigate two distinct fathers, families, and cultures.
-
-But when his father's rigid, black-and-white worldview threatens to shatter the family unity Nelson has dreamed of since childhood, he faces an impossible choice. He must learn to see what the ghost has been trying to show him before his fantasies leave him lost between worlds, _ni de aquí ni de allá_.
+After he travels to Central America, his past and present begin to blend, thunderstorms drown out discontent, and living rooms expand to fit the entire neighborhood. Over the years, as he discovers a life taken from him, he struggles to balance the demands of his two lives, leaving him feeling _ni de aquí ni de allá_. Just as Nelson comes to terms with the cost of his disappearance, a betrayal forces him to make an impossible choice: protect the family he has dreamed of since childhood, or accept the truth his ghost and siblings have been pushing him toward.
 
 {{< box class="alt align-center">}}
 {{< modal title="Join The Journey" class="primary large icon fa fa-envelope" formSparkID="3Jj2P1N3">}}
@@ -39,9 +33,11 @@ When Javier Zamora's memoir [_Solito_](https://www.javierzamora.net/solito) beca
 
 > "Joan Didion and other white US writers were the only tellers of Salvadoran stories in the English language."
 
-One story that has rarely been told from the inside is that of the disappeared. Since the 1950s, governments throughout Central and South America have abducted more than 100,000 people as a strategy of intimidation and control. While most are presumed dead, a small subset, almost entirely children, have survived and had their origins concealed. In El Salvador alone, nearly 1,000 children were disappeared during the country's 13-year-long civil war.
+One story that has rarely been told from the inside is that of the disappeared. Since the 1950s, governments throughout Latin America have abducted more than 100,000 people as a strategy of intimidation and control. Only a small handful, almost all children, reunite with their families. Of those, a tiny fraction get a second chance to grow up with the family they were taken from.
 
-There are many more diaspora stories waiting to be told. _Waking From Innocent Dreams_ is the first novel about the _desaparecidos_ written by one of them.
+In El Salvador alone, nearly 1,000 children were disappeared during the country's 13-year-long civil war. As one of them, I am part of that tiny fraction who received a second chance. _Waking From Innocent Dreams_ may be the first English-language novel about forced disappearances written by someone who was taken by the state and later reunited with their family.
+
+There are many more diaspora stories waiting to be told.
 
 {{< subheader >}}
 
@@ -58,7 +54,7 @@ As someone who was forcibly disappeared and had a loved one taken the same way, 
 
 In 2024, my essay ["'You're One of the Disappeared?' How I Came to Accept My Place in History"](https://www.tandfonline.com/doi/full/10.1080/10714839.2024.2356304?src=exp-la#d1e155) was published in the NACLA Report. That commitment to writing my truth continued at the [Under The Volcano](https://underthevolcano.org/) writing residency in Tepoztlán, Mexico, where I joined its Writing of Witness program in 2025 to continue developing my novel.
 
-In addition to this book, I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/). It centers around a week-long trip I took to El Salvador in 2011, where I got to connect with the other Disappeared Children, interview members of my birth family, and meet the country's president.
+In addition to this manuscript, I am working on a documentary film called [Identifying Nelson/Buscando a Roberto](https://www.identifyingnelson.com/). It centers around a week-long trip I took to El Salvador in 2011, where I got to connect with the other Disappeared Children, interview members of my birth family, and meet the country's president.
 
 My story has been featured in:
 
@@ -76,7 +72,7 @@ I've also appeared on [several podcasts](https://nelsonroberto.com/portfolio/pub
 Coming soon...
 {{< /subheader >}}
 
-I'm currently seeking representation as I pursue traditional publishing for my novel, which is 115,000 words in its current draft. If you are a literary agent interested in my project, [please get in touch](mailto:hello@nelsonroberto.com). I'm happy to send sample chapters upon request.
+I'm currently seeking representation as I pursue traditional publishing for my novel, which is complete at 110,000 words. If you are a literary agent interested in reading _Waking From Innocent Dreams_, [please get in touch](mailto:hello@nelsonroberto.com). I would be happy to send a sample of any length you suggest.
 
 Traditional publishing can take a long time, so if you want to follow along and be the first to know when the book is available, [join the journey](#subscribe).
 

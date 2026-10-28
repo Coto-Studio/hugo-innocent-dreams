@@ -45,7 +45,7 @@ fields:
         text: Other
   - type: radio
     labelText: 3. How confident are you that you can read it in 3 to 4 weeks?
-    helperText: The book is 470 pages but I've been told it's a fast read.
+    helperText: The manuscript is 470 pages but I've been told it's a fast read.
     options:
       - id: confidence-low
         name: confidence
@@ -65,7 +65,7 @@ fields:
   - type: select
     id: time-of-year
     labelText: 4. When could you read it?
-    helperText: What is the best time of year for you to read the book.
+    helperText: What is the best time of year for you to read the manuscript.
     options:
       - value: ""
         text: "- Select a time -"
